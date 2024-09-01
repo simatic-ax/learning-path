@@ -1,0 +1,10 @@
+name: "implement_valve"
+version: 0.0.1
+type: app
+targets:
+  - plcsim
+variables:
+  APAX_BUILD_ARGS:
+    - "--debug" # Generate debug information for target "1500"
+devDependencies:
+  "@ax/sdk": 2311.0.1

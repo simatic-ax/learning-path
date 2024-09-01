@@ -1,0 +1,8 @@
+name: 00_introduction
+
+version: 0.0.0
+type: generic
+
+scripts:
+  setup-training-environment: npm install -g reveal-md
+  present: reveal-md ./slides/slides.md --theme ./slides/theme/simatic-ax.css --watch

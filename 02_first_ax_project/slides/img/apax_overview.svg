@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,4.42565,-2.17701)">
+        <g transform="matrix(70.8333,0,0,70.8333,616.234,521.163)">
+        </g>
+        <text x="460.456px" y="521.163px" style="font-family:'Consolas-Bold', 'Consolas';font-weight:700;font-size:70.833px;fill:rgb(0,215,160);">apax</text>
+    </g>
+    <g>
+        <g transform="matrix(1,0,0,1,-358.91,-283.469)">
+            <g transform="matrix(45.8333,0,0,45.8333,561.254,521.163)">
+            </g>
+            <text x="460.456px" y="521.163px" style="font-family:'Consolas-Bold', 'Consolas';font-weight:700;font-size:45.833px;">test</text>
+        </g>
+        <g transform="matrix(1,0,0,1,-33.2743,54.6957)">
+            <text x="136.487px" y="224.517px" style="font-family:'ArialMT', 'Arial';font-size:29.167px;">Unit testing on a</text>
+            <text x="136.487px" y="254.638px" style="font-family:'ArialMT', 'Arial';font-size:29.167px;">logical level</text>
+            <text x="136.487px" y="284.759px" style="font-family:'ArialMT', 'Arial';font-size:29.167px;">or directly on the</text>
+            <g transform="matrix(29.1667,0,0,29.1667,201.329,314.88)">
+            </g>
+            <text x="136.487px" y="314.88px" style="font-family:'ArialMT', 'Arial';font-size:29.167px;">PLC</text>
+        </g>
+    </g>
+    <g>
+        <g transform="matrix(1,0,0,1,-358.91,77.262)">
+            <g transform="matrix(45.8333,0,0,45.8333,561.254,521.163)">
+            </g>
+            <text x="460.456px" y="521.163px" style="font-family:'Consolas-Bold', 'Consolas';font-weight:700;font-size:45.833px;">pack</text>
+        </g>
+        <g transform="matrix(1,0,0,1,-33.2743,415.427)">
+            <text x="136.487px" y="224.517px" style="font-family:'ArialMT', 'Arial';font-size:29.167px;">Create archive</text>
+            <g transform="matrix(29.1667,0,0,29.1667,288.9,254.638)">
+            </g>
+            <text x="136.487px" y="254.638px" style="font-family:'ArialMT', 'Arial';font-size:29.167px;">for package</text>
+        </g>
+    </g>
+    <g>
+        <g transform="matrix(1,0,0,1,-58.0837,-413.697)">
+            <g transform="matrix(45.8333,0,0,45.8333,586.453,521.163)">
+            </g>
+            <text x="460.456px" y="521.163px" style="font-family:'Consolas-Bold', 'Consolas';font-weight:700;font-size:45.833px;">build</text>
+        </g>
+        <g transform="matrix(1,0,0,1,267.552,-75.5321)">
+            <text x="136.487px" y="224.517px" style="font-family:'ArialMT', 'Arial';font-size:29.167px;">Compiling your</text>
+            <g transform="matrix(29.1667,0,0,29.1667,349.925,254.638)">
+            </g>
+            <text x="136.487px" y="254.638px" style="font-family:'ArialMT', 'Arial';font-size:29.167px;">ST<tspan x="173.23px 181.334px " y="254.638px 254.638px "> c</tspan>ode with stc</text>
+        </g>
+    </g>
+    <g>
+        <g transform="matrix(1,0,0,1,-58.0837,262.185)">
+            <g transform="matrix(45.8333,0,0,45.8333,636.852,521.163)">
+            </g>
+            <text x="460.456px" y="521.163px" style="font-family:'Consolas-Bold', 'Consolas';font-weight:700;font-size:45.833px;">publish</text>
+        </g>
+        <g transform="matrix(1,0,0,1,267.552,600.35)">
+            <text x="136.487px" y="224.517px" style="font-family:'ArialMT', 'Arial';font-size:29.167px;">Push package to</text>
+            <g transform="matrix(29.1667,0,0,29.1667,264.547,254.638)">
+            </g>
+            <text x="136.487px" y="254.638px" style="font-family:'ArialMT', 'Arial';font-size:29.167px;">repository</text>
+        </g>
+    </g>
+    <g>
+        <g transform="matrix(1,0,0,1,245.347,-267.842)">
+            <g transform="matrix(45.8333,0,0,45.8333,636.852,521.163)">
+            </g>
+            <text x="460.456px" y="521.163px" style="font-family:'Consolas-Bold', 'Consolas';font-weight:700;font-size:45.833px;">install</text>
+        </g>
+        <g transform="matrix(1,0,0,1,570.983,70.323)">
+            <text x="136.487px" y="224.517px" style="font-family:'ArialMT', 'Arial';font-size:29.167px;">Download</text>
+            <text x="136.487px" y="254.638px" style="font-family:'ArialMT', 'Arial';font-size:29.167px;">dependencies</text>
+            <g transform="matrix(29.1667,0,0,29.1667,254.863,284.759)">
+            </g>
+            <text x="136.487px" y="284.759px" style="font-family:'ArialMT', 'Arial';font-size:29.167px;">and tools</text>
+        </g>
+    </g>
+    <g>
+        <g transform="matrix(1,0,0,1,245.347,92.8893)">
+            <g transform="matrix(45.8333,0,0,45.8333,536.055,521.163)">
+            </g>
+            <text x="460.456px" y="521.163px" style="font-family:'Consolas-Bold', 'Consolas';font-weight:700;font-size:45.833px;">run</text>
+        </g>
+        <g transform="matrix(1,0,0,1,570.983,431.054)">
+            <text x="136.487px" y="224.517px" style="font-family:'ArialMT', 'Arial';font-size:29.167px;">Execute custom</text>
+            <g transform="matrix(29.1667,0,0,29.1667,220.754,254.638)">
+            </g>
+            <text x="136.487px" y="254.638px" style="font-family:'ArialMT', 'Arial';font-size:29.167px;">scripts</text>
+        </g>
+    </g>
+    <g transform="matrix(0.0859034,0,0,0.0859034,390.114,483.575)">
+        <path d="M470,590L266,384C255,389 243,392 232,394C220,397 208,398 195,398C139,398 91,378 52,339C12,299 -8,251 -8,195C-8,175 -5,156 1,137C7,119 14,102 25,85L148,209L209,148L85,25C102,14 119,7 137,1C156,-5 175,-8 195,-8C251,-8 299,12 339,52C378,91 398,139 398,195C398,208 397,220 394,232C392,243 389,255 384,266L590,470C597,477 600,485 600,495C600,504 597,513 590,519L519,590C513,597 504,600 495,600C485,600 477,597 470,590ZM495,519L518,496L302,280C312,268 319,255 323,240C328,225 330,210 330,195C330,161 319,132 298,107C276,82 249,67 217,62L280,124C286,131 290,139 290,148C290,157 286,165 280,171L171,280C165,286 157,290 148,290C139,290 131,286 124,280L62,217C67,249 82,276 107,298C132,319 161,330 195,330C210,330 224,328 239,323C254,319 267,312 279,302L495,519Z" style="fill:rgb(0,215,160);"/>
+    </g>
+</svg>

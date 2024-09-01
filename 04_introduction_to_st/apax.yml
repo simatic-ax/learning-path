@@ -1,0 +1,12 @@
+name: "introduction-to-st"
+version: 0.0.0
+type: app
+targets:
+  - plcsim
+variables:
+  APAX_BUILD_ARGS:
+    - "--debug" # Generate debug information for target "1500"
+devDependencies:
+  "@ax/sdk": 2311.0.1
+scripts:
+    present: reveal-md ./slides/slides.md --theme ./slides/theme/simatic-ax.css --watch

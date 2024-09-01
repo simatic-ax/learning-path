@@ -1,0 +1,7 @@
+{
+  "FormatVersion": 1,
+  "Containers": {
+    "HardwareContainer": "HwConfiguration.hwdat",
+    "PkiContainer": "PkiContainer.hwdat"
+  }
+}

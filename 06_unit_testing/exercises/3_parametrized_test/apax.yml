@@ -1,0 +1,32 @@
+# General information
+name: "3_parametrized_tests"
+version: 1.0.0
+type: app
+# Description for your application example or app
+description: Third exercise of the chapter Unit Testing
+# Targets to be compiled with 'apax build'
+targets:
+  - "1500"
+  - llvm
+# Dependencies
+devDependencies:
+  "@ax/sdk": 2405.0.0
+
+# Project variables
+variables:
+  APAX_BUILD_ARGS:
+    - --debug # Enable debug information for value debugging 
+  BIN_FOLDER: "./bin/1500" # choose your target RT, here : any S7-1500 PLC
+  # IP address must match with the IP address of your target device
+  # The IP address in the .vscode/launch.json must be equal  
+  IP_ADDRESS: "192.168.0.1"
+
+# Apax scripts
+scripts:
+  # call 'apax load' to download the builded program to the target. An 'apax build' might be required upfront
+  load: apax sld load --input $BIN_FOLDER --target $IP_ADDRESS --restart
+    --accept-security-disclaimer --log debug
+  # call 'apax dlplc' to build and download the application to the target
+  dlplc:
+    - apax build
+    - apax load

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 634 877" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:6;">
+    <g transform="matrix(1,0,0,1,-201.668,-73.9959)">
+        <g transform="matrix(1,0,0,1,6.25042,0)">
+            <g transform="matrix(1.25079,0,0,1.40582,-164.557,-254.447)">
+                <rect x="291.797" y="237.187" width="498.219" height="616.015" style="fill:none;stroke:black;stroke-width:7.52px;"/>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,6.25042,0)">
+            <g transform="matrix(1,0,0,1,-6.25042,67.974)">
+                <path d="M207.793,210.934L827.284,210.934" style="fill:none;stroke:black;stroke-width:10px;"/>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,6.25042,0)">
+            <g transform="matrix(1,0,0,1,-6.25042,398.575)">
+                <path d="M207.793,210.934L827.284,210.934" style="fill:none;stroke:black;stroke-width:10px;"/>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,6.25042,0)">
+            <g transform="matrix(1,0,0,1,165.229,98.8713)">
+                <g transform="matrix(180,0,0,180,445.077,141.415)">
+                </g>
+                <text x="64.121px" y="141.415px" style="font-family:'SiemensSans-Roman', 'Siemens Sans';font-size:180px;">V<tspan x="156.877px 239.35px 273.923px 350.419px " y="141.415px 141.415px 141.415px 141.415px ">alve</tspan></text>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,6.25042,0)">
+            <g transform="matrix(1,0,0,1,172.181,252.585)">
+                <g transform="matrix(120,0,0,120,452.335,141.415)">
+                </g>
+                <text x="64.121px" y="141.415px" style="font-family:'SiemensSans-Roman', 'Siemens Sans';font-size:120px;">-<tspan x="94.845px 118.245px 141.645px 185.553px 265.379px 326.103px 382.608px " y="141.415px 141.415px 141.415px 141.415px 141.415px 141.415px 141.415px "> isOpen</tspan></text>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,6.25042,0)">
+            <g transform="matrix(1,0,0,1,172.181,597.09)">
+                <g transform="matrix(120,0,0,120,471.378,141.415)">
+                </g>
+                <text x="64.121px" y="141.415px" style="font-family:'SiemensSans-Roman', 'Siemens Sans';font-size:120px;">+<tspan x="126.661px 150.061px 211.254px 271.979px 328.484px 391.611px 428.194px " y="141.415px 141.415px 141.415px 141.415px 141.415px 141.415px 141.415px "> open()</tspan></text>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,6.25042,0)">
+            <g transform="matrix(1,0,0,1,172.181,383.899)">
+                <g transform="matrix(120,0,0,120,501.713,141.415)">
+                </g>
+                <text x="64.121px" y="141.415px" style="font-family:'SiemensSans-Roman', 'Siemens Sans';font-size:120px;">-<tspan x="94.845px 118.245px 141.645px 185.553px 249.382px 272.782px 333.975px 377.883px 434.389px " y="141.415px 141.415px 141.415px 141.415px 141.415px 141.415px 141.415px 141.415px 141.415px "> isClosed</tspan></text>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,6.25042,0)">
+            <g transform="matrix(1,0,0,1,172.181,728.403)">
+                <g transform="matrix(120,0,0,120,463.547,141.415)">
+                </g>
+                <text x="64.121px" y="141.415px" style="font-family:'SiemensSans-Roman', 'Siemens Sans';font-size:120px;">+<tspan x="126.661px 150.061px 198.774px 222.174px 283.367px 327.275px 383.78px 420.364px " y="141.415px 141.415px 141.415px 141.415px 141.415px 141.415px 141.415px 141.415px "> close()</tspan></text>
+            </g>
+        </g>
+    </g>
+</svg>
