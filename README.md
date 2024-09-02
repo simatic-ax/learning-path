@@ -2,7 +2,7 @@
 To retrieve the learning path, you can 
 ### 1. Clone the directory using git with the command 
 ```
-git clone https://code.siemens.com/axcercise/training_rework.git
+git clone https://github.com/simatic-ax/learning-path
 ```
 This will create a new directory in the folder you executed the git clone from.
 

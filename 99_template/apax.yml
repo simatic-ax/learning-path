@@ -1,7 +1,0 @@
-name: 99_template
-
-version: 0.0.0
-type: generic
-
-scripts:
-    present: reveal-md slides/slides.md
