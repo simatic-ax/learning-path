@@ -16,6 +16,10 @@ mouseWheel: true,
 In this introductory course you will learn everything required to get started with the new engineering environment **SIMATIC AX**.
 Regardless if you are coming from TIA Portal or are starting new in the SIMATIC environment, this learning path will guide you through the journey.
 
+To navigate between chapters (pages), please use the left/right arrows. To see more chapter content, use the up/down arrows when available.
+
+To exit apax present in the editor, please use "ctrl" + "c".
+
 ---
 
 # Agenda
