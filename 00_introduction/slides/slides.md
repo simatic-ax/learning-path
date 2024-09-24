@@ -31,7 +31,7 @@ Regardless if you are coming from TIA Portal or are starting new in the SIMATIC 
 | 06 | Unit Testing |
 | 07 | Tools for commissioning |
 | 08 | Package management |
-| 09 | Versioning and Continuous Integration |
+| 09 | Hardware Configuration |
 
 ---
 
