@@ -137,7 +137,7 @@ mouseWheel: true,
 <div class="grid-two-col-eq">
 <div class="flex-col justify-center">
   <p>
-    You should cut functionality into meaningful partitions and create smaller libraries instead of a single big bouquet. Your code should be designed so that it can be reused. 
+    You should cut functionality into meaningful partitions and create smaller libraries instead of a single big bouquet. Your code should be designed so that it can be reused.
   </p>
   <br>
   <p>
@@ -201,7 +201,7 @@ mouseWheel: true,
 <pre>
   NAMESPACE Siemens.Training.Fluidhandling
   // ...
-  END_NAMESPACE 
+  END_NAMESPACE
 </pre>
 </div>
 <br>
@@ -390,7 +390,7 @@ mouseWheel: true,
   apax version 1.0.4
   apax pack
   apax login --registry https://npm.pkg.github.com --password *
-  apax publish --package *.apax.tgz --registry https://npm.pkg.github.com 
+  apax publish --package *.apax.tgz --registry https://npm.pkg.github.com
   </pre>
   <br><br><br><br>
   <div class="grid-two-col-eq">
@@ -455,7 +455,7 @@ mouseWheel: true,
 
 <div class="flex-col justify-center">
   <p>
-    A version can either be specified exactly or with range arguments in the <code>apax.yml</code>: 
+    A version can either be specified exactly or with range arguments in the <code>apax.yml</code>:
   </p>
   <ul>
       <li><code>1.4.5</code> - Matches exactly this version. No alternative will be used.</li>
@@ -465,7 +465,7 @@ mouseWheel: true,
 </div>
 <br><br><br><br>
 <p>
-    <b>Hint:</b> There is an exercise abaout consuming a library included in this chapter (exercise 3).
+    <b>Hint:</b> There is an exercise about consuming a library included in this chapter (exercise 3).
 </p>
 <br>
 <br>

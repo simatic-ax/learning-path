@@ -29,7 +29,7 @@ mouseWheel: true,
 <div class="grid-two-col-eq">
   <div class="flex-col justify-center">
     <p>To get started, you need to have SIMATIC AX, apax and all its prerequisites installed. </p>
-    <p>In addition you should know the basics on how to use AX Code as well as have a starting project, that has been created in the previouse section
+    <p>In addition you should know the basics on how to use AX Code as well as have a starting project, that has been created in the previous section
     </p>
     <br/>
     <p>With this you are set up to continue with this learning path.</p>
@@ -91,7 +91,7 @@ mouseWheel: true,
     <br>
         <ol>
             <li>Create a <code>plc.yaml</code> in the <code>.ax/plcs/</code> directory</li>
-            <li>Enter the specific informations of the PLC</li>
+            <li>Enter the specific information of the PLC</li>
         </ol>
     </p>
     <br>

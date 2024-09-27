@@ -13,8 +13,8 @@ CONFIGURATION MyConfiguration
         //SECOND AND COMPLEX
         vInEntry : ValveWithEntry;
         vOutEntry: ValveWithEntry;
-        tankCube: CubicTank :=(inletValve:= vIn, outletValve:= vOut, side_lenght:= 20);
-        tankCilinder : CilindricTank :=(inletValve := vIn, outletValve:= vOut, height:= 20, radium := 10);
+        tankCube: CubicTank :=(inletValve:= vIn, outletValve:= vOut, side_length:= 20);
+        tankCylinder : CylindricalTank :=(inletValve := vIn, outletValve:= vOut, height:= 20, radium := 10);
 
         //SIMPLE VALVES
         vInCtrl AT %Q1.0 : BOOL;
@@ -42,7 +42,7 @@ CONFIGURATION MyConfiguration
 
         statusInR : ValveState;
         statusOutR : ValveState;
-        
+
         //CONTROL TANK
         Close AT %I0.0 : BOOL;
         Fill AT %I0.1  : BOOL;

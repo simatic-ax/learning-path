@@ -55,27 +55,27 @@ The main objective is to ensure the reliability and quality by facilitating the 
 
 ## Main Benefits
 
-* **Automated Testing.** Verify automatically the functionality of individual units of code, ensuring the behaviour as expected.
+* **Automated Testing.** Verify automatically the functionality of individual units of code, ensuring the behavior as expected.
 
 * **Early Bug Detection.** Identify and fix bugs early in the development process, reducing cost and efforts.
 
 * **Regression Prevention.** Ensure that new changes do not break existing functionality.
 
-* **Code Quality Improvement.** Encourage better design and modularity of code, as unit test tipically require code to split into smaller testable units.
+* **Code Quality Improvement.** Encourage better design and modularity of code, as unit test typically require code to split into smaller testable units.
 
-* **Documentation.** Serve as documentation for expected behaviour of code, making easier for developers to understand the purpose.
+* **Documentation.** Serve as documentation for expected behavior of code, making easier for developers to understand the purpose.
 
-* **Continuous Integration.** Support continuoug integration practices by providing a framework for automated testing as part of the build process.
+* **Continuous Integration.** Support continuous integration practices by providing a framework for automated testing as part of the build process.
 
-* **Confidence in Refactoring.** Allow developers to refactor code with confidence, ensuring that the existing test will catch any unintented changes in the behaviour.
+* **Confidence in Refactoring.** Allow developers to refactor code with confidence, ensuring that the existing test will catch any unintented changes in the behavior.
 
 * **Efficiency.** Reduce the need for extensive manual testing, speeding up the development cycle.
 
 ----
 
-## Posibilities
+## Possibilities
 
-AX provides different possibilites to execute the tests. The big advantage of both is that a runtime like PLCSIM Advanced or a real PLC is __NOT NEEDED__:
+AX provides different possibilities to execute the tests. The big advantage of both is that a runtime like PLCSIM Advanced or a real PLC is __NOT NEEDED__:
 
 * Via APAX (locally or in the pipeline)
 * Via the IDE.
@@ -95,16 +95,16 @@ This learning session is focused on <ins>**testing with the IDE**</ins>
 * An AX Project (lib or app) is created
 * SDK is installed ('apax add @ax/sdk' or 'apax install')
 * A folder "test" where your tests are located is existing
-* llvm target is enabled in the apax.yml (next page) 
+* llvm target is enabled in the apax.yml (next page)
 
 A typical project structure looks like that:
 ```text
-my-project/  
-├── apax.yml  
-├── src/  
-│   └── (source files)  
-└── test/  
-    └── (test files)  
+my-project/
+├── apax.yml
+├── src/
+│   └── (source files)
+└── test/
+    └── (test files)
 ```
 
 ----
@@ -158,7 +158,7 @@ The easiest way to write tests in AX is the test function. This function is char
 
 ## What is a pragma?
 
-A pragma is a special instruction or directive in programming languages that provides additional information to the compiler or interpreter. Pragmas are typically used to enable or disable certain features, optimize code, or provide metadata. 
+A pragma is a special instruction or directive in programming languages that provides additional information to the compiler or interpreter. Pragmas are typically used to enable or disable certain features, optimize code, or provide metadata.
 
 In the context of the AX Unit Testing Framework, a pragma is used to mark a function as a test function.
 
@@ -170,7 +170,7 @@ In the context of the AX Unit Testing Framework, a pragma is used to mark a func
 
 <div style="padding-right:10px">
   <p>
-    An assertion is a statement in code that checks if a specified condition is true. Assertions are used in unit tests to verify that the output of a piece of code matches the expected result. 
+    An assertion is a statement in code that checks if a specified condition is true. Assertions are used in unit tests to verify that the output of a piece of code matches the expected result.
     If the assertion fails (i.e., the condition is not true), it indicates that there is a bug or error in the code being tested.
   </p>
 </div>
@@ -185,7 +185,7 @@ In the context of the AX Unit Testing Framework, a pragma is used to mark a func
 
 <div>
   <pre>
-FUNCTION  ADD : INT 
+FUNCTION  ADD : INT
     VAR_INPUT
         a : INT;
         b : INT;
@@ -270,10 +270,10 @@ Further example on: https://console.simatic-ax.siemens.io/docs/axunitst/customas
 
 ## Limitations
 
-With test functions you can't test function blocks or classes in a proper way. Because it is not allowed to instantiate FBs or classes in VAR_TEMP and you need to instantiate it in VAR_GLOBAL. 
+With test functions you can't test function blocks or classes in a proper way. Because it is not allowed to instantiate FBs or classes in VAR_TEMP and you need to instantiate it in VAR_GLOBAL.
 
 > * If you execute multiple tests at global  instances, the instances are not stateless. This can lead to unexpected test results!
-> * VAR_GLOBAL is not available in library projects (type: lib)  
+> * VAR_GLOBAL is not available in library projects (type: lib)
 
 Notes:
 To test fb/classes with test functions you need global instances
@@ -290,7 +290,7 @@ Global instances are not stateless when you execute tests on the same instance
 
 ----
 
-## Test Class - Instantiation 
+## Test Class - Instantiation
 
 * Within test classes, you can **instantiate the function blocks or classes** that you need to test.
 * This allows for comprehensive testing of class behaviors and interactions.
@@ -458,7 +458,7 @@ END_NAMESPACE
 
 - **Step out.** Execute the current function and stop when it returns.
 
-- **Restart debugging.** 
+- **Restart debugging.**
 
 - **Stop the test** execution and terminates the debug mode.
 
@@ -497,7 +497,7 @@ END_NAMESPACE
         <li><b>Complex Dependencies:</b> When the code under test interacts with complex or difficult-to-control dependencies.</li>
         <li><b>External Services:</b> When the code relies on external services or APIs that might be unavailable, unstable, or have usage limitations during testing (e. g. system functions).</li>
         <li><b>State Management:</b> When dependencies maintain complex state that is hard to replicate and reset for each test run.</li>
-    </ul>   
+    </ul>
 </div>
 
 ----
@@ -512,7 +512,7 @@ END_NAMESPACE
   </p>
   <br>
   <p>
-    Dependency injection is a technique which moves the responsibility for the creation of an object to the caller. So the caller is in control of the used implementation. This enables you to exchange the concrete implementation of an object with a stub. A stub acts as a small piece of code that replaces another component during testing. This is an advanced technique and won´t be explained in this chapter. You can find more information on that topic in the dcoumentation.
+    Dependency injection is a technique which moves the responsibility for the creation of an object to the caller. So the caller is in control of the used implementation. This enables you to exchange the concrete implementation of an object with a stub. A stub acts as a small piece of code that replaces another component during testing. This is an advanced technique and won´t be explained in this chapter. You can find more information on that topic in the documentation.
   </p>
   <br><br><br>
 </div>
@@ -535,7 +535,7 @@ END_NAMESPACE
         <li>Check that your apax-build version is 1.1 or higher</li>
         <li>Add axunit-mocking with <code>apax add @ax/axunit-mocking -D</code> to the dev-dependecies</li>
         <li>Add <code>USING AxUnit.Mocking;</code> to the namespace you want to use the mocks in</li>
-    </ul>   
+    </ul>
 </div>
 
 ----
@@ -633,7 +633,7 @@ END_NAMESPACE
 ----
 
 <header class="slide_header">
-  <h2>Mocking frameworky: Payloads</h2>
+  <h2>Mocking framework: Payloads</h2>
 </header>
 
 <div>
@@ -664,7 +664,7 @@ FUNCTION funcMock: INT
     END_VAR
     </pre><br><pre>
     p ?= AxUnit.Mocking.GetPayload();
-    IF (p <> null) THEN 
+    IF (p <> null) THEN
         funcMock:=p^.value;
     END_IF;
 END_FUNCTION
@@ -697,7 +697,7 @@ CLASS MyTest
         payloadInstance.value := 456;
         AxUnit.Mocking.Mock(NAME_OF(GetNumber1), NAME_OF(funcMock), payloadInstance);
         AxUnit.Assert.Equal(456, GetANumber());
-    END_EMTHOD
+    END_METHOD
 END_CLASS
 </pre><br><pre>
 END_NAMESPACE

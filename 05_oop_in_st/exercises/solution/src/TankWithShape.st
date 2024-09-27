@@ -1,6 +1,6 @@
 //USING System.Math;
 NAMESPACE FluidHandlingInterfaces
-    CLASS CilindricTank EXTENDS TankWithVolume
+    CLASS CylindricalTank EXTENDS TankWithVolume
         VAR PUBLIC
             radium : REAL;
             height : REAL;
@@ -13,10 +13,10 @@ NAMESPACE FluidHandlingInterfaces
 
     CLASS CubicTank EXTENDS TankWithVolume
         VAR PUBLIC
-            side_lenght : REAL;
+            side_length : REAL;
         END_VAR
         METHOD VolumeCalculator : REAL
-            volume := side_lenght * side_lenght * side_lenght;
+            volume := side_length * side_length * side_length;
         END_METHOD
     END_CLASS
 END_NAMESPACE
