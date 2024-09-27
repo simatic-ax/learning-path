@@ -1,12 +1,14 @@
 ## How to get the learning path
-To retrieve the learning path, you can
-### 1. Clone the directory using git with the command
+
+To retrieve the learning path, you can either
+
+### Clone the directory using git with the command 
 ```
 git clone https://github.com/simatic-ax/learning-path
 ```
 This will create a new directory in the folder you executed the git clone from.
 
-### 2. Download the repository as an archive
+### Download the repository as an archive
 Click on `Code` in the gitlab repository overview and select one of the archive formats to download the entire repository. You then have to decompress the downloaded archive file with a tool like 7zip and are ready to go!
 
 ![Download archive](./assets/img/download_archive.png)
