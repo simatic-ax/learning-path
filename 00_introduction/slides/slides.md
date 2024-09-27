@@ -21,10 +21,10 @@ mouseWheel: true,
   Regardless if you are coming from TIA Portal or are starting new in the SIMATIC environment, this learning path will guide you through the journey.
   <br>
   <br>
-  To navigate between chapters (pages), please use the left/right arrows. To see more chapter content, use the up/down arrows when available.
+  To navigate between chapters (pages), please use the left/right arrows. To see more chapter content, use the up/down arrows when available. For a detailed overview of the controls, press F1 at any time of the presenation.
   <br>
   <br>
-  To exit <strong>apax present</strong> in the editor, please use "ctrl" + "c".
+  To exit <strong>apax present</strong> in the terminal, please use "ctrl" + "c".
 </div>  
 
 
