@@ -1,4 +1,5 @@
 ## How to get the learning path
+
 To retrieve the learning path, you can either
 
 ### Clone the directory using git with the command 
@@ -8,7 +9,7 @@ git clone https://github.com/simatic-ax/learning-path
 This will create a new directory in the folder you executed the git clone from.
 
 ### Download the repository as an archive
-Click on `Code` in the gitlab repository overview and select one of the archive formats to download the entire repository. You then have to uncompress the downloaded archive file with a tool like 7zip and are ready to go!
+Click on `Code` in the gitlab repository overview and select one of the archive formats to download the entire repository. You then have to decompress the downloaded archive file with a tool like 7zip and are ready to go!
 
 ![Download archive](./assets/img/download_archive.png)
 
@@ -26,12 +27,12 @@ Please note that this will install 3rd party executable files to your PC.
 
 ## Starting the slides
 For starting the slides, please navigate into the respective directory in the command line
-```cd ./00_introduction``` and execute the command ```apax present```. 
-This will start reveal-md with the slides of the section you navigated to. 
+```cd ./00_introduction``` and execute the command ```apax present```.
+This will start reveal-md with the slides of the section you navigated to.
 
 
 ## How to report issues, ideas and suggestions
-This learning path is supposed to be a living document and be adjusted to your needs, the needs of your customers and the development of AX itself. 
+This learning path is supposed to be a living document and be adjusted to your needs, the needs of your customers and the development of AX itself.
 
 To improve the slides we are in need of feedback from you, as everything with AX it is a community effort! To provide the feedback, please add an issue where you describe, what you want us to change or where there is a mistake.
 ![New issue](./assets/img/new_issue.png)
