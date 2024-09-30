@@ -30,7 +30,25 @@ Agenda
 </div>
 ---
 
-What will you learn in this chapter
+<header class="slide_header">
+  <h2>
+        What will you learn in this chapter
+  </h2>
+</header>
+
+<div class="grid-two-col-eq">
+  <div class="flex-col justify-center">
+    <p>After you completed this training section you will </p>
+        <ul>
+            <li>know how to create and hardware configuration</li>
+            <li>using templates in hardware context</li>
+            <li>know how to do GSDML handling</li>
+            <li>able to administrate User Managment</li>
+            <li>have learned about:</li>
+        </ul>
+    <br>
+  </div>
+</div>
 
 ---
 
