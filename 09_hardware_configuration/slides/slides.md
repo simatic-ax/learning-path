@@ -138,7 +138,7 @@ Agenda
 
 <div class="grid-slide-ressources">
     <ol>
-      <li>Definition of <br><a href="https://console.simatic-ax.siemens.io/docs/hw/language">The SIMATIC AX Hardware Declaration Language</a></li>
+      <li>Definition of: <br><a href="https://console.simatic-ax.siemens.io/docs/hw/language">The SIMATIC AX Hardware Declaration Language</a></li>
     </ol>
 </div>
 
@@ -169,7 +169,7 @@ Agenda
 
 <div class="grid-slide-ressources">
     <ol>
-      <li>More informations about <br><a href="https://console.simatic-ax.siemens.io/docs/hw/language/templates">Templates</a></li>
+      <li>More informations about: <br><a href="https://console.simatic-ax.siemens.io/docs/hw/language/templates">Templates</a></li>
     </ol>
 </div>
 
@@ -200,7 +200,7 @@ Agenda
 
 <div class="grid-slide-ressources">
     <ol>
-      <li>More informations about <br><a href="https://console.simatic-ax.siemens.io/docs/hw/language/gsd-devices-and-modules">GSDMLs in AX</a></li>
+      <li>More informations about: <br><a href="https://console.simatic-ax.siemens.io/docs/hw/language/gsd-devices-and-modules">GSDMLs in AX</a></li>
     </ol>
 </div>
 
@@ -232,7 +232,7 @@ Agenda
 
 <div class="grid-slide-ressources">
     <ol>
-      <li>More informations about <br><a href="https://console.simatic-ax.siemens.io/docs/hw/security/authorization/user-management">User Management Access Control (UMAC)</a></li>
+      <li>More informations about: <br><a href="https://console.simatic-ax.siemens.io/docs/hw/security/authorization/user-management">User Management Access Control (UMAC)</a></li>
     </ol>
 </div>
 
