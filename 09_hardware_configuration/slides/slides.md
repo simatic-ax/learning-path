@@ -84,6 +84,37 @@ Agenda
 
 <header class="slide_header">
     <h2>IT Like Hardware Engineer</h2>
+    <h3>Security by default</h3>
+</header>
+
+<div class="grid-two-col-eq">
+    <div class="flex-col justify-center">
+        <p>
+        In order to be able to create hardware for a plc, the first step we need to take is how the hardware configuration is described in a textual declaration for a IT like context.</p>
+        <br>
+            <p>The format in which the hardware configuration is created is Json. Json has the following advantages as a format:
+                <ul>
+                    <li>text based</li>
+                    <li>readable by humans</li>
+                    <li>can be easily edited with a text editor</li>
+                </ul>
+            </p>
+        <br>
+        <p>The devices and dependent modules, including all properties, can be easily defined and set.</p>
+    </div>
+    <img style="height: 400px; width: auto" src="./img/hwl-json-file.png" />
+</div>
+
+<div class="grid-slide-ressources">
+    <ol>
+      <li>Informations about: <br><a href="https://console.simatic-ax.siemens.io/docs/hw/security">Security</a></li>
+    </ol>
+</div>
+
+---
+
+<header class="slide_header">
+    <h2>IT Like Hardware Engineer</h2>
     <h3>Create a hardware configuration</h3>
 </header>
 
@@ -138,7 +169,7 @@ Agenda
 
 <div class="grid-slide-ressources">
     <ol>
-      <li>TIAX Direct Loading: <br><a href="https://console.simatic-ax.siemens.io/docs/sld/tiax-direct-load">https://console.simatic-ax.siemens.io/docs/sld/tiax-direct-load</a></li>
+      <li>More informations about <br><a href="https://console.simatic-ax.siemens.io/docs/hw/language/templates">Templates</a></li>
     </ol>
 </div>
 
@@ -167,6 +198,12 @@ Agenda
     <img style="height: 400px; width: auto" src="./img/hwl-json-file.png" />
 </div>
 
+<div class="grid-slide-ressources">
+    <ol>
+      <li>More informations about <br><a href="https://console.simatic-ax.siemens.io/docs/hw/language/gsd-devices-and-modules">GSDMLs in AX</a></li>
+    </ol>
+</div>
+
 ---
 
 
@@ -192,6 +229,13 @@ Agenda
     </div>
     <img style="height: 400px; width: auto" src="./img/hwl-json-file.png" />
 </div>
+
+<div class="grid-slide-ressources">
+    <ol>
+      <li>More informations about <br><a href="https://console.simatic-ax.siemens.io/docs/hw/security/authorization/user-management">User Management Access Control (UMAC)</a></li>
+    </ol>
+</div>
+
 
 ---
 
