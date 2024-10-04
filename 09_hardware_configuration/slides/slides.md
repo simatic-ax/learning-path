@@ -74,6 +74,12 @@ Agenda
     <img style="height: 400px; width: auto" src="./img/hwl-json-file.png" />
 </div>
 
+<div class="grid-slide-ressources">
+    <ol>
+      <li>Definition of JSON: <br><a href="https://ecma-international.org/publications-and-standards/standards/ecma-404/">ECMA-404</a></li>
+    </ol>
+</div>
+
 ---
 
 <header class="slide_header">
@@ -84,19 +90,25 @@ Agenda
 <div class="grid-two-col-eq">
     <div class="flex-col justify-center">
         <p>
-        In order to be able to create hardware for a plc, the first step we need to take is how the hardware configuration is described in a textual declaration for a IT like context.</p>
+       To create your own hardware configuration, you just have to create a file with the ending ".hwl.sjon" or you can simply use the template that is provided via the hardware laguage server.
+       </p>
         <br>
-            <p>The format in which the hardware configuration is created is Json. Json has the following advantages as a format:
+            <p>There are a few points here that need to be taken into account:
                 <ul>
-                    <li>text based</li>
-                    <li>readable by humans</li>
-                    <li>can be easily edited with a text editor</li>
+                    <li>The entry point is always the device</li>
+                    <li>The name of the device will be used later for identification. If it is changed, some things have to be initialized again.</li>
+                    <li>A piece of hardware can consist of several files</li>
                 </ul>
             </p>
         <br>
-        <p>The devices and dependent modules, including all properties, can be easily defined and set.</p>
     </div>
-    <img style="height: 400px; width: auto" src="./img/hwl-json-file.png" />
+    <img style="height: 400px; width: auto" src="./img/create-hardware-file.png" />
+</div>
+
+<div class="grid-slide-ressources">
+    <ol>
+      <li>Definition of <br><a href="https://console.simatic-ax.siemens.io/docs/hw/language">The SIMATIC AX Hardware Declaration Language</a></li>
+    </ol>
 </div>
 
 ---
@@ -122,6 +134,12 @@ Agenda
         <p>The devices and dependent modules, including all properties, can be easily defined and set.</p>
     </div>
     <img style="height: 400px; width: auto" src="./img/hwl-json-file.png" />
+</div>
+
+<div class="grid-slide-ressources">
+    <ol>
+      <li>TIAX Direct Loading: <br><a href="https://console.simatic-ax.siemens.io/docs/sld/tiax-direct-load">https://console.simatic-ax.siemens.io/docs/sld/tiax-direct-load</a></li>
+    </ol>
 </div>
 
 ---
