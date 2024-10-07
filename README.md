@@ -15,12 +15,10 @@ Click on `Code` in the gitlab repository overview and select one of the archive 
 
 ## Prerequisites:
 For the interactive slides, you need to have a few software packages installed to your PC:
-- npm
-- nodejs
-- Reveal.md
+- nodejs (which also installs npm) [here you can download the installer for node.js for Windows](https://nodejs.org/en)
+- Reveal.md (how to install it, is described below)
 
-
-To get started, please make sure to download and install both npm and nodejs. Once you installed both of these packages, you can install Reveal.md using the command
+You can install Reveal.md using the command in a terminal
 ```npm install --global reveal-md```.
 
 Please note that this will install 3rd party executable files to your PC.
