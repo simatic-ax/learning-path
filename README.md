@@ -19,13 +19,21 @@ For the interactive slides, you need to have a few software packages installed t
 - Reveal.md (how to install it, is described below)
 
 You can install Reveal.md using the command in a terminal
-```npm install --global reveal-md```.
+
+```
+npm install --global reveal-md
+```
 
 Please note that this will install 3rd party executable files to your PC.
 
 ## Starting the slides
 For starting the slides, please navigate into the respective directory in the command line
-```cd ./00_introduction``` and execute the command ```apax present```.
+```cd ./00_introduction``` and execute the command 
+
+```
+apax present
+```
+
 This will start reveal-md with the slides of the section you navigated to.
 
 
