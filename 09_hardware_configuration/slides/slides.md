@@ -84,37 +84,6 @@ Agenda
 
 <header class="slide_header">
     <h2>IT Like Hardware Engineer</h2>
-    <h3>Security by default</h3>
-</header>
-
-<div class="grid-two-col-eq">
-    <div class="flex-col justify-center">
-        <p>
-        In order to be able to create hardware for a plc, the first step we need to take is how the hardware configuration is described in a textual declaration for a IT like context.</p>
-        <br>
-            <p>The format in which the hardware configuration is created is Json. Json has the following advantages as a format:
-                <ul>
-                    <li>text based</li>
-                    <li>readable by humans</li>
-                    <li>can be easily edited with a text editor</li>
-                </ul>
-            </p>
-        <br>
-        <p>The devices and dependent modules, including all properties, can be easily defined and set.</p>
-    </div>
-    <img style="height: 400px; width: auto" src="./img/hwl-json-file.png" />
-</div>
-
-<div class="grid-slide-ressources">
-    <ol>
-      <li>Informations about: <br><a href="https://console.simatic-ax.siemens.io/docs/hw/security">Security</a></li>
-    </ol>
-</div>
-
----
-
-<header class="slide_header">
-    <h2>IT Like Hardware Engineer</h2>
     <h3>Create a hardware configuration</h3>
 </header>
 
@@ -139,6 +108,94 @@ Agenda
 <div class="grid-slide-ressources">
     <ol>
       <li>Definition of: <br><a href="https://console.simatic-ax.siemens.io/docs/hw/language">The SIMATIC AX Hardware Declaration Language</a></li>
+    </ol>
+</div>
+
+---
+
+<header class="slide_header">
+    <h2>IT Like Hardware Engineer</h2>
+    <h3>Security by default</h3>
+</header>
+
+<div class="grid-two-col-eq">
+    <div class="flex-col justify-center">
+        <p>
+        In order to be able to create hardware for a plc, the first step we need to take is how the hardware configuration is described in a textual declaration for a IT like context.</p>
+        <br>
+            <p>Security consists of two aspects: Authentication and Authorization:
+                <ul>
+                    <li>Authentication ensures that you are communicating with the expected PLC</li>
+                    <li>Authorization ensures operations are only performed by users permitted to do so.</li>
+                </ul>
+            </p>
+        <br>
+        <p>The devices and dependent modules, including all properties, can be easily defined and set.</p>
+    </div>
+    <img style="height: 400px; width: auto" src="./img/hwl-json-file.png" />
+</div>
+
+<div class="grid-slide-ressources">
+    <ol>
+      <li>Informations about: <br><a href="https://console.simatic-ax.siemens.io/docs/hw/security">Security</a></li>
+    </ol>
+</div>
+
+----
+
+<header class="slide_header">
+    <h3>Set Up PLC Security Configuration</h3>
+</header>
+
+<div class="grid-two-col-eq">
+    <div class="flex-col justify-center">
+        <p>
+        In order to be able to create hardware for a plc, the first step we need to take is how the hardware configuration is described in a textual declaration for a IT like context.</p>
+        <br>
+            <p>Security consists of two aspects: Authentication and Authorization:
+                <ul>
+                    <li>Authentication ensures that you are communicating with the expected PLC</li>
+                    <li>Authorization ensures operations are only performed by users permitted to do so.</li>
+                </ul>
+            </p>
+        <br>
+        <p>The devices and dependent modules, including all properties, can be easily defined and set.</p>
+    </div>
+    <img style="height: 400px; width: auto" src="./img/hwl-json-file.png" />
+</div>
+
+<div class="grid-slide-ressources">
+    <ol>
+      <li>Informations about: <br><a href="https://console.simatic-ax.siemens.io/docs/hw/security/authorization/plc-configuration-data-protection">PLC Configuration Data Protection</a></li>
+    </ol>
+</div>
+
+----
+
+<header class="slide_header">
+    <h3>Set Up PLC Access Protection</h3>
+</header>
+
+<div class="grid-two-col-eq">
+    <div class="flex-col justify-center">
+        <p>
+        In order to be able to create hardware for a plc, the first step we need to take is how the hardware configuration is described in a textual declaration for a IT like context.</p>
+        <br>
+            <p>Security consists of two aspects: Authentication and Authorization:
+                <ul>
+                    <li>Authentication ensures that you are communicating with the expected PLC</li>
+                    <li>Authorization ensures operations are only performed by users permitted to do so.</li>
+                </ul>
+            </p>
+        <br>
+        <p>The devices and dependent modules, including all properties, can be easily defined and set.</p>
+    </div>
+    <img style="height: 400px; width: auto" src="./img/hwl-json-file.png" />
+</div>
+
+<div class="grid-slide-ressources">
+    <ol>
+      <li>Informations about: <br><a href="https://console.simatic-ax.siemens.io/docs/hw/security/authorization/plc-access-protection">PLC Access Protection</a></li>
     </ol>
 </div>
 
