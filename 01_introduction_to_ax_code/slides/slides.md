@@ -119,7 +119,7 @@ mouseWheel: true,
 
 <div class="grid-two-col-foc-right">
   <div class="flex-col justify-center">
-    <p>Beside the custom extensions there are AX specific extensions. Those are installed via the extension manager which is integrated into AX Code. The exension manager can also update the installed extensions automatically (optionally).</p>
+    <p>Beside the custom extensions there are AX specific extensions. Those are installed via the extension manager which is integrated into AX Code. The extension manager can also update the installed extensions automatically (optionally).</p>
     <p>Some examples for SIMATIC AX specific extensions:</p>
     <ul>
       <li>ST (according IEC61131-3) syntax highlighting</li>
