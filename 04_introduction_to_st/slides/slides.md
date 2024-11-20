@@ -21,7 +21,7 @@ mouseWheel: true,
 | 06 | Unit Testing |
 | 07 | Tools for commissioning |
 | 08 | Package management |
-| 09 | Versioning and Continuous Integration |
+| 09 | Hardware Configuration |
 
 ---
 
