@@ -36,6 +36,8 @@ apax present
 
 This will start reveal-md with the slides of the section you navigated to.
 
+## Direct Link
+[Introduction](./00_introduction/slides/slides.md)
 
 ## How to report issues, ideas and suggestions
 This learning path is supposed to be a living document and be adjusted to your needs, the needs of your customers and the development of AX itself.

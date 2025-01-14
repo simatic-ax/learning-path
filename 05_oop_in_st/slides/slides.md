@@ -271,10 +271,10 @@ A FUNCTION BLOCK is similar to a CLASS with one method
 |can be instantiated|yes|yes|
 |occupy memory|yes|yes|
 |method supported|no|yes|
-|access modifier[1]|no (just private)|yes|
+|access modifier|yes|yes|
 |can be inherited|no|yes|
 
-<small>[1] in ST they're private. In SCL on TIA Portal they're public</small>
+<small>[1] In SCL on TIA Portal they're always public</small>
 
 ---
 
@@ -512,8 +512,90 @@ END_NAMESPACE
 
 ---
 
-## Interfaces
+## Hands On (OOP01)
+### Goal
 
+Transform Valve and Tank into classes:
+
+**Miniumum:**
+
+- Valve is transformed into Class ValveBase
+- Tank is transformed into Class TankBase
+
+**Voluntary:**
+
+- ValveWithClosedSensor is transformed into class
+- Valve and Tank is instanced in configuration
+- Valve and Tank is called in ExampleProgram
+- Compile and download it to the PLC
+- Check the functionality of the program
+
+----
+
+## ValveBase Class ValveBase
+
+|**Method**|**Functionality**|
+|-|-|
+|Open()|Open the valve|
+|Close()|Close the valve|
+|GetState : ValveState| returns the state Undefined, Open, Close (Hint: Enumeration)|
+|WriteCyclic(ctrlOpen : BOOL) | for the activation of the digital output. true when valve opened, false when valve is closed|
+
+
+----
+
+SHORT HINT OF THE STRUCTURE OF THE CLASS AND THE ENUM
+```C#
+NAMESPACE FluidHandlingClass
+    CLASS ValveClass
+        //VARIABLES
+        _ctrlOpen : BOOL;
+        _state : ValveState;
+
+        //METHODS
+        Open();
+        Close();
+        GetState() : ValveState;
+        WriteCyclic(VAR_OUTPUT: (ctrlOpen : BOOL));
+    END_CLASS
+
+    //ENUM 
+    TYPE ValveState 
+       STATES: Open, Closed, Error, Undefined
+    END_TYPE
+END_NAMESPACE
+```
+----
+
+#### Create the Class TankBase
+
+Transform the function block Tank into a class according the table (next slide)
+
+```C#
+NAMESPACE FluidHandlingClass
+    CLASS Tank 
+        inletValve : Valve
+        outletValve : Valve
+        Fill()
+        Emptying()
+        Flush() 
+        Close()
+    END_CLASS
+END_NAMESPACE
+```
+
+Behavior:
+
+|**Method**|**inletValve**|**outletValve**|
+|-|-|-|
+|Fill()| OpenInlet() | CloseOutlet()|
+|Emptying()|CloseInlet()|OpenOutlet()|
+|Flush()|OpenInlet()|OpenOutlet()|
+|Close()|CloseInlet()|CloseOutlet()|
+
+---
+
+## Interfaces
 
 ----
 

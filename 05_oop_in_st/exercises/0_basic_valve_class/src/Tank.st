@@ -14,10 +14,8 @@ NAMESPACE FluidHandling
         END_VAR 
         
         inlet(cmdOpen := cmdFill, 
-                cmdClose:= NOT cmdFill, 
-                ctrlOpen => inletOpen);
+            ctrlOpen => inletOpen);
         outlet(cmdOpen := cmdEmpty,
-                cmdClose := NOT cmdEmpty,
                 ctrlOpen => outletOpen);
     END_FUNCTION_BLOCK
 
