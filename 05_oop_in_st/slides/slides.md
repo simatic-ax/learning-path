@@ -583,14 +583,15 @@ NAMESPACE FluidHandlingClass
     END_CLASS
 END_NAMESPACE
 ```
-----
 
-|Method|inletValve|outletValve|
-   |-|-|-|
-   |Fill()| OpenInlet() | CloseOutlet()|
-   |Emptying()|CloseInlet()|OpenOutlet()|
-   |Flush()|OpenInlet()|OpenOutlet()|
-   |Close()|CloseInlet()|CloseOutlet()|
+Behavior:
+
+|**Method**|**inletValve**|**outletValve**|
+|-|-|-|
+|Fill()| OpenInlet() | CloseOutlet()|
+|Emptying()|CloseInlet()|OpenOutlet()|
+|Flush()|OpenInlet()|OpenOutlet()|
+|Close()|CloseInlet()|CloseOutlet()|
 
 ---
 

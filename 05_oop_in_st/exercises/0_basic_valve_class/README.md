@@ -26,11 +26,11 @@ Transform Valve and Tank into classes:
 ### Valve Class
 
 |Method|Functionality|
-   |-|-|
-   |Open()|Open the valve|
-   |Close()|Close the valve|
-   |GetState : ValveState| returns the state Undefined, Open, Close (Hint: Enumeration)|
-   |WriteCyclic(ctrlOpen : BOOL) | for the activation of the digital output. true when valve opened, false when valve is closed|
+|-|-|
+|Open()|Open the valve|
+|Close()|Close the valve|
+|GetState : ValveState| returns the state Undefined, Open, Close (Hint: Enumeration)|
+|WriteCyclic(ctrlOpen : BOOL) | for the activation of the digital output. true when valve opened, false when valve is closed|
 
 **Advice:** do not change the function block. Choose a different namespace instead
 
@@ -78,10 +78,10 @@ END_NAMESPACE
 ----
 
 |Method|inletValve|outletValve|
-   |-|-|-|
-   |Fill()| OpenInlet() | CloseOutlet()|
-   |Emptying()|CloseInlet()|OpenOutlet()|
-   |Flush()|OpenInlet()|OpenOutlet()|
-   |Close()|CloseInlet()|CloseOutlet()|
+|-|-|-|
+|Fill()| OpenInlet() | CloseOutlet()|
+|Emptying()|CloseInlet()|OpenOutlet()|
+|Flush()|OpenInlet()|OpenOutlet()|
+|Close()|CloseInlet()|CloseOutlet()|
 
 ---
