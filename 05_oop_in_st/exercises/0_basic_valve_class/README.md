@@ -7,15 +7,20 @@
 
 Using the introduction to ST exercises as starting point: 
 
-**Transform Valve and Tank Function Blocks into classes**
+Transform Valve and Tank into classes:
 
-| Step          | Description  |
-|---------------|------------------------------------|
-| **First**     | Small change: In the tank class, control the valves independently: Open inlet/outlet valve separately (different methods)|
-| **Second**    | Then, create the object that instance the class in configuration.|
-| **Third**     | Call your object instance in an example program.|
-| **Fourth**    | Compile and download it to the PLC |
+**Miniumum:**
 
+- Valve is transformed into Class ValveBase
+- Tank is transformed into Class TankBase
+
+**Voluntary:**
+
+- ValveWithClosedSensor is transformed into class
+- Valve and Tank is instanced in configuration
+- Valve and Tank is called in ExampleProgram
+- Compile and download it to the PLC
+- Check the functionality of the program
 
 ----
 ### Valve Class
@@ -74,10 +79,6 @@ END_NAMESPACE
 
 |Method|inletValve|outletValve|
    |-|-|-|
-   |OpenInlet() |opened|    |
-   |OpenOutlet()||opened    |
-   |CloseInlet()|closed|    |
-   |CloseOutlet()||closed   |
    |Fill()| OpenInlet() | CloseOutlet()|
    |Emptying()|CloseInlet()|OpenOutlet()|
    |Flush()|OpenInlet()|OpenOutlet()|
