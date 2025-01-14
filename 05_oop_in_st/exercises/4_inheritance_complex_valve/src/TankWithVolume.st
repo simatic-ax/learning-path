@@ -1,8 +1,10 @@
-NAMESPACE FluidHandlingInterfaces
-    CLASS TankWithVolume IMPLEMENTS ITank
+USING FluidHandlingClass;
+
+NAMESPACE FluidHandlingClass
+    CLASS TankWithVolume IMPLEMENTS ItfTank
         VAR PUBLIC
-            inletValve: IValve;
-            outletValve: IValve;
+            inletValve: ItfValve;
+            outletValve: ItfValve;
             volume: REAL;
         END_VAR
         VAR PROTECTED

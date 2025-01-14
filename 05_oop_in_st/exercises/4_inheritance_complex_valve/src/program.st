@@ -5,8 +5,8 @@ USING System.Timer;
 
 PROGRAM CalculatorCurrentVolume
     VAR_EXTERNAL
-        vIn  : Valve2;
-        vOut : Valve2;
+        vIn  : ValveBase;
+        vOut : ValveBase;
         tank : TankWithVolume;
 
         vInCtrl  : BOOL;
@@ -105,7 +105,6 @@ PROGRAM CalculatorCurrentVolume
                     current_volume := current_volume - 5 *_emptying_rate; //Reduce the volume in 5 Liters per second
                     IF current_volume < 0 THEN
                         current_volume := 0; // //Ensure volume does not exceed the minimum volume
-                    END_IF;
                     END_IF;
                     capacity_percentage := tank.Capacity(currentVolume := current_volume);; //Actualize the capacity percentage
                     _ton.signal := TRUE; // Reinitialize the timer
