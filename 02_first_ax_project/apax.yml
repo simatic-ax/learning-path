@@ -5,3 +5,4 @@ type: generic
 
 scripts:
     present: reveal-md ./slides/slides.md --theme ./slides/theme/simatic-ax.css --watch
+    print: reveal-md ./slides/slides.md --theme ./slides/theme/simatic-ax.css --print presentation.pdf
