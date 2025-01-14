@@ -2,7 +2,7 @@
 
 NAMESPACE FluidHandlingClass   
 
-    CLASS TankBase
+    CLASS TankBase IMPLEMENTS ItfTank
         VAR PRIVATE
             inletValve: ValveBase;
             outletValve: ValveBase;

@@ -2,7 +2,7 @@
 
 NAMESPACE FluidHandlingClass   
 
-    CLASS ValveBase
+    CLASS ValveBase IMPLEMENTS ItfValve
         VAR
             _ctrlOpen : BOOL;
             _state : ValveState;
