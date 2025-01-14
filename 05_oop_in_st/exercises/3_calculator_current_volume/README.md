@@ -9,7 +9,7 @@ Using the solution for the HandsOn2 as the starting point:
 
 
 >* **FIRST:** Create a TYPE for the Tank State as the Valve one. 
->* **SECOND:** Create a second class: *TankWithVolume* that implements also the interface *ITank* created in the HandsOn2. 
+>* **SECOND:** Create a second class: *TankWithVolume* that implements also the interface *ItfTank* created in the HandsOn2. 
 >* **THIRD:** Create a program that calculates and displays as an output the current volume of the tank .
 
 
@@ -18,11 +18,11 @@ Using the solution for the HandsOn2 as the starting point:
 ### TYPE for Tank State
 
 |Status|
-   |-|
-   |Filling|
-   |Emptying|
-   |Flushing|
-   |Closed|
+|-|
+|Filling|
+|Emptying|
+|Flushing|
+|Closed|
 
 **Advice:** remember that the starting state is closed and you should include it on the definition.
 

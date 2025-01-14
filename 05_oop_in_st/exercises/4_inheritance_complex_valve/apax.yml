@@ -1,7 +1,7 @@
 # General information
 name: "oop1"
 version: 0.0.1
-type: lib
+type: app
 keywords:
   - library
 author: SIMATIC AX
@@ -26,3 +26,5 @@ variables:
 # Files, which will be shipped with the library
 files:
   - bin
+dependencies:
+  "@ax/system-timer": ^8.0.7
