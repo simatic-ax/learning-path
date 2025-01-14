@@ -512,6 +512,25 @@ END_NAMESPACE
 
 ---
 
+## Hands On (OOP01)
+### Goal
+
+Transform Valve and Tank into classes:
+
+**Miniumum:**
+
+- Valve is transformed into Class
+- Tank is transformed into Class
+
+**Voluntary:**
+
+- ValveWithClosedSensor is transformed into class
+- Valve and Tank is instanced in configuration
+- Valve and Tank is called in ExampleProgram
+- Compile and download it to the PLC
+- Check the functionality of the program
+---
+
 ## Interfaces
 
 
