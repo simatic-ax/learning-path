@@ -17,12 +17,12 @@ Using the solution for the HandsOn1 as the starting point:
 ----
 ### Valve Interface
 
-|Method|
-   |-|
-   |Open()|
-   |Close()|
-   |GetState : ValveState|
-   |WriteCyclic(ctrlOpen : BOOL) |
+|**Method**|
+|-|
+|Open()|
+|Close()|
+|GetState : ValveState|
+|WriteCyclic(ctrlOpen : BOOL) |
 
 **Advice:** remember that the interface does not include any implementation, only the definition.
 
@@ -32,16 +32,12 @@ Using the solution for the HandsOn1 as the starting point:
 
 ----
 
-|Method|
-   |-|
-   |OpenInlet()|
-   |OpenOutlet()|
-   |CloseInlet()|
-   |CloseOutlet()|
-   |Fill()|
-   |Flush()|
-   |Close()|
-   |Emptying()|
+|**Method**|
+|-|
+|Fill()|
+|Flush()|
+|Close()|
+|Emptying()|
 
 
 **Advice:** remember that the interface does not include any implementation, only the definition.

@@ -739,12 +739,12 @@ Using the solution for the HandsOn1 as the starting point:
 ----
 ## Valve Interface
 
-|Method|
-   |-|
-   |Open()|
-   |Close()|
-   |GetState : ValveState|
-   |WriteCyclic(ctrlOpen : BOOL) |
+|**Method**|
+|-|
+|Open()|
+|Close()|
+|GetState : ValveState|
+|WriteCyclic(ctrlOpen : BOOL) |
 
 <br>
 <br>
@@ -757,10 +757,6 @@ Using the solution for the HandsOn1 as the starting point:
 
 |Method|
    |-|
-   |OpenInlet()|
-   |OpenOutlet()|
-   |CloseInlet()|
-   |CloseOutlet()|
    |Fill()|
    |Flush()|
    |Close()|

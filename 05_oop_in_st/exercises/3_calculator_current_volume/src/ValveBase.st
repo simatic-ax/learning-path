@@ -1,5 +1,8 @@
-NAMESPACE FluidHandlingClass
-    CLASS basicValve IMPLEMENTS IValve
+//Use the same namespace than the TYPE for the Valves state
+
+NAMESPACE FluidHandlingClass   
+
+    CLASS ValveBase
         VAR
             _ctrlOpen : BOOL;
             _state : ValveState;
@@ -41,4 +44,5 @@ NAMESPACE FluidHandlingClass
             state := _state;
         END_METHOD
     END_CLASS
+    
 END_NAMESPACE
