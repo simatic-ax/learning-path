@@ -592,6 +592,8 @@ END_NAMESPACE
    |Flush()|OpenInlet()|OpenOutlet()|
    |Close()|CloseInlet()|CloseOutlet()|
 
+---
+
 ## Interfaces
 
 ----
