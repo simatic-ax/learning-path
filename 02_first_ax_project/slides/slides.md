@@ -1,5 +1,5 @@
 ---
-title: Introduction to the AX Code IDE 
+title: Get started with apax and your first AX Project
 progress: true
 revealOptions:
   transition: 'fade'
@@ -12,7 +12,7 @@ mouseWheel: true,
 | -- | ----- |
 | 00 | Introduction to the workshop |
 | 01 | Introduction to AX Code IDE |
-| **02** | **Get started with your first AX Project** |
+| **02** | **Get started with Apax and your first AX Project** |
 | 03 | Loading and Debugging |
 | 04 | Introduction to ST Programming |
 | 05 | OOP Elements of ST |
@@ -47,6 +47,7 @@ mouseWheel: true,
   <div class="flex-col justify-center">
     <p>After you completed this training section you will </p>
         <ul>
+            <li>understand the basics of package management</li>
             <li>know how to use apax to create and build a new project</li>
             <li>have learned about:</li>
             <ul>
@@ -66,17 +67,18 @@ mouseWheel: true,
     <div class="grid-slide-header">
     <header class="slide_header">
         <h2>Introduction to apax</h2>
-        <h3>What is apax</h3>
+        <h3>What is apax?</h3>
     </header>
   </div>
   <div class="grid-slide-text">
-    <p>To create a new project from a template we first need to understand how to retrieve a template at all.</p>
+    <p>apax is the central tool within Simatic AX, acting as both a package manager and a build tool.</p>
+    <p>apax is a command line interface tool that serves as a package manager and facilitator for each step in the development workflow.</p>
+    <p>It helps you create, build, and manage AX projects efficiently.</p>
+    <div class="definition"><code>apax</code> automates the process of retrieving and managing project dependencies, making it easier to develop and maintain AX projects.</div>
     <br>
-    <p>For this we will use the tool <code>apax</code> that we have installed in the previous step</p>
-    <div class="definition"><code>apax</code> is a command line interface tool that serves as a package manager and facilitator for each step in the development workflow.</div>
-    <p>We will learn more about this tool in the following section<p>
   </div>
   <div class="grid-slide-image" style="background-image: url(../img/apax_overview.svg); background-repeat: no-repeat">
+    <p>Placeholder for an image explaining apax</p>
   </div>
 </div>
 
@@ -85,7 +87,28 @@ mouseWheel: true,
 <div class="grid-slide-container">
     <div class="grid-slide-header">
     <header class="slide_header">
-        <h2>Introduction to apax</h2>
+        <h2>Introduction to Package Management</h2>
+        <h3>What is a Package Manager?</h3>
+    </header>
+  </div>
+  <div class="grid-slide-text">
+    <p>A package manager is a tool that automates the process of installing, updating, and managing software packages and their dependencies.</p>
+    <br>
+    <p>It retrieves libraries and tools (packages) required for your project from central databases (registries) and downloads them to your PC.</p>
+    <div class="definition">A package manager simplifies the process of managing software dependencies and ensures that your project has all the necessary components to run correctly.</div>
+    <p>Common examples of package managers include npm for JavaScript, pip for Python, and apax for AX projects.</p>
+  </div>
+  <div class="grid-slide-image" style="background-image: url(../img/package_manager_overview.png); background-repeat: no-repeat; background-size: contain">
+    <p>Placeholder for an image explaining package management</p>
+  </div>
+</div>
+
+---
+
+<div class="grid-slide-container">
+    <div class="grid-slide-header">
+    <header class="slide_header">
+        <h2>Using apax</h2>
         <h3>How to use apax</h3>
     </header>
   </div>
@@ -104,9 +127,9 @@ mouseWheel: true,
     <pre><code data-trim data-noescape>apax</code></pre>
     <br>
     <p>This will prompt you with all the commands that apax is capable of executing as well as the version of apax that you have installed.</p>
-    
   </div>
   <div class="grid-slide-image" style="background-image: url(../img/apax_cmd_output.png); background-repeat: no-repeat; background-size: contain">
+    <p>Placeholder for an image showing apax command output</p>
   </div>
 </div>
 
@@ -115,18 +138,22 @@ mouseWheel: true,
 <div class="grid-slide-container">
     <div class="grid-slide-header">
     <header class="slide_header">
-        <h2>Introduction to apax</h2>
-        <h3>Use apax in the GUI</h3>
+        <h2>Package Management with apax</h2>
+        <h3>Understanding Dependencies</h3>
     </header>
   </div>
   <div class="grid-slide-text">
-    <p>Alternatively you can use apax from the command palette in AX Code</p>
+    <p>Dependencies are external libraries or tools that your project needs to function correctly.</p>
     <br>
-    <p>
-    Press <code>F1</code> and enter apax to see all available commands.
-    </p>
+    <p>There are two types of dependencies:</p>
+    <ul>
+        <li><strong>Dependencies:</strong> Required for the project to run.</li>
+        <li><strong>DevDependencies:</strong> Required for development and testing but not for running the project.</li>
+    </ul>
+    <div class="definition">Dependencies are like ingredients in a recipe, while devDependencies are like the tools used to prepare the recipe.</div>
   </div>
-  <div class="grid-slide-image" style="background-image: url(../img/apax_command_palette.png); background-repeat: no-repeat; background-size: contain">
+  <div class="grid-slide-image" style="background-image: url(../img/dependencies_vs_devdependencies.png); background-repeat: no-repeat; background-size: contain">
+    <p>Placeholder for an image explaining dependencies vs devDependencies</p>
   </div>
 </div>
 
@@ -135,42 +162,22 @@ mouseWheel: true,
 <div class="grid-slide-container">
     <div class="grid-slide-header">
     <header class="slide_header">
-        <h2>Introduction to apax</h2>
-        <h3>Package managment</h3>
+        <h2>Package Management with apax</h2>
+        <h3>Installing Dependencies</h3>
     </header>
   </div>
   <div class="grid-slide-text">
-    <p>Before we continue, we first must understand the package management part of apax</p>
+    <p>To download and install the dependencies for your project, you can use the following command:</p>
+    <pre><code>apax install</code></pre>
     <br>
-    <div class="definition">A package manager is a tool for automated handling of installing and updating of software and its dependencies.<sup><a href="https://web.archive.org/web/20171017151526/http://aptitude.alioth.debian.org/doc/en/pr01s02.html">[1]</a></sup></div>
-    <p>
-    <code>apax</code> will automatically retrieve libraries and tools (&wedgeq;packages) required for your project from one or multiple central databases (called registries) and download them to your PC.
-    </p>
+    <p>This command will collect all dependencies and devDependencies listed in the apax.yml file and download them to the .apax folder.</p>
+    <p>Additionally, it will create an apax-lock.json file, which contains all the installed packages and their versions.</p>
   </div>
-  <div class="grid-slide-image" style="background-image: url(../img/apax_registries.svg); background-repeat: no-repeat; background-size: contain">
+  <div class="grid-slide-image" style="background-image: url(../img/apax_install.png); background-repeat: no-repeat; background-size: contain">
+    <p>Placeholder for an image showing apax install process</p>
   </div>
 </div>
----
 
-<div class="grid-slide-container">
-    <div class="grid-slide-header">
-    <header class="slide_header">
-        <h2>Introduction to apax</h2>
-        <h3>Package managment</h3>
-    </header>
-  </div>
-  <div class="grid-slide-text">
-    <p>To download these packages, we must first authenticate against the registries. Execute an login command:</p>
-    <br>
-    <pre><code>apax login</code></pre>
-    <p> This will guide you through the login process and should use the browser for a single sign on. If this is not working, <a href="https://console.simatic-ax.siemens.io/settings/tokens">create a token on your user account</a> and execute the command as follows: 
-    </p>
-    <pre><code>apax login --password TOKEN</code></pre>
-    <p>where TOKEN is your generated token</p>
-  </div>
-  <div class="grid-slide-image" style="background-image: url(../img/apax_registries.svg); background-repeat: no-repeat; background-size: contain">
-  </div>
-</div>
 ---
 
 <div class="grid-slide-container">
@@ -190,6 +197,7 @@ mouseWheel: true,
     <p>This will download a special package called template and uncompress it into a new folder under the selected directory.</p>
  </div>
   <div class="grid-slide-image" style="background-image: url(../img/apax_extension.png); background-repeat: no-repeat; background-size: contain">
+    <p>Placeholder for an image showing apax extension</p>
   </div>
   <div class="grid-slide-ressources">
    <ol>
@@ -215,6 +223,7 @@ mouseWheel: true,
     <p> This will create a new project in the my-app folder, called my-app from the app template.</p>
   </div>
   <div class="grid-slide-image" style="background-image: url(../img/apax_cli_create.png); background-repeat: no-repeat; background-size: contain">
+    <p>Placeholder for an image showing apax CLI create command</p>
   </div>
   <div class="grid-slide-ressources">
     <ol>
@@ -241,6 +250,7 @@ mouseWheel: true,
     <p>In the following slides these points will be described in more detail</p>
   </div>
   <div class="grid-slide-image" style="background-image: url(../img/ax_project_structure.png); background-repeat: no-repeat; background-size: contain">
+    <p>Placeholder for an image showing project structure</p>
   </div>
 </div>
 
@@ -442,6 +452,7 @@ mouseWheel: true,
     </ol>
   </div>
 </div>
+
 ---
 
 <div class="grid-slide-container">
