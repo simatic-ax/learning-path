@@ -44,11 +44,11 @@ mouseWheel: true,
 </header>
 <div class="grid-two-col-eq">
   <div class="flex-col justify-center">
-    <p>After you completed this training section you will </p>
+    <p>After you have completed this training section you will:</p>
         <ul>
-            <li>understand how the download workflow together with TIA Portal and AX is working.</li>
-            <li>know how to download a compiled AX project to a controller.</li>
-            <li>know how to debug and monitor your code online on the PLC.</li>
+            <li>understand how the download workflow together with TIA Portal and AX is working</li>
+            <li>know how to download a compiled AX project to a controller</li>
+            <li>know how to debug and monitor your code online on the PLC</li>
         </ul>
     <br>
   </div>
@@ -74,7 +74,7 @@ mouseWheel: true,
         </ul>
     </p>
     <br>
-    <p>After that AX can download all of our user program without overwriting the configuration done by TIA Portal.<p>
+    <p>After that SIMATIC AX can download all of our user program without overwriting the configuration done by TIA Portal.<p>
   </div>
   <div class="grid-slide-image" style="background-image: url(../img/tiaxDirectLoading.png); background-repeat: no-repeat; background-size: contain">
   </div>
@@ -118,14 +118,14 @@ mouseWheel: true,
     <div class="grid-slide-header">
     <header class="slide_header">
         <h2>Downloading the program</h2>
-        <h3>Hardware configuration from AX</h3>
+        <h3>Hardware configuration from SIMATIC AX</h3>
     </header>
   </div>
   <div class="grid-slide-text">
-    <p>In the assets/ax directory you can find a prepared hardware configuration, created by the AX hardware configuration.</p>
+    <p>In the assets/ax directory you can find a prepared hardware configuration, created by the SIMATIC AX hardware configuration.</p>
     <p>You can use PLCSim Advanced or a real PLC to test the download.</p>
     <br>
-    <p>To download simply enter the command to the right. If you used the AX configuration, make sure to use the <code>certificateForConnection.crt</code> that you can find in the assets folder.</p>
+    <p>To download simply enter the command to the right. If you've used the SIMATIC AX configuration, make sure to use the <code>certificateForConnection.crt</code> that you can find in the assets folder.</p>
     <code></code>
   </div>
   <div class="grid-slide-image">
@@ -197,7 +197,7 @@ mouseWheel: true,
     </header>
   </div>
   <div class="grid-slide-text">
-    <p>After the hardware configuration has been downloaded, you can use AX to download the software</p>
+    <p>After the hardware configuration has been downloaded, you can use SIMATIC AX to download the software</p>
     <br>
     <p>
     This will invoke the <code>sld</code> (software loader) and download the target specific binary to the device reachable under the set PLC IP Address. If you have set up secure communication in TIA Portal (activated by default) you also need to set the path to the certificate of the PLC.
@@ -343,7 +343,7 @@ mouseWheel: true,
     <p>You can either create it manually or select the Run and Debug menu (<code class="selection">Ctrl+Shift+D</code>) and click on the "create a launch.json file".</p>
     <p>Then you can fill in the correct IP Address and path to the certificate.</p>
     <div class="definition">
-      The ${workspaceFolder} is a AX Code variable and refers to the root of your project. It is the same folder where the apax.yml is located in. 
+      The ${workspaceFolder} is a SIMATIC AX Code environment variable and refers to the root of your project. It is the same folder where the apax.yml is located in. 
     </div>
   </div>
   <div class="grid-slide-image">
