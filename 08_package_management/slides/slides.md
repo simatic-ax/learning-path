@@ -33,7 +33,7 @@ mouseWheel: true,
 <div class="flex-col justify-center">
   <p>Basic understanding of...
     <ul>
-        <li>how to work with AX Code</li>
+        <li>how to work with SIMATIC AX Code</li>
         <li>what a package and a package manager is</li>
         <li>programming wit ST</li>
         <li>unit testing in AX</li>
@@ -83,13 +83,13 @@ mouseWheel: true,
 ----
 
 <header class="slide_header">
-<h2>How do libraries look like in AX?</h2>
+<h2>How do libraries look like in SIMATIC AX?</h2>
 </header>
 
 <div class="grid-two-col-eq">
 <div class="flex-col justify-center">
   <p>
-    AX libraries can be distributed as source code libraries or as binary (precompiled) libraries. The source code of binary libraries can´t be inspected by a consumer.
+    SIMATIC AX libraries can be distributed as source code libraries or as binary (precompiled) libraries. The source code of binary libraries can´t be inspected by a consumer.
   </p>
   <br>
   <p>

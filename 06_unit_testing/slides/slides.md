@@ -26,7 +26,7 @@ mouseWheel: true,
 
 ## Prerequisites
 
-Basic understanding of AX code and ST programming
+Basic understanding of SIMATIC AX Code and ST programming
 
 ---
 
@@ -61,9 +61,9 @@ The main objective is to ensure the reliability and quality by facilitating the 
 
 * **Regression Prevention.** Ensure that new changes do not break existing functionality.
 
-* **Code Quality Improvement.** Encourage better design and modularity of code, as unit test typically require code to split into smaller testable units.
+* **Code Quality Improvement.** Encourage better design and modularity of code, as unit test typically require code to be split into smaller testable units.
 
-* **Documentation.** Serve as documentation for expected behavior of code, making easier for developers to understand the purpose.
+* **Documentation.** Serve as documentation for expected behavior of code, making it easier for developers to understand the purpose.
 
 * **Continuous Integration.** Support continuous integration practices by providing a framework for automated testing as part of the build process.
 
@@ -75,10 +75,10 @@ The main objective is to ensure the reliability and quality by facilitating the 
 
 ## Possibilities
 
-AX provides different possibilities to execute the tests. The big advantage of both is that a runtime like PLCSIM Advanced or a real PLC is __NOT NEEDED__:
+SIMATIC AX provides different possibilities to execute the tests. The big advantage of both is that a runtime like PLCSIM Advanced or a real PLC is __NOT NEEDED__:
 
-* Via APAX (locally or in the pipeline)
-* Via the IDE.
+* via APAX (locally or in the pipeline)
+* via the IDE
 
 This learning session is focused on <ins>**testing with the IDE**</ins>
 
@@ -87,10 +87,6 @@ This learning session is focused on <ins>**testing with the IDE**</ins>
 <h2>Testing in the IDE</h2>
 <h3>Prerequisites</h3>
 </header>
-
-## Testing in the IDE
-
-### Prerequisites
 
 * An AX Project (lib or app) is created
 * SDK is installed ('apax add @ax/sdk' or 'apax install')
@@ -148,7 +144,7 @@ my-project/
 ## Writing Tests
 ### Test function
 
-The easiest way to write tests in AX is the test function. This function is characterized by:
+The easiest way to write tests in SIMATIC AX is using a function. This function is characterized by:
 
 * The pragma {Test} above FUNCTION
 * Minimum one Assertion (given by assert functions)
@@ -233,7 +229,7 @@ END_NAMESPACE
 
 <div class="flex-col justify-center">
     <p>
-    Since not all data types, especially user defined data types, supported by the assertions, you can define `custom asserts`.
+    Since not all data types, especially user defined data types, are supported by the assertions, you can define `custom asserts`.
     </p>
 
 <br>
@@ -717,7 +713,7 @@ END_NAMESPACE
   <div class="flex-col justify-center">
     <p>In this section you learned about...</p>
     <ul>
-      <li>what Unit Testing is.</li>
+      <li>what Unit Testing is</li>
       <li>how the debugger works</li>
       <li>how you can use AXUnit to assert the correctness of your code</li>
       <li>you know what parametrized tests are</li>

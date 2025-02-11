@@ -62,7 +62,7 @@ mouseWheel: true,
 
 <div class="flex-col justify-center">
     <p>
-        A ST Program consists of:
+        A ST application consists of:
     </p>
     <ul>
         <li>a Configuration</li>
@@ -71,7 +71,7 @@ mouseWheel: true,
     </ul>
     <br>
     <p>
-        A minimal ST program consists of a  <b>CONFIGURATION</b> and a <b>PROGRAM</b> section.
+        A minimal ST program consists of a  <b>CONFIGURATION</b> and a <b>PROGRAM</b>.
     </p>
 </div>
 
@@ -319,7 +319,7 @@ mouseWheel: true,
     END_PROGRAM
     </pre>
     <p>
-        Question: What is to do, when I want to calculate the area of a square?
+        Question: What needs to be done, in case you wanted to calculate the area of a square?
     </p>
 </div>
 
@@ -337,12 +337,8 @@ OR --> Namespaces
         A function block is a another program organization unit (POU) to modularize your program.
     </p>
     <p>
-        The differences to functions are:
+        In contrast to a FUNCTION a FUNCTION_BLOCK persists its state over multiple cycles.
     </p>
-    <ul>
-        <li>A function block (FB) is able to persist its state over multiple cycles.</li>
-        <li>Hence, all variables are remain valid outside its scope.</li>
-    </ul>
 </div>
 
 ----
@@ -365,7 +361,7 @@ OR --> Namespaces
         <tr><td>VAR_IN_OUT</td><td>Reference to any other variable</td></tr>
         <tr><td>VAR_TEMP</td><td>Temporary variables</td></tr>
         <tr><td>VAR_EXTERNAL (CONSTANT)</td><td>Access to a global variable/constant declared in the configuration section</td></tr>
-        <tr><td>VAR CONSTANT</td><td>Constants within the function</td></tr>
+        <tr><td>VAR CONSTANT</td><td>Constants within the function block</td></tr>
     </table>
 </div>
 
@@ -524,8 +520,8 @@ PROGRAM ExampleProgram
         result : LREAL;
     END_VAR
     </pre><pre>
-    result := Circle.Area(diameter := 2.0);     // full qualified call
-    result := Square.Area(sideLength := 2.0);   // full qualified call
+    result := Circle.Area(diameter := 2.0);     // fully qualified call
+    result := Square.Area(sideLength := 2.0);   // fully qualified call
     ;
 END_PROGRAM
     <p>
