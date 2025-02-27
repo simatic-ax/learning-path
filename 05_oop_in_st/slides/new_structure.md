@@ -1,22 +1,4 @@
 # OOP in ST
-
-## Inhaltsverzeichnis
-- [Inhalt / Lernziele / Zielgruppe](#inhalt--lernziele--zielgruppe)
-- [Einführung in OOP](#einführung-in-oop)
-  - [Definition und Grundlagen von OOP](#definition-und-grundlagen-von-oop)
-  - [Motivation und Vorteile von OOP](#motivation-und-vorteile-von-oop)
-  - [Historischer Hintergrund](#historischer-hintergrund)
-- [Objekte und Klassen in ST](#objekte-und-klassen-in-st)
-  - [Deklaration und Instanziierung von Klassen](#deklaration-und-instanziierung-von-klassen)
-  - [Felder (Variablen) und Methoden](#felder-variablen-und-methoden)
-  - [Zugriffsmodi (public, private, protected)](#zugriffsmodi-public-private-protected)
-- [Kapselung in ST](#kapselung-in-st)
-- [Vererbung in ST](#vererbung-in-st)
-- [Polymorphismus in ST](#polymorphismus-in-st)
-- [Abstraktion und Schnittstellen in ST](#abstraktion-und-schnittstellen-in-st)
-- [Besonderheiten von OOP in ST](#besonderheiten-von-oop-in-st)
-- [Zusammenfassung und Ausblick](#zusammenfassung-und-ausblick)
-
 ---
 # Inhalt / Lernziele / Zielgruppe
 - Zielgruppe: Teilnehmer mit geringem Vorwissen zur OOP

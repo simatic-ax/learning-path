@@ -66,7 +66,6 @@ mouseWheel: true,
     <li>With this, you are set up to continue with this learning path.</li>
   </div>
 </div>
-
 ---
 <div class="grid-slide-container">
   <div class="grid-slide-header">
@@ -84,8 +83,7 @@ mouseWheel: true,
     <li>How to create and manage projects using apax.</li>
   </ul>
   </div>
-    <div class="grid-slide-image" style="background-image: url(../img/apax_overview.svg); background-repeat: no-repeat">
-    </div>
+  <div class="grid-slide-image" style="background-image: url(../img/apax_overview.svg); background-repeat: no-repeat">
   </div>
 </div>
 
@@ -129,39 +127,29 @@ mouseWheel: true,
 </div>
 
 ----
-
 <div class="grid-slide-container">
   <div class="grid-slide-header">
-  <header class="slide_header">
-    <h2>Introduction to Package Management</h2>
-    <h3>What are Dependencies?</h3>
-  </header>
+    <header class="slide_header">
+      <h2>Introduction to Package Management</h2>
+      <h3>Configuration file for package manager</h3>
+    </header>
   </div>
   <div class="grid-slide-text">
-  <p>Dependencies are external libraries or tools that your project needs to function correctly. They help you avoid reinventing the wheel by reusing pre-existing code.</p>
+    <p>Typically a package manager requires a configuration file named. This file contains many entries that define:</p>
+    <ul>
+      <li>Metadata</li>
+      <li>Target systems</li>
+      <li>Registries</li>
+      <li>Dependencies</li>
+      <li>DevDependencies</li>
+      <li>Custom scripts</li>
+      <li>Custom variables</li>
+    </ul>
+    <p>In the case of <strong>Apax</strong> the name of the configuration file is <code>apax.yml</code></p>
   </div>
-  <div class="grid-slide-image" style="background-image: url(../img/package_manager_overview.png); background-repeat: no-repeat; background-size: contain">
-  <p>Placeholder for an image explaining dependencies</p>
-  </div>
-</div>
-
-----
-
-<div class="grid-slide-container">
-  <div class="grid-slide-header">
-  <header class="slide_header">
-    <h2>Introduction to Package Management</h2>
-    <h3>What is a Registry?</h3>
-  </header>
-  </div>
-  <div class="grid-slide-text">
-  <p>A registry is a central database where packages are stored and maintained. It acts as a repository from which package managers can retrieve the necessary packages.</p>
-  </div>
-  <div class="grid-slide-image" style="background-image: url(../img/package_manager_overview.png); background-repeat: no-repeat; background-size: contain">
-  <p>Placeholder for an image explaining registries</p>
+  <div class="grid-slide-image" style="background-image: url(../img/apax_yml.svg); background-repeat: no-repeat; background-size: contain">
   </div>
 </div>
-
 ----
 
 <div class="grid-slide-container">
@@ -172,10 +160,16 @@ mouseWheel: true,
   </header>
   </div>
   <div class="grid-slide-text">
-  <p>A package is a bundle of code that provides specific functionality and can be easily shared and reused. It typically includes compiled code, configuration files, and metadata.</p>
+  <p>A package is a bundle of code that provides specific functionality and can be easily shared and reused. It typically includes tools, compiled code, or source code. Examples of packages are:</p>
+  <ul>
+    <li>Tools like the ST compiler (STC) or SIMATIC loader (SLD)</li>
+    <li>System libraries like IEC Timer or Motion Control</li>
+    <li>User libraries that come from GitHub or are self-created</li>
+  </ul>
+  <p>Packages can be individually updated, which significantly simplifies the process of updating a library.</p>
+  <p>The full package name then becomes something like <code>@ax/package-name</code>, helping in organizing and managing packages, especially when dealing with multiple registries.</p>
   </div>
-  <div class="grid-slide-image" style="background-image: url(../img/package_manager_overview.png); background-repeat: no-repeat; background-size: contain">
-  <p>Placeholder for an image explaining packages</p>
+  <div class="grid-slide-image" style="background-image: url(../img/apax_overview.svg); background-repeat: no-repeat; background-size: contain">
   </div>
 </div>
 
@@ -198,10 +192,50 @@ mouseWheel: true,
     </ul>
     <div class="definition">Dependencies are like ingredients in a recipe, while devDependencies are like the tools used to prepare the recipe.</div>
   </div>
-  <div class="grid-slide-image" style="background-image: url(../img/dependencies_vs_devdependencies.png); background-repeat: no-repeat; background-size: contain">
-    <p>Placeholder for an image explaining dependencies vs devDependencies</p>
+  <div class="grid-slide-image" style="background-image: url(../img/apax_overview.svg); background-repeat: no-repeat; background-size: contain">
   </div>
 </div>
+
+----
+
+<div class="grid-slide-container">
+  <div class="grid-slide-header">
+  <header class="slide_header">
+    <h2>Introduction to Package Management</h2>
+    <h3>Differences between dependencies and devDependencies and </h3>
+  </header>
+  </div>
+  <div class="grid-slide-text">
+  <ul>
+    <li><strong>Dependencies:</strong> These are essential for the project to run. They are like the ingredients in a recipe that you need to make the final dish. For example, a system-timer library is a dependency because it is required for the application to function.</li>
+    <li><strong>DevDependencies:</strong> These are only needed during the development and testing phases but not for running the project. They are like the tools used to prepare the recipe, such as a mixer. For example, an SDK (Software Development Kit) is a devDependency because it is used to build and test the project but is not needed in the final application.</li>
+  </ul>
+  </div>
+  <div class="grid-slide-image" style="background-image: url(../img/apax_overview.svg); background-repeat: no-repeat; background-size: contain">
+  </div>
+</div>
+
+----
+
+<div class="grid-slide-container">
+  <div class="grid-slide-header">
+  <header class="slide_header">
+    <h2>Introduction to Package Management</h2>
+    <h3>What is a Registry?</h3>
+  </header>
+  </div>
+  <div class="grid-slide-text">
+  <ul>
+    <li>A registry is a central database where packages are stored and maintained. It acts as a repository from which package managers can retrieve the necessary packages. Registries can be public or private, and they help in managing and distributing packages efficiently.</li>
+    <li>For SIMATIC AX, the default registry does not need to be specified.</li>
+    <li>If you want to fetch packages from other registries like GitHub or NPM, you need to configure apax to recognize these registries.</li>
+    <li>A scope is a way to group related packages together, usually defined by a prefix, such as <code>@ax</code> for SIMATIC AX packages.</li>
+  </ul>
+  </div>
+  <div class="grid-slide-image" style="background-image: url(../img/apax_registries.svg); background-repeat: no-repeat; background-size: contain">
+  </div>
+</div>
+
 
 ---
 <div class="grid-slide-container">
@@ -221,7 +255,6 @@ mouseWheel: true,
   </ul>
   </div>
   <div class="grid-slide-image" style="background-image: url(../img/use_apax_overview.svg); background-repeat: no-repeat; background-size: contain">
-  <p>Placeholder for an image showing Apax usage overview</p>
   </div>
 </div>
 
@@ -240,8 +273,7 @@ mouseWheel: true,
   <br>
   <p>This command will display the current version of Apax installed on your system.</p>
   </div>
-  <div class="grid-slide-image" style="background-image: url(../img/apax_version.png); background-repeat: no-repeat; background-size: contain">
-  <p>Placeholder for an image showing the output of apax --version</p>
+  <div class="grid-slide-image" style="background-image: url(../img/apax_version.gif); background-repeat: no-repeat; background-size: contain">
   </div>
 </div>
 ----
@@ -249,7 +281,62 @@ mouseWheel: true,
   <div class="grid-slide-header">
     <header class="slide_header">
       <h2>Using Apax</h2>
-      <h3>Creating a New Project with Apax</h3>
+      <h3>Creating a project - Project templates</h3>
+    </header>
+  </div>
+  <div class="grid-slide-text">
+    <p>With Apax, projects can be created based on so-called project templates. Each project template is essentially a package that is downloaded and unpacked as a new project using the command <code>apax create</code>. The advantage is that there are not only fixed project templates; every user can create their own project templates and store them in a registry to make them available.</p>
+  </div>
+  <div class="grid-slide-image" style="background-image: url(../img/create_project.gif); background-repeat: no-repeat; background-size: contain">
+  </div>
+</div>
+
+----
+<div class="grid-slide-container">
+  <div class="grid-slide-header">
+    <header class="slide_header">
+      <h2>Using Apax</h2>
+      <h3>Creating a project - Important project templates</h3>
+    </header>
+  </div>
+  <div class="grid-slide-text">
+    <p>There are two main templates you can use with <code>apax create</code>:</p>
+    <ul>
+      <li><strong>app:</strong> This template is used to create an application project. An application project is designed to run on a real runtime environment, such as an S7-1500 PLC.</li>
+      <li><strong>lib:</strong> This template is used to create a library project. A library project is intended to be published as a package and can be reused in applications or other libraries.</li>
+    </ul>
+  </div>
+  <div class="grid-slide-image" style="background-image: url(../img/create_project.gif); background-repeat: no-repeat; background-size: contain">
+  </div>
+</div>
+
+----
+<div class="grid-slide-container">
+  <div class="grid-slide-header">
+    <header class="slide_header">
+      <h2>Using Apax</h2>
+      <h3>Creating a project - Further Templates</h3>
+    </header>
+  </div>
+  <div class="grid-slide-text">
+    <p>In addition to the <strong>app</strong> and <strong>lib</strong> templates, Apax offers several other templates to help you get started with different types of projects:</p>
+    <ul>
+      <li><strong>empty</strong> A generic template for creating a minimal project setup.</li>
+      <li><strong>quickstart</strong> A template designed to help you quickly get started with Simatic AX.</li>
+      <li><strong>workspace</strong> A template for setting up a workspace with multiple projects.</li>
+      <li><strong>template</strong> A template for custom template that can be created and used based on specific user requirements.</li>
+    </ul>
+    <p>These templates can be used to streamline the project creation process and ensure that you have the necessary structure and dependencies in place from the start.</p>
+  </div>
+  <div class="grid-slide-image" style="background-image: url(../img/create_project.gif); background-repeat: no-repeat; background-size: contain">
+  </div>
+</div>
+----
+<div class="grid-slide-container">
+  <div class="grid-slide-header">
+    <header class="slide_header">
+      <h2>Using Apax</h2>
+      <h3>Creating a project - Apax create</h3>
     </header>
   </div>
   <div class="grid-slide-text">
@@ -267,61 +354,7 @@ mouseWheel: true,
   <div class="grid-slide-image" style="background-image: url(../img/create_project.gif); background-repeat: no-repeat; background-size: contain">
   </div>
 </div>
-----
-<div class="grid-slide-container">
-  <div class="grid-slide-header">
-    <header class="slide_header">
-      <h2>Using Apax</h2>
-      <h3>Projects overview</h3>
-    </header>
-  </div>
-  <div class="grid-slide-text">
-    <p>There are two main templates you can use with <code>apax create</code>:</p>
-    <ul>
-      <li><strong>app:</strong> This template is used to create an application project. An application project is designed to run on a real runtime environment, such as an S7-1500 PLC.</li>
-      <li><strong>lib:</strong> This template is used to create a library project. A library project is intended to be published as a package and can be reused in applications or other libraries.</li>
-    </ul>
-  </div>
-    <div class="grid-slide-yml">
-    <pre><code># General information
-name: "my-first-app"
-version: 1.0.0
-type: app
-# Description for your application example or app
-description: First exercise of the chapter Unit Testing
-# Targets to be compiled with 'apax build'
-targets:
-  - "1500"
-  - llvm
-# Dependencies
-devDependencies:
-  "@ax/sdk": 2405.0.0
-</code></pre>
-  </div>
-</div>
-----
-<div class="grid-slide-container">
-  <div class="grid-slide-header">
-    <header class="slide_header">
-      <h2>Using Apax</h2>
-      <h3>Further Templates</h3>
-    </header>
-  </div>
-  <div class="grid-slide-text">
-    <p>In addition to the <strong>app</strong> and <strong>lib</strong> templates, Apax offers several other templates to help you get started with different types of projects:</p>
-    <ul>
-      <li><strong>empty</strong> A generic template for creating a minimal project setup.</li>
-      <li><strong>quickstart</strong> A template designed to help you quickly get started with Simatic AX.</li>
-      <li><strong>workspace</strong> A template for setting up a workspace with multiple projects.</li>
-      <li><strong>template</strong> A template for custom template that can be created and used based on specific user requirements.</li>
-    </ul>
-    <p>These templates can be used to streamline the project creation process and ensure that you have the necessary structure and dependencies in place from the start.</p>
-  </div>
-  <div class="grid-slide-image" style="background-image: url(../img/apax_templates.png); background-repeat: no-repeat; background-size: contain">
-    <p>Placeholder for an image showing different Apax templates</p>
-  </div>
-</div>
-----
+<!-- ----
 <div class="grid-slide-container">
     <div class="grid-slide-header">
     <header class="slide_header">
@@ -345,6 +378,28 @@ devDependencies:
    <ol>
       <li>AX Templates: <a href="https://console.simatic-ax.siemens.io/docs/apax/templates#templates">https://console.simatic-ax.siemens.io/docs/apax/templates</a></li>
     </ol>
+  </div>
+</div> -->
+
+----
+<div class="grid-slide-container">
+  <div class="grid-slide-header">
+  <header class="slide_header">
+    <h2>Project overview</h2>
+    <h3>apax.yml</h3>
+  </header>
+  </div>
+  <div class="grid-slide-text">
+  <p>When you open the project with AX Code, you will find an <code>apax.yml</code> file. This file is the project manifest and contains important information about the project, such as:</p>
+  <ul>
+    <li><strong>name:</strong> The name of the project.</li>
+    <li><strong>version:</strong> The version of the project.</li>
+    <li><strong>type:</strong> The type of the project (app, lib).</li>
+    <li><strong>devDependencies:</strong> The libraries and tools required for development and testing.</li>
+  </ul>
+  <p>This file helps in defining everything specific to the project, automating workflows with scripts, and specifying where the code is supposed to run.</p>
+  </div>
+  <div class="grid-slide-image" style="background-image: url(../img/apaxyml.png); background-repeat: no-repeat; background-size: contain">
   </div>
 </div>
 
