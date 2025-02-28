@@ -174,6 +174,8 @@ mouseWheel: true,
 </div>
 
 ----
+x
+----
 
 <div class="grid-slide-container">
     <div class="grid-slide-header">
@@ -248,10 +250,11 @@ mouseWheel: true,
   <div class="grid-slide-text">
   <p>In this section, you will learn about:</p>
   <ul>
-    <li>How to use Apax for managing your AX projects.</li>
-    <li>Basic commands and their usage.</li>
-    <li>Creating and managing projects with Apax.</li>
-    <li>Building and compiling your projects.</li>
+    <li>Verify Apax installation: <code>apax --version</code></li>
+    <li>Create projects with templates: <code>apax create [template] [project-name]</code></li>
+    <li>Important templates: <strong>app</strong>, <strong>lib</strong>, <strong>empty</strong>, <strong>quickstart</strong>, <strong>workspace</strong>, <strong>template</strong></li>
+    <li>Project structure: <strong>apax.yml</strong>, <strong>src/</strong>, <strong>test/</strong></li>
+    <li>Install dependencies: <code>apax install</code></li>
   </ul>
   </div>
   <div class="grid-slide-image" style="background-image: url(../img/use_apax_overview.svg); background-repeat: no-repeat; background-size: contain">
@@ -285,7 +288,11 @@ mouseWheel: true,
     </header>
   </div>
   <div class="grid-slide-text">
-    <p>With Apax, projects can be created based on so-called project templates. Each project template is essentially a package that is downloaded and unpacked as a new project using the command <code>apax create</code>. The advantage is that there are not only fixed project templates; every user can create their own project templates and store them in a registry to make them available.</p>
+    <ul>
+      <li>With Apax, projects can be created based on so-called project templates.</li>
+      <li>Each project template is essentially a package that is downloaded and unpacked as a new project using the command <code>apax create</code>.</li>
+      <li>The advantage is that there are not only fixed project templates; every user can create their own project templates and store them in a registry to make them available.</li>
+    </ul>
   </div>
   <div class="grid-slide-image" style="background-image: url(../img/create_project.gif); background-repeat: no-repeat; background-size: contain">
   </div>
@@ -354,6 +361,27 @@ mouseWheel: true,
   <div class="grid-slide-image" style="background-image: url(../img/create_project.gif); background-repeat: no-repeat; background-size: contain">
   </div>
 </div>
+----
+<div class="grid-slide-container">
+  <div class="grid-slide-header">
+    <header class="slide_header">
+      <h2>Using Apax</h2>
+      <h3>Creating a project - Generated project structure</h3>
+    </header>
+  </div>
+  <div class="grid-slide-text">
+    <p>After creating the project and opening it in AxCode, you will see the following structure:</p>
+    <ul>
+      <li><strong>apax.yml:</strong> The project manifest file, which we will explore in the next slide.</li>
+      <li><strong>src/:</strong> Contains all the source code for your project, including a <code>configuration.st</code> and a <code>program.st</code>, both written in Structured Text, a standardized language for automation systems. These files will be covered in detail in the chapter on ST Programming.</li>
+      <li><strong>test/:</strong> Contains unit tests for your project.</li>
+    </ul>
+    <p>This structure helps in organizing your project files and dependencies efficiently.</p>
+  </div>
+  <div class="grid-slide-image" style="background-image: url(../img/ax_project_structure.png); background-repeat: no-repeat; background-size: contain">
+  </div>
+</div>
+
 <!-- ----
 <div class="grid-slide-container">
     <div class="grid-slide-header">
@@ -385,8 +413,8 @@ mouseWheel: true,
 <div class="grid-slide-container">
   <div class="grid-slide-header">
   <header class="slide_header">
-    <h2>Project overview</h2>
-    <h3>apax.yml</h3>
+    <h2>Using Apax</h2>
+    <h3>Creating a project - The apax.yml</h3>
   </header>
   </div>
   <div class="grid-slide-text">
@@ -399,199 +427,166 @@ mouseWheel: true,
   </ul>
   <p>This file helps in defining everything specific to the project, automating workflows with scripts, and specifying where the code is supposed to run.</p>
   </div>
+  <div class="grid-slide-ressources">
+    <ol>
+      <li>apax.yml manifest reference: <br><a href="https://console.simatic-ax.siemens.io/docs/apax/yml">https://console.simatic-ax.siemens.io/docs/apax/yml</a></li>
+    </ol>
+</div>
   <div class="grid-slide-image" style="background-image: url(../img/apaxyml.png); background-repeat: no-repeat; background-size: contain">
   </div>
 </div>
 
 ----
+
 <div class="grid-slide-container">
-    <div class="grid-slide-header">
+  <div class="grid-slide-header">
     <header class="slide_header">
-        <h2>Using Apax</h2>
-        <h3>Installing Dependencies</h3>
+      <h2>Using Apax</h2>
+      <h3>Creating a project - Understanding the Field: Type</h3>
     </header>
   </div>
   <div class="grid-slide-text">
-    <p>To download and install the dependencies for your project, you can use the following command:</p>
+    <p>The <code>type</code> field in the <code>apax.yml</code> file defines the nature of the project. The possible values are:</p>
+    <ul>
+      <li><strong>app:</strong> An application that can be deployed to PLCs.</li>
+      <li><strong>lib:</strong> A library that can be reused by other packages.</li>
+      <li><strong>generic:</strong> A package that contains arbitrary files.</li>
+      <li><strong>catalog:</strong> A package that defines a set of catalogDependencies.</li>
+      <li><strong>workspace:</strong> The root of a multi-project workspace.</li>
+    </ul>
+    <p>For now, we will focus on <strong>lib</strong> and <strong>app</strong> types, as they are essential for the daily work of automation engineers.</p>
+  </div>
+    <div class="grid-slide-ressources">
+    <ol>
+      <li>apax.yml field type: <br><a href="https://console.simatic-ax.siemens.io/docs/apax/yml#type">https://console.simatic-ax.siemens.io/docs/apax/yml#type</a></li>
+    </ol>
+</div>
+  <div class="grid-slide-image" style="background-image: url(../img/apaxyml.png); background-repeat: no-repeat; background-size: contain">
+  </div>
+</div>
+
+----
+
+<div class="grid-slide-container">
+  <div class="grid-slide-header">
+      <header class="slide_header">
+      <h2>Using Apax</h2>
+      <h3>Creating a project - Understanding type app and lib</h3>
+    </header>
+  </div>
+  <div class="grid-slide-text">
+    <p>Let's take a closer look at the <strong>app</strong> and <strong>lib</strong> types:</p>
+    <ul>
+      <li><strong>app:</strong>
+        <ul>
+          <li>A PLC application that can be loaded onto an S7-1500.</li>
+          <li>Example: Software for machine control.</li>
+        </ul>
+      </li>
+      <li><strong>lib:</strong>
+        <ul>
+          <li>A library from which a package can be built.</li>
+          <li>Can be reused in other libraries or applications.</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="grid-slide-image" style="background-image: url(../img/apaxyml.png); background-repeat: no-repeat; background-size: contain">
+  </div>
+</div>
+----
+<div class="grid-slide-container">
+  <div class="grid-slide-header">
+    <header class="slide_header">
+      <h2>Using Apax</h2>
+      <h3>Creating a project - Understanding the Field: devDependencies</h3>
+    </header>
+  </div>
+  <div class="grid-slide-text">
+    <p>The <code>devDependencies</code> field in the <code>apax.yml</code> file lists the tools and libraries required for developing and testing your project. By default, it includes the latest SDK (Software Development Kit).</p>
+    <ul>
+      <li>An SDK is a collection of tools necessary for developing, loading, and debugging PLC software.</li>
+      <li>For example, it includes the ST Compiler and the SIMATIC Loader.</li>
+      <li>One of the advantages of using package management is the ability to switch to a newer or older SDK version without needing to migrate the project.</li>
+      <li>This flexibility ensures that you can always use the most suitable tools for your development needs.</li>
+    </ul>
+  </div>
+  <div class="grid-slide-image" style="background-image: url(../img/apaxyml.png); background-repeat: no-repeat; background-size: contain">
+  </div>
+</div>
+
+----
+
+<div class="grid-slide-container">
+  <div class="grid-slide-header">
+    <header class="slide_header">
+      <h2>Using Apax</h2>
+      <h3>Creating a project - Understanding the Field: targets</h3>
+    </header>
+  </div>
+  <div class="grid-slide-text">
+    <p>The <code>targets</code> field in the <code>apax.yml</code> file specifies the target platforms for your project. Currently, the possible values are <strong>1500</strong> and <strong>LLVM</strong>.</p>
+    <ul>
+      <li><strong>1500:</strong> This target is used for S7-1500 PLCs.</li>
+      <li><strong>LLVM:</strong> This target is used for the AxUnit Testing Framework.</li>
+    </ul>
+    <p>By defining the target, you ensure that the project is compiled and built for the correct platform, whether it's for deployment on a PLC or for running unit tests.</p>
+  </div>
+  <div class="grid-slide-image" style="background-image: url(../img/apaxyml.png); background-repeat: no-repeat; background-size: contain">
+  </div>
+</div>
+----
+<div class="grid-slide-container">
+  <div class="grid-slide-header">
+    <header class="slide_header">
+      <h2>Using Apax</h2>
+      <h3>Installing Dependencies</h3>
+    </header>
+  </div>
+  <div class="grid-slide-text">
+    <p>Before starting your project, install the dependencies with:</p>
     <pre><code>apax install</code></pre>
     <br>
-    <p>This command will collect all dependencies and devDependencies listed in the apax.yml file and download them to the .apax folder.</p>
-    <p>Additionally, it will create an apax-lock.json file, which contains all the installed packages and their versions.</p>
-  </div>
-  <div class="grid-slide-image" style="background-image: url(../img/apax_install.png); background-repeat: no-repeat; background-size: contain">
-    <p>Placeholder for an image showing apax install process</p>
-  </div>
-</div>
-
----
-<div class="grid-slide-container">
-    <div class="grid-slide-header">
-    <header class="slide_header">
-        <h2>Create a new project</h2>
-        <h3>Using the apax CLI</h3>
-    </header>
-  </div>
-  <div class="grid-slide-text">
-    <p>To create a new project from the command line you can execute the following steps:</p>
-    <ol>
-        <li>1. open a new terminal <code>Terminal &rarr; New Terminal</code></li>
-        <li>2. enter the command <pre><code>apax create app my-app</code></pre></li>
-    </ol>
-    <p> This will create a new project in the my-app folder, called my-app from the app template.</p>
-  </div>
-  <div class="grid-slide-image" style="background-image: url(../img/apax_cli_create.png); background-repeat: no-repeat; background-size: contain">
-    <p>Placeholder for an image showing apax CLI create command</p>
-  </div>
-  <div class="grid-slide-ressources">
-    <ol>
-      <li>apax create CLI reference: <br><a href="https://console.simatic-ax.siemens.io/docs/apax/cli#create">https://console.simatic-ax.siemens.io/docs/apax/cli#create</a></li>
-    </ol>
-</div>
-
----
-
-<div class="grid-slide-container">
-    <div class="grid-slide-header">
-    <header class="slide_header">
-        <h2>Project overview</h2>
-        <h3>Structure of the project</h3>
-    </header>
-  </div>
-  <div class="grid-slide-text">
-    <p>Now that we have created a project let's explore the created files  and understand the structure. We have the following files and directories in our project:</p>
     <ul>
-        <li>src/</li>
-        <li>lib/</li>
-        <li>apax.yml</li>
+      <li>This command downloads all dependencies and devDependencies listed in the apax.yml file to the .apax folder.</li>
+      <li>It creates an apax-lock.json file with the installed packages and their versions.</li>
+      <li>This ensures your project has all necessary components and correct dependency versions.</li>
     </ul>
-    <p>In the following slides these points will be described in more detail</p>
   </div>
-  <div class="grid-slide-image" style="background-image: url(../img/ax_project_structure.png); background-repeat: no-repeat; background-size: contain">
-    <p>Placeholder for an image showing project structure</p>
-  </div>
-</div>
-
-----
-
-<div class="grid-slide-container">
-    <div class="grid-slide-header">
-    <header class="slide_header">
-        <h2>Project overview</h2>
-        <h3>src directory</h3>
-    </header>
-  </div>
-  <div class="grid-slide-text">
-    <p>In the src directory you can find all the software code that belongs to your machine program.
-    <br>
-    In the template there should be a configuration.st and a program.st, both written in Structured Text, a standardized language for automation systems.
-    </p>
-    <p>We will explore these files in the following chapters.<br> For more information you can check out <a href="https://console.simatic-ax.siemens.io/docs/st/language">the documentation</a>
-  </div>
-  <div class="grid-slide-image" style="background-image: url(../img/ax_project_structure.png); background-repeat: no-repeat; background-size: contain">
-  </div>
-</div>
-----
-<div class="grid-slide-container">
-    <div class="grid-slide-header">
-    <header class="slide_header">
-        <h2>Project overview</h2>
-        <h3>test directory</h3>
-    </header>
-  </div>
-  <div class="grid-slide-text">
-    <p>In the test directory you can create the unit tests for your program.
-    <br>
-    These unit tests can be used to test and verify the functionality without any simulation or machine as a prerequisite.
-    </p>
-    <p>We will explore unit testing in the following chapters.<br> For more information you can check out <a href="https://console.simatic-ax.siemens.io/docs/axunitst">the documentation</a>
-  </div>
-  <div class="grid-slide-image" style="background-image: url(../img/ax_project_structure.png); background-repeat: no-repeat; background-size: contain">
-  </div>
-</div>
-----
-<div class="grid-slide-container">
-    <div class="grid-slide-header">
-    <header class="slide_header">
-        <h2>Project overview</h2>
-        <h3>apax.yml</h3>
-    </header>
-  </div>
-  <div class="grid-slide-text">
-    <p>First check out the apax.yml; this file is the project manifest, containing metadata and all dependencies required for this project.
-    Here you can define everything that is specific for this project, automate your workflows with scripts and tell the compiler, where the code is supposed to run.
-    </p>
-    <br>
-    <p>We will explore this file step by step in the following chapters.<br> For more information you can check out <a href="https://console.simatic-ax.siemens.io/docs/apax/yml">the documentation</a>
-  </div>
-  <div class="grid-slide-image" style="background-image: url(../img/apax_yml.svg); background-repeat: no-repeat; background-size: contain">
-  </div>
-</div>
----
-<div class="grid-slide-container">
-    <div class="grid-slide-header">
-    <header class="slide_header">
-        <h2>Building the project</h2>
-        <h3>Understanding dependencies</h3>
-    </header>
-  </div>
-  <div class="grid-slide-text">
-    <p>To build the project we first need to get all required tools (e.g. the compiler). Unlike other tools, where build tools are installed statically and need to be updated globally, AX is using an on-demand system, where each project references the version of the SDK (software development kit) it is built with.
-    <br>
-    In the apax.yml we can see which version we are referencing under the <code>devDependencies</code> section.
-    </p>
-  </div>
-  <div class="grid-slide-image">
-    <pre><code data-line-numbers="7-8" data-line-numbers data-trim data-noescape>
-    name: "my-app"
-    version: 0.0.0
-    type: app
-    <br>
-    ...
-    <br>
-    devDependencies:
-        "@ax/sdk": 2405.0.0
-    </code><pre>
-  </div>
-  <div class="grid-slide-ressources">
+      <div class="grid-slide-ressources">
     <ol>
       <li>apax package management: <a href="https://console.simatic-ax.siemens.io/docs/apax/yml#package-management">https://console.simatic-ax.siemens.io/docs/apax/yml#package-management</a></li>
-      <li>AX packages <a href="https://console.simatic-ax.siemens.io/docs/apax/packages">https://console.simatic-ax.siemens.io/docs/apax/packages</a></li>
     </ol>
   </div>
-</div>
----
+  <div class="grid-slide-image" style="background-image: url(../img/apax_install.gif); background-repeat: no-repeat; background-size: contain">
+  </div>
+
+----
+
 <div class="grid-slide-container">
-    <div class="grid-slide-header">
+  <div class="grid-slide-header">
     <header class="slide_header">
-        <h2>Building the project</h2>
-        <h3>Difference between dependencies and devDependencies</h3>
+      <h2>Using Apax</h2>
+      <h3>Adding Dependencies</h3>
     </header>
   </div>
   <div class="grid-slide-text">
-    <p>The SDK is not the only package you can reference, there are also libraries that you can use in your code. Here we encounter the difference between <code>dependencies</code> and <code>devDependencies</code> 
-    <br>
-    <p>You can think of creating a project like baking a cake; you need two categories of things:</p>
+    <p>To add a new dependency to your project, you can use the <code>apax add</code> command. For example, to add the <code>@ax/system-timer</code> package, you would use the following command:</p>
+    <pre><code>apax add @ax/system-timer</code></pre>
+    <p>When you run this command, the following happens:</p>
     <ul>
-        <li>Ingredients (e.g flour, sugar) are <strong>dependencies</strong> that you put in your cake. Same is true for your software libraries, you need your timer implementation in your final compiled app.</li>
-        <li>Baking utilities (e.g. mixer) are like <strong>devDependencies</strong>. You need them to create the cake, but you don't want to put the mixer in your cake.</li>
+      <li>The <code>@ax/system-timer</code> package is fetched from the registry.</li>
+      <li>The <code>apax.yml</code> has a new entry <code>dependencies:</code></li>
+      <pre><code>dependencies:
+      "@ax/system-timer": ^8.0.8</code></pre>
+      <li>The <code>apax-lock.json</code> file is updated to lock the version of the added package.</li>
     </ul>
   </div>
-  <div class="grid-slide-image">
-    <pre><code data-line-numbers="7-10" data-line-numbers data-trim data-noescape>
-    name: "my-app"
-    version: 0.0.0
-    type: app
-    <br>
-    ...
-    <br>
-    devDependencies:
-        "@ax/sdk": 2405.0.0
-    dependencies:
-        "@ax/system-timer": 7.0.17 
-    </code><pre>
+  <div class="grid-slide-image" style="background-image: url(../img/apax_add.gif); background-repeat: no-repeat; background-size: contain">
   </div>
 </div>
----
+
+<!-- ---
 
 <div class="grid-slide-container">
     <div class="grid-slide-header">
@@ -632,7 +627,8 @@ mouseWheel: true,
       <li>package-locks: <br><a href="https://docs.npmjs.com/cli/v6/configuring-npm/package-locks">https://docs.npmjs.com/cli/v6/configuring-npm/package-locks</a></li>
     </ol>
   </div>
-</div>
+</div> -->
+
 ---
 
 <div class="grid-slide-container">
@@ -670,7 +666,7 @@ mouseWheel: true,
   </div>
 </div>
 
----
+----
 
 <div class="grid-slide-container">
     <div class="grid-slide-header">
@@ -700,6 +696,7 @@ mouseWheel: true,
     </code><pre>
   </div>
 </div>
+
 ---
 
 <header class="slide_header">

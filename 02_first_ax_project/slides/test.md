@@ -1,5 +1,6 @@
-   <div class="grid-slide-yml">
-    <pre><code># General information
+# Test 
+---
+<!-- <code># General information
 name: "my-first-app"
 version: 1.0.0
 type: app
@@ -12,6 +13,5 @@ targets:
 # Dependencies
 devDependencies:
   "@ax/sdk": 2405.0.0
-</code></pre>
-  </div>
-</div>
+</code> -->
+----
