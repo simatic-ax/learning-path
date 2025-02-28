@@ -53,16 +53,16 @@ mouseWheel: true,
 
 <div class="grid-two-col-eq">
   <div class="flex-col justify-center">
-    <li>to get started, you need to have SIMATIC AX, apax and all its prerequisites installed. </li>
-    <li>in addition, you should know the basics on how to use AX Code.</li>
-    <li>basic knowledge of using the command line interface (CLI) is also required. This includes:</li>
+    <li>to get started, you need to have SIMATIC AX, apax and all its prerequisites installed </li>
+    <li>in addition, you should know the basics on how to use AX Code</li>
+    <li>basic knowledge of using the command line interface (CLI) is also required This includes:</li>
     <ul>
-      <li>how to open a CLI.</li>
-      <li>how to change directories.</li>
-      <li>how to execute commands.</li>
+      <li>how to open a CLI</li>
+      <li>how to change directories</li>
+      <li>how to execute commands</li>
     </ul>
     <br/>
-    <li>with this, you are set up to continue with this learning path.</li>
+    <li>with this, you are set up to continue with this learning path</li>
   </div>
 </div>
 ---
@@ -76,10 +76,9 @@ mouseWheel: true,
   <div class="grid-slide-text">
   <p>In this chapter, you will learn about:</p>
   <ul>
-    <li>what package management is and why it is important.</li>
-    <li>the role of apax in package management within Simatic AX.</li>
-    <li>key concepts such as dependencies, registries, and packages.</li>
-    <li>how to create and manage projects using apax.</li>
+    <li>what package management is and why it is important</li>
+    <li>the role of apax in package management within Simatic AX</li>
+    <li>key concepts such as dependencies, registries, and packages</li>
   </ul>
   </div>
   <div class="grid-slide-image" style="background-image: url(../img/apax_overview.svg); background-repeat: no-repeat">
@@ -96,9 +95,9 @@ mouseWheel: true,
     </header>
   </div>
   <div class="grid-slide-text">
-    <li>apax is the central tool within Simatic AX, acting as a package manager and a build tool.</li>
-    <li>apax is a command line interface tool that serves as a package manager and facilitator for each step in the development workflow.</li>
-    <li>it helps you create, build, and manage AX projects efficiently.</li>
+    <li>apax is the central tool within Simatic AX, acting as a package manager and a build tool</li>
+    <li>apax is a command line interface tool that serves as a package manager and facilitator for each step in the development workflow</li>
+    <li>it helps you create, build, and manage AX projects efficiently</li>
     <div class="definition"><code>apax</code> automates the process of retrieving and managing project dependencies, making it easier to develop and maintain AX projects.</div>
     <br>
   </div>
@@ -115,9 +114,9 @@ mouseWheel: true,
   </header>
   </div>
   <div class="grid-slide-text">
-  <li>a package manager is a tool that automates the process of installing, updating, and managing software packages and their dependencies.</li>
+  <li>a package manager is a tool that automates the process of installing, updating, and managing software packages and their dependencies</li>
   <br>
-  <li>it retrieves libraries and tools (packages) required for your project from central databases (registries) and downloads them to your PC.</li>
+  <li>it retrieves libraries and tools (packages) required for your project from central databases (registries) and downloads them to your PC</li>
   <div class="definition">a package manager simplifies the process of managing software dependencies and ensures that your project has all the necessary components to run correctly.</div>
   <p>common examples of package managers include npm for JavaScript, pip for Python, and apax for AX projects.</p>
   </div>
@@ -182,15 +181,15 @@ mouseWheel: true,
   <div class="grid-slide-text">
     <p>Packages in Apax use semantic versioning (semver): <code>MAJOR.MINOR.PATCH</code>.</p>
     <ul>
-      <li><strong>MAJOR:</strong> incompatible changes (e.g., <code>1.0.0</code> to <code>2.0.0</code>).</li>
-      <li><strong>MINOR:</strong> new features, backward-compatible (e.g., <code>1.0.0</code> to <code>1.1.0</code>).</li>
-      <li><strong>PATCH:</strong> bug fixes, backward-compatible (e.g., <code>1.0.0</code> to <code>1.0.1</code>).</li>
+      <li><strong>MAJOR:</strong> incompatible changes (e.g., <code>1.0.0</code> to <code>2.0.0</code>)</li>
+      <li><strong>MINOR:</strong> new features, backward-compatible (e.g., <code>1.0.0</code> to <code>1.1.0</code>)</li>
+      <li><strong>PATCH:</strong> bug fixes, backward-compatible (e.g., <code>1.0.0</code> to <code>1.0.1</code>)</li>
     </ul>
     <p>Examples:</p>
     <ul>
-      <li><code>@ax/system-timer@1.0.0</code> to <code>@ax/system-timer@2.0.0</code>: major update.</li>
-      <li><code>@ax/system-timer@1.0.0</code> to <code>@ax/system-timer@1.1.0</code>: minor update.</li>
-      <li><code>@ax/system-timer@1.0.0</code> to <code>@ax/system-timer@1.0.1</code>: patch update.</li>
+      <li><code>@ax/system-timer@1.0.0</code> to <code>@ax/system-timer@2.0.0</code>: major update</li>
+      <li><code>@ax/system-timer@1.0.0</code> to <code>@ax/system-timer@1.1.0</code>: minor update</li>
+      <li><code>@ax/system-timer@1.0.0</code> to <code>@ax/system-timer@1.0.1</code>: patch update</li>
     <p>the caret symbol <code>^</code> in version (e.g., <code>^1.0.0</code>) allows updates that do not change the first non-zero digit (e.g., <code>1.x.x</code>). Example <code>apax.yml</code> configuration:
     <pre><code>
     dependencies:
@@ -212,8 +211,8 @@ mouseWheel: true,
     <br>
     <p>There are two types of dependencies:</p>
     <ul>
-        <li><strong>dependencies:</strong> required for the project to run.</li>
-        <li><strong>devDependencies:</strong> required for development and testing but not for running the project.</li>
+        <li><strong>dependencies:</strong> required for the project to run</li>
+        <li><strong>devDependencies:</strong> required for development and testing but not for running the project</li>
     </ul>
     <div class="definition">dependencies are like ingredients in a recipe, while devDependencies are like the tools used to prepare the recipe.</div>
   </div>
@@ -232,8 +231,8 @@ mouseWheel: true,
   </div>
   <div class="grid-slide-text">
   <ul>
-    <li><strong>dependencies:</strong> these are essential for the project to run. They are like the ingredients in a recipe that you need to make the final dish. For example, a system-timer library is a dependency because it is required for the application to function.</li>
-    <li><strong>devDependencies:</strong> these are only needed during the development and testing phases but not for running the project. They are like the tools used to prepare the recipe, such as a mixer. For example, an SDK (Software Development Kit) is a devDependency because it is used to build and test the project but is not needed in the final application.</li>
+    <li><strong>dependencies:</strong> these are essential for the project to run. They are like the ingredients in a recipe that you need to make the final dish. For example, a system-timer library is a dependency because it is required for the application to function</li>
+    <li><strong>devDependencies:</strong> these are only needed during the development and testing phases but not for running the project. They are like the tools used to prepare the recipe, such as a mixer. For example, an SDK (Software Development Kit) is a devDependency because it is used to build and test the project but is not needed in the final application</li>
   </ul>
   </div>
   <div class="grid-slide-image" style="background-image: url(../img/apax_overview.svg); background-repeat: no-repeat; background-size: contain">
@@ -251,10 +250,10 @@ mouseWheel: true,
   </div>
   <div class="grid-slide-text">
   <ul>
-    <li>a registry is a central database where packages are stored and maintained. It acts as a repository from which package managers can retrieve the necessary packages. Registries can be public or private, and they help in managing and distributing packages efficiently.</li>
-    <li>for SIMATIC AX, the default registry does not need to be specified.</li>
-    <li>if you want to fetch packages from other registries like GitHub or NPM, you need to configure apax to recognize these registries.</li>
-    <li>a scope is a way to group related packages together, usually defined by a prefix, such as <code>@ax</code> for SIMATIC AX packages.</li>
+    <li>a registry is a central database where packages are stored and maintained. It acts as a repository from which package managers can retrieve the necessary packages. Registries can be public or private, and they help in managing and distributing packages efficiently</li>
+    <li>for SIMATIC AX, the default registry does not need to be specified</li>
+    <li>if you want to fetch packages from other registries like GitHub or NPM, you need to configure apax to recognize these registries</li>
+    <li>a scope is a way to group related packages together, usually defined by a prefix, such as <code>@ax</code> for SIMATIC AX packages</li>
   </ul>
   </div>
   <div class="grid-slide-image" style="background-image: url(../img/apax_registries.svg); background-repeat: no-repeat; background-size: contain">
@@ -328,9 +327,9 @@ mouseWheel: true,
   </div>
   <div class="grid-slide-text">
     <ul>
-      <li>with Apax, projects can be created based on so-called project templates.</li>
-      <li>each project template is essentially a package that is downloaded and unpacked as a new project using the command <code>apax create</code>.</li>
-      <li>the advantage is that there are not only fixed project templates; every user can create their own project templates and store them in a registry to make them available.</li>
+      <li>with Apax, projects can be created based on so-called project templates</li>
+      <li>each project template is essentially a package that is downloaded and unpacked as a new project using the command <code>apax create</code></li>
+      <li>the advantage is that there are not only fixed project templates; every user can create their own project templates and store them in a registry to make them available</li>
     </ul>
   </div>
   <div class="grid-slide-image" style="background-image: url(../img/create_project.gif); background-repeat: no-repeat; background-size: contain">
@@ -348,8 +347,8 @@ mouseWheel: true,
   <div class="grid-slide-text">
     <p>There are two main templates you can use with <code>apax create</code>:</p>
     <ul>
-      <li><strong>app:</strong> this template is used to create an application project. An application project is designed to run on a real runtime environment, such as an S7-1500 PLC.</li>
-      <li><strong>lib:</strong> this template is used to create a library project. A library project is intended to be published as a package and can be reused in applications or other libraries.</li>
+      <li><strong>app:</strong> this template is used to create an application project. An application project is designed to run on a real runtime environment, such as an S7-1500 PLC</li>
+      <li><strong>lib:</strong> this template is used to create a library project. A library project is intended to be published as a package and can be reused in applications or other libraries</li>
     </ul>
   </div>
   <div class="grid-slide-image" style="background-image: url(../img/create_project.gif); background-repeat: no-repeat; background-size: contain">
@@ -367,10 +366,10 @@ mouseWheel: true,
   <div class="grid-slide-text">
     <p>In addition to the <strong>app</strong> and <strong>lib</strong> templates, Apax offers several other templates to help you get started with different types of projects:</p>
     <ul>
-      <li><strong>empty</strong> a generic template for creating a minimal project setup.</li>
-      <li><strong>quickstart</strong> a template designed to help you quickly get started with Simatic AX.</li>
-      <li><strong>workspace</strong> a template for setting up a workspace with multiple projects.</li>
-      <li><strong>template</strong> a template for custom template that can be created and used based on specific user requirements.</li>
+      <li><strong>empty</strong> a generic template for creating a minimal project setup</li>
+      <li><strong>quickstart</strong> a template designed to help you quickly get started with Simatic AX</li>
+      <li><strong>workspace</strong> a template for setting up a workspace with multiple projects</li>
+      <li><strong>template</strong> a template for custom template that can be created and used based on specific user requirements</li>
     </ul>
     <p>These templates can be used to streamline the project creation process and ensure that you have the necessary structure and dependencies in place from the start.</p>
   </div>
@@ -411,9 +410,9 @@ mouseWheel: true,
   <div class="grid-slide-text">
     <p>After creating the project and opening it in AxCode, you will see the following structure:</p>
     <ul>
-      <li><strong>apax.yml:</strong> the project manifest file, which we will explore in the next slide.</li>
-      <li><strong>src/:</strong> contains all the source code for your project, including a <code>configuration.st</code> and a <code>program.st</code>, both written in Structured Text, a standardized language for automation systems. These files will be covered in detail in the chapter on ST Programming.</li>
-      <li><strong>test/:</strong> contains unit tests for your project.</li>
+      <li><strong>apax.yml:</strong> the project manifest file, which we will explore in the next slide</li>
+      <li><strong>src/:</strong> contains all the source code for your project, including a <code>configuration.st</code> and a <code>program.st</code>, both written in Structured Text, a standardized language for automation systems. These files will be covered in detail in the chapter on ST Programming</li>
+      <li><strong>test/:</strong> contains unit tests for your project</li>
     </ul>
     <p>This structure helps in organizing your project files and dependencies efficiently.</p>
   </div>
@@ -459,10 +458,10 @@ mouseWheel: true,
   <div class="grid-slide-text">
   <p>When you open the project with AX Code, you will find an <code>apax.yml</code> file. This file is the project manifest and contains important information about the project, such as:</p>
   <ul>
-    <li><strong>name:</strong> the name of the project.</li>
-    <li><strong>version:</strong> the version of the project.</li>
-    <li><strong>type:</strong> the type of the project (app, lib).</li>
-    <li><strong>devDependencies:</strong> the libraries and tools required for development and testing.</li>
+    <li><strong>name:</strong> the name of the project</li>
+    <li><strong>version:</strong> the version of the project</li>
+    <li><strong>type:</strong> the type of the project (app, lib)</li>
+    <li><strong>devDependencies:</strong> the libraries and tools required for development and testing</li>
   </ul>
   <p>This file helps in defining everything specific to the project, automating workflows with scripts, and specifying where the code is supposed to run.</p>
   </div>
@@ -487,11 +486,11 @@ mouseWheel: true,
   <div class="grid-slide-text">
     <p>The <code>type</code> field in the <code>apax.yml</code> file defines the nature of the project. The possible values are:</p>
     <ul>
-      <li><strong>app:</strong> an application that can be deployed to PLCs.</li>
-      <li><strong>lib:</strong> a library that can be reused by other packages.</li>
-      <li><strong>generic:</strong> a package that contains arbitrary files.</li>
-      <li><strong>catalog:</strong> a package that defines a set of catalogDependencies.</li>
-      <li><strong>workspace:</strong> the root of a multi-project workspace.</li>
+      <li><strong>app:</strong> an application that can be deployed to PLCs</li>
+      <li><strong>lib:</strong> a library that can be reused by other packages</li>
+      <li><strong>generic:</strong> a package that contains arbitrary files</li>
+      <li><strong>catalog:</strong> a package that defines a set of catalogDependencies</li>
+      <li><strong>workspace:</strong> the root of a multi-project workspace</li>
     </ul>
     <p>For now, we will focus on <strong>lib</strong> and <strong>app</strong> types, as they are essential for the daily work of automation engineers.</p>
   </div>
@@ -518,14 +517,14 @@ mouseWheel: true,
     <ul>
       <li><strong>app:</strong>
         <ul>
-          <li>a PLC application that can be loaded onto an S7-1500.</li>
-          <li>example: software for machine control.</li>
+          <li>a PLC application that can be loaded onto an S7-1500</li>
+          <li>example: software for machine control</li>
         </ul>
       </li>
       <li><strong>lib:</strong>
         <ul>
-          <li>a library from which a package can be built.</li>
-          <li>can be reused in other libraries or applications.</li>
+          <li>a library from which a package can be built</li>
+          <li>can be reused in other libraries or applications</li>
         </ul>
       </li>
     </ul>
@@ -544,10 +543,10 @@ mouseWheel: true,
   <div class="grid-slide-text">
     <p>The <code>devDependencies</code> field in the <code>apax.yml</code> file lists the tools and libraries required for developing and testing your project. By default, it includes the latest SDK (Software Development Kit).</p>
     <ul>
-      <li>an SDK is a collection of tools necessary for developing, loading, and debugging PLC software.</li>
-      <li>for example, it includes the ST Compiler and the SIMATIC Loader.</li>
-      <li>one of the advantages of using package management is the ability to switch to a newer or older SDK version without needing to migrate the project.</li>
-      <li>this flexibility ensures that you can always use the most suitable tools for your development needs.</li>
+      <li>an SDK is a collection of tools necessary for developing, loading, and debugging PLC software</li>
+      <li>for example, it includes the ST Compiler and the SIMATIC Loader</li>
+      <li>one of the advantages of using package management is the ability to switch to a newer or older SDK version without needing to migrate the project</li>
+      <li>this flexibility ensures that you can always use the most suitable tools for your development needs</li>
     </ul>
   </div>
   <div class="grid-slide-image" style="background-image: url(../img/apaxyml.png); background-repeat: no-repeat; background-size: contain">
@@ -566,8 +565,8 @@ mouseWheel: true,
   <div class="grid-slide-text">
     <p>The <code>targets</code> field in the <code>apax.yml</code> file specifies the target platforms for your project. Currently, the possible values are <strong>1500</strong> and <strong>LLVM</strong>.</p>
     <ul>
-      <li><strong>1500:</strong> this target is used for S7-1500 PLCs.</li>
-      <li><strong>LLVM:</strong> this target is used for the AxUnit Testing Framework.</li>
+      <li><strong>1500:</strong> this target is used for S7-1500 PLCs</li>
+      <li><strong>LLVM:</strong> this target is used for the AxUnit Testing Framework</li>
     </ul>
     <p>By defining the target, you ensure that the project is compiled and built for the correct platform, whether it's for deployment on a PLC or for running unit tests.</p>
   </div>
@@ -587,9 +586,9 @@ mouseWheel: true,
     <pre><code>apax install</code></pre>
     <br>
     <ul>
-      <li>this command downloads all dependencies and devDependencies listed in the apax.yml file to the .apax folder.</li>
-      <li>it creates an apax-lock.json file with the installed packages and their versions.</li>
-      <li>this ensures your project has all necessary components and correct dependency versions.</li>
+      <li>this command downloads all dependencies and devDependencies listed in the apax.yml file to the .apax folder</li>
+      <li>it creates an apax-lock.json file with the installed packages and their versions</li>
+      <li>this ensures your project has all necessary components and correct dependency versions</li>
     </ul>
   </div>
       <div class="grid-slide-ressources">
@@ -614,11 +613,11 @@ mouseWheel: true,
     <pre><code>apax add @ax/system-timer</code></pre>
     <p>When you run this command, the following happens:</p>
     <ul>
-      <li>the <code>@ax/system-timer</code> package is fetched from the registry.</li>
+      <li>the <code>@ax/system-timer</code> package is fetched from the registry</li>
       <li>the <code>apax.yml</code> has a new entry <code>dependencies:</code></li>
       <pre><code>dependencies:
       "@ax/system-timer": ^8.0.8</code></pre>
-      <li>the <code>apax-lock.json</code> file is updated to lock the version of the added package.</li>
+      <li>the <code>apax-lock.json</code> file is updated to lock the version of the added package</li>
     </ul>
   </div>
   <div class="grid-slide-image" style="background-image: url(../img/apax_add.gif); background-repeat: no-repeat; background-size: contain">
@@ -667,9 +666,26 @@ mouseWheel: true,
     </ol>
   </div>
 </div> -->
-
 ---
-
+<div class="grid-slide-container">
+  <div class="grid-slide-header">
+  <header class="slide_header">
+    <h2>Building the project</h2>
+    <h3>Overview</h3>
+  </header>
+  </div>
+  <div class="grid-slide-text">
+  <p>In this section, you will learn about:</p>
+  <ul>
+    <li>how to build the project using Apax: <code>apax build</code></li>
+    <li>the role of the Structured Text compiler (stc) in the build process</li>
+    <li>where to find the generated binaries</li>
+  </ul>
+  </div>
+  <div class="grid-slide-image" style="background-image: url(../img/apax_build_overview.svg); background-repeat: no-repeat; background-size: contain">
+  </div>
+</div>
+----
 <div class="grid-slide-container">
     <div class="grid-slide-header">
     <header class="slide_header">
@@ -736,6 +752,36 @@ mouseWheel: true,
   </div>
 </div>
 
+----
+<div class="grid-slide-container">
+  <div class="grid-slide-header">
+    <header class="slide_header">
+      <h2>Getting Started</h2>
+      <h3>Complete Workflow</h3>
+    </header>
+  </div>
+  <div class="grid-slide-text">
+    <p>For a detailed guide on the complete workflow from creating a project to downloading it onto a PLC, refer to the <strong>Getting Started</strong> guide.</p>
+    <p>In the <strong>Getting Started</strong> guide, you will learn about:</p>
+    <ul>
+      <li>creating a new project using Apax templates</li>
+      <li>installing dependencies with <code>apax install</code></li>
+      <li>building the project using <code>apax build</code></li>
+      <li>downloading the compiled binary to a PLC</li>
+      <li>monitor and debug the application</li>
+    </ul>
+  </div>
+  <div class="grid-slide-ressources">
+    <ol>
+      <li>Getting Started: <br><a href="https://console.simatic-ax.siemens.io/docs/get-started/guides_overview">https://console.simatic-ax.siemens.io/docs/get-started/guides_overview</a></li>
+    </ol>
+  </div>
+  <div class="grid-slide-image" style="background-image: url(../img/getting_started_workflow.svg); background-repeat: no-repeat; background-size: contain">
+  </div>
+</div>
+
+
+
 ---
 
 <header class="slide_header">
@@ -748,12 +794,12 @@ mouseWheel: true,
   <div class="flex-col justify-center">
     <p>In this section you learned about...</p>
     <ul>
-      <li>what apax is.</li>
+      <li>what apax is</li>
       <li>basics of package management</li>
-      <li>how to create a project from a template and its basic structure.</li>
-      <li>how to build the project.</li>
+      <li>how to create a project from a template and its basic structure</li>
+      <li>how to build the project</li>
     </ul>
     <br>
-    <p>you can now create your own project and continue with the next section.</p>
+    <p>you can now create your own project and continue with the next section</p>
   </div>
 </div>
