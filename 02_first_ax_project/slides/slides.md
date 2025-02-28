@@ -172,9 +172,33 @@ mouseWheel: true,
   <div class="grid-slide-image" style="background-image: url(../img/apax_overview.svg); background-repeat: no-repeat; background-size: contain">
   </div>
 </div>
-
 ----
-x
+<div class="grid-slide-ressources">
+  <div class="grid-slide-header">
+    <header class="slide_header">
+      <h2>Introduction to Package Management</h2>
+      <h3>Understanding Package Versions</h3>
+    </header>
+  </div>
+  <div class="grid-slide-text">
+    <p>Packages in Apax use semantic versioning (semver): <code>MAJOR.MINOR.PATCH</code>.</p>
+    <ul>
+      <li><strong>MAJOR:</strong> Incompatible changes (e.g., <code>1.0.0</code> to <code>2.0.0</code>).</li>
+      <li><strong>MINOR:</strong> New features, backward-compatible (e.g., <code>1.0.0</code> to <code>1.1.0</code>).</li>
+      <li><strong>PATCH:</strong> Bug fixes, backward-compatible (e.g., <code>1.0.0</code> to <code>1.0.1</code>).</li>
+    </ul>
+    <p>Examples:</p>
+    <ul>
+      <li><code>@ax/system-timer@1.0.0</code> to <code>@ax/system-timer@2.0.0</code>: Major update.</li>
+      <li><code>@ax/system-timer@1.0.0</code> to <code>@ax/system-timer@1.1.0</code>: Minor update.</li>
+      <li><code>@ax/system-timer@1.0.0</code> to <code>@ax/system-timer@1.0.1</code>: Patch update.</li>
+    <p>The caret symbol <code>^</code> in version (e.g., <code>^1.0.0</code>) allows updates that do not change the first non-zero digit (e.g., <code>1.x.x</code>). Example <code>apax.yml</code> configuration:
+    <pre><code>
+    dependencies:
+      "@ax/system-timer": ^1.0.0
+    </code></pre>
+    </p>
+</div>
 ----
 
 <div class="grid-slide-container">
@@ -277,6 +301,23 @@ x
   <p>This command will display the current version of Apax installed on your system.</p>
   </div>
   <div class="grid-slide-image" style="background-image: url(../img/apax_version.gif); background-repeat: no-repeat; background-size: contain">
+  </div>
+</div>
+
+----
+<div class="grid-slide-container">
+  <div class="grid-slide-header">
+    <header class="slide_header">
+      <h2>Using Apax</h2>
+      <h3>Logging into a Registry</h3>
+    </header>
+  </div>
+  <div class="grid-slide-text">
+    <p>Before you can fetch packages from a registry, you need to log in. This is done using the <code>apax login</code> command. Since we are not using any external registries at this point, we will log in to the <code>@ax</code> registry.</p>
+    <pre><code>apax login</code></pre>
+    <p>This command will login for the <code>@ax</code> registry. Once logged in, you will be able to fetch and manage packages from this registry.</p>
+  </div>
+  <div class="grid-slide-image" style="background-image: url(../img/apax_login.gif); background-repeat: no-repeat; background-size: contain">
   </div>
 </div>
 ----
