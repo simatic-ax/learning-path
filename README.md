@@ -13,12 +13,17 @@ Click on `Code` in the gitlab repository overview and select one of the archive 
 
 ![Download archive](./assets/img/download_archive.png)
 
+> **Note:** The chapter `02_first_ax_project` has moved to a separate repository. You can access the repository and the presentation via the following links:
+> - [Repository: simatic-ax/axlp_apax_and_project_creation](https://github.com/simatic-ax/axlp_apax_and_project_creation)
+> - [Presentation: GitHub Pages](https://simatic-ax.github.io/axlp_apax_and_project_creation/#/)
+
 ## Prerequisites:
 For the interactive slides, you need to have a few software packages installed to your PC:
 - nodejs (which also installs npm) [here you can download the installer for node.js for Windows](https://nodejs.org/en)
 - Reveal.md (how to install it, is described below)
 
 You can install Reveal.md using the command in a terminal
+
 
 ```
 npm install --global reveal-md
