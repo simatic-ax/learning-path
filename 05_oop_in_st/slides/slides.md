@@ -271,7 +271,7 @@ A FUNCTION BLOCK is similar to a CLASS with one method
 |can be instantiated|yes|yes|
 |occupy memory|yes|yes|
 |method supported|no|yes|
-|access modifier|yes|yes|
+|access modifier[1]|yes|yes|
 |can be inherited|no|yes|
 
 <small>[1] In SCL on TIA Portal they're always public</small>
