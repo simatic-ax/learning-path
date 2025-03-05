@@ -202,7 +202,7 @@ In this time, the software costs exceeded the hardware costs. In the 80ties, OOP
 ----
 ## Instantiate a class in ST
 
-A class can be instanced just like any function block
+A class can be instantiated just like any function block
 
 ```C#
     VAR
@@ -213,7 +213,7 @@ A class can be instanced just like any function block
 #
 #### Remarks
 
->Classes can not instantiated in:
+>Classes can not be instantiated in:
 >
 >* **VAR_TEMP** section
 >* **VAR_INPUT** section
@@ -221,7 +221,7 @@ A class can be instanced just like any function block
 
 >* In ST, classes can only be instantiated during compile time.
 >* In opposite to other languages, ST can not create instances during runtime.
->* There are no constructors for classes in ST
+>* There are no constructors for classes in ST.
 ----
 <br>
 
@@ -284,11 +284,9 @@ A FUNCTION BLOCK is similar to a CLASS with one method
 One of the main concepts of OOP is encapsulation
 
 - The state of a object is stored in member variables
-- In a properly designed object, the state can be changed its methods.
+- In a properly designed object, the state can only be changed by its methods.
 - This is achieved by providing public methods that operate on the values of private member variables.
-- Encapsulation ensures that private information
- - is not exposed
- - and cannot be modified except through calls of methods
+- Encapsulation ensures that private information is not exposed and cannot be modified except through calls of methods
 
 ----
 
@@ -305,7 +303,7 @@ One of the main concepts of OOP is encapsulation
     myValveInstance.isOpen := TRUE;
     myValveInstance.isClosed := TRUE;
     </pre>
-    <p>To prevent this, we want to encapsulate all internal logic to be inaccessible from the outside and the user should only control the state using the defined methods. This can be done, by using access modifier; in </p>
+    <p>To prevent this, we want to encapsulate the internal state to be inaccessible from the outside and the user should only control the state using the defined methods. This can be done, by using access modifiers. </p>
   </div>
   <div class="grid-slide-image">
     <pre>
@@ -378,11 +376,12 @@ _accountNumber_ and _balance_ are private attributes of the BankAccount class an
 ```C#
 // Declaration of the BankAccount class
 Class BankAccount
-VAR
-// Private attributes
-    accountNumber : INT;
-    balance : REAL;
-END_VAR
+    VAR
+    // Private attributes
+        accountNumber : INT;
+        balance : REAL;
+    END_VAR
+END_CLASS
 ```
 ----
 ## Public Methods:
@@ -393,20 +392,20 @@ _Deposit_ method adds a valid amount to the balance and returns TRUE if the depo
 
 ```C#
 // Public methods
-METHOD GetBalance : REAL
-VAR_OUTPUT
-    GetBalance : REAL;
-END_VAR
+METHOD PUBLIC GetBalance : REAL
+    VAR_OUTPUT
+        GetBalance : REAL;
+    END_VAR
     GetBalance := balance;
 END_METHOD
 
-METHOD Deposit : BOOL
-VAR_INPUT
-    amount : REAL;
-END_VAR
-VAR_OUTPUT
-    Deposit : BOOL;
-END_VAR
+METHOD PUBLIC Deposit : BOOL
+    VAR_INPUT
+        amount : REAL;
+    END_VAR
+    VAR_OUTPUT
+        Deposit : BOOL;
+    END_VAR
     IF amount > 0 THEN
         balance := balance + amount;
         Deposit := TRUE;
@@ -418,13 +417,13 @@ END_METHOD
 ----
 _Withdraw_ method subtracts a valid amount from the balance and returns TRUE if the withdrawal was successful, otherwise FALSE.
 ```C#
-METHOD Withdraw : BOOL
-VAR_INPUT
-    amount : REAL;
-END_VAR
-VAR_OUTPUT
-    Withdraw : BOOL;
-END_VAR
+METHOD PUBLIC Withdraw : BOOL
+    VAR_INPUT
+        amount : REAL;
+    END_VAR
+    VAR_OUTPUT
+        Withdraw : BOOL;
+    END_VAR
     IF (amount > 0) AND (amount <= balance) THEN
         balance := balance - amount;
         Withdraw := TRUE;
@@ -440,18 +439,15 @@ END_METHOD
 The Init method is used to set up the initial values of accountNumber and balance when an instance of the BankAccount class is created. This method can act as a substitute for a constructor.
 ```C#
 // Initialization method to set up initial values
-METHOD Init
-VAR_INPUT
-    initAccountNumber : INT;
-    initBalance : REAL;
-END_VAR
+METHOD PUBLIC Init
+    VAR_INPUT
+        initAccountNumber : INT;
+        initBalance : REAL;
+    END_VAR
     accountNumber := initAccountNumber;
     balance := initBalance;
 END_METHOD
-END_CLASS
-
 ```
-
 ----
 <br>
 
