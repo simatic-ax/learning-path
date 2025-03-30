@@ -10,7 +10,7 @@ targets:
   - llvm
 # Dependencies
 devDependencies:
-  "@ax/sdk": 2405.0.0
+  "@ax/sdk": 2411.2.0
 
 # Project variables
 variables:

@@ -8,4 +8,4 @@ scripts:
   present: reveal-md ./slides/slides.md --theme ./slides/theme/simatic-ax.css --watch
   
 dependencies:
-  "@ax/sdk": 2405.0.0
+  "@ax/sdk": 2411.2.0

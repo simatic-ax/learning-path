@@ -7,6 +7,6 @@ variables:
   APAX_BUILD_ARGS:
     - "--debug" # Generate debug information for target "1500"
 devDependencies:
-  "@ax/sdk": 2405.0.0
+  "@ax/sdk": 2411.2.0
 dependencies:
   "@ax/system-timer": ^7.0.17

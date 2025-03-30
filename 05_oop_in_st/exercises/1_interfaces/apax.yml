@@ -16,7 +16,7 @@ installStrategy: strict
 apaxVersion: 3.2.1
 # Dependencies
 devDependencies:
-  "@ax/sdk": 2411.0.0
+  "@ax/sdk": 2411.2.0
 
 # Environment variables
 variables:
