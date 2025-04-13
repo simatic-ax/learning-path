@@ -9,4 +9,4 @@ variables:
 devDependencies:
   "@ax/sdk": 2405.0.0
 dependencies:
-  "@ax/system-timer": ^7.0.17
+  "@ax/system-timer": ^10.0.0

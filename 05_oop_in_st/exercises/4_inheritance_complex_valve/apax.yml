@@ -27,4 +27,4 @@ variables:
 files:
   - bin
 dependencies:
-  "@ax/system-timer": ^8.0.7
+  "@ax/system-timer": ^10.0.0
