@@ -1,11 +1,11 @@
 {
-  "name": "timer_for_tank",
-  "version": "0.0.1",
+  "name": "3_parametrized_tests",
+  "version": "1.0.0",
   "lockFileVersion": "2",
   "installStrategy": "strict",
   "root": {
-    "name": "timer_for_tank",
-    "version": "0.0.1",
+    "name": "3_parametrized_tests",
+    "version": "1.0.0",
     "devDependencies": {
       "@ax/sdk": "2504.0.0"
     },

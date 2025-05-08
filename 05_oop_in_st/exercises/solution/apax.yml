@@ -11,12 +11,9 @@ description: <Description for your library>
 targets:
   - "1500"
   - llvm
-# Install settings
-installStrategy: strict
-apaxVersion: 3.2.1
 # Dependencies
 devDependencies:
-  "@ax/sdk": 2411.0.0
+  "@ax/sdk": 2504.0.0
 
 # Environment variables
 variables:
@@ -26,3 +23,5 @@ variables:
 # Files, which will be shipped with the library
 files:
   - bin
+catalogs:
+  "@ax/simatic-ax": ^2504.0.0
