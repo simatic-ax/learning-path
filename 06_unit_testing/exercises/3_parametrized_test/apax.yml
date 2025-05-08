@@ -10,7 +10,7 @@ targets:
   - llvm
 # Dependencies
 devDependencies:
-  "@ax/sdk": 2405.0.0
+  "@ax/sdk": 2504.0.0
 
 # Project variables
 variables:
@@ -24,9 +24,10 @@ variables:
 # Apax scripts
 scripts:
   # call 'apax load' to download the builded program to the target. An 'apax build' might be required upfront
-  load: apax sld load --input $BIN_FOLDER --target $IP_ADDRESS --restart
-    --accept-security-disclaimer --log debug
+  load: apax sld load --input $BIN_FOLDER --target $IP_ADDRESS --restart --accept-security-disclaimer --log debug
   # call 'apax dlplc' to build and download the application to the target
   dlplc:
     - apax build
     - apax load
+catalogs:
+  "@ax/simatic-ax": ^2504.0.0
