@@ -29,6 +29,7 @@ Agenda
     <p>With this you are set up to continue with this learning path.</p>
   </div>
 </div>
+
 ---
 
 <header class="slide_header">
@@ -177,28 +178,55 @@ Agenda
     <h3>Set Up PLC Access Protection</h3>
 </header>
 
-<div class="grid-two-col-eq">
-    <div class="flex-col justify-center">
-        <p>
-        In order to be able to create hardware for a plc, the first step we need to take is how the hardware configuration is described in a textual declaration for a IT like context.</p>
-        <br>
-            <p>Security consists of two aspects: Authentication and Authorization:
-                <ul>
-                    <li>Authentication ensures that you are communicating with the expected PLC</li>
-                    <li>Authorization ensures operations are only performed by users permitted to do so.</li>
-                </ul>
-            </p>
-        <br>
-        <p>The devices and dependent modules, including all properties, can be easily defined and set.</p>
-    </div>
-    <img style="height: 400px; width: auto" src="./img/hwl-yml-file.png" />
+
 </div>
 
-<div class="grid-slide-ressources">
-    <ol>
-      <li>Informations about: <br><a href="https://console.simatic-ax.siemens.io/docs/hw/security/authorization/plc-access-protection">PLC Access Protection</a></li>
-    </ol>
+----
+
+<header class="slide_header">
+    <h3>The PLC SecurityConfiguration File</h3>
+</header>
+
+
 </div>
+
+---
+
+
+
+<header class="slide_header">
+    <h2>IT Like Hardware Engineer</h2>
+    <h3>Integration of additional hardware in project</h3>
+</header>
+
+
+----
+
+<header class="slide_header">
+    <h3>Siemens Hardware over Support Packages</h3>
+</header>
+
+
+</div>
+
+----
+
+<header class="slide_header">
+    <h3>Using of GSD Files</h3>
+</header>
+
+
+</div>
+
+----
+
+<header class="slide_header">
+    <h3>Overview what Hardware is installed in project</h3>
+</header>
+
+
+</div>
+
 
 ---
 
@@ -207,24 +235,146 @@ Agenda
     <h3>Using of Templates</h3>
 </header>
 
+----
+
+<header class="slide_header">
+    <h3>Templates form GSD</h3>
+</header>
+
+
+</div>
+
+----
+
+<header class="slide_header">
+    <h3>Templates form hardware support packages</h3>
+</header>
+
+
+</div>
+
+----
+
+<header class="slide_header">
+    <h3>Using of placeholder</h3>
+</header>
+
+
+</div>
+
+----
+
+<header class="slide_header">
+    <h3>Apply templates</h3>
+</header>
+
+
+</div>
 
 ---
 
 <header class="slide_header">
     <h2>IT Like Hardware Engineer</h2>
-    <h3>Integration of GSDMLs</h3>
+    <h3>User Managment UMAC</h3>
+</header>
+
+
+----
+
+<header class="slide_header">
+    <h3>Define Users and Roles in hwl.yml</h3>
+</header>
+
+
+</div>
+
+----
+
+<header class="slide_header">
+    <h3>Set Password and manage user over command line of hwc</h3>
+</header>
+
+
+</div>
+
+---
+
+<header class="slide_header">
+    <h2>IT Like Hardware Engineer</h2>
+    <h3>Hardware basic setting assignment</h3>
 </header>
 
 
 ---
 
-
 <header class="slide_header">
     <h2>IT Like Hardware Engineer</h2>
-    <h3>User Managment</h3>
+    <h3>Constante Values that will be used in software programm</h3>
+</header>
+
+----
+
+<header class="slide_header">
+    <h3>Io Addresses</h3>
 </header>
 
 
+</div>
+
+----
+
+<header class="slide_header">
+    <h3>Hw Identifiers</h3>
+</header>
+
+
+</div>
+
+
+---
+
+<header class="slide_header">
+    <h2>IT Like Hardware Engineer</h2>
+    <h3>Diagnostic and hardware functions</h3>
+</header>
+
+
+----
+
+<header class="slide_header">
+    <h3>Hw Overview</h3>
+</header>
+
+
+</div>
+
+
+----
+
+<header class="slide_header">
+    <h3>PLC Info</h3>
+</header>
+
+
+</div>
+
+----
+
+<header class="slide_header">
+    <h3>Alarmserver</h3>
+</header>
+
+
+</div>
+
+----
+
+<header class="slide_header">
+    <h3>Performance Informations</h3>
+</header>
+
+
+</div>
 
 ---
 
