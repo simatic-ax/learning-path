@@ -207,29 +207,6 @@ Agenda
     <h3>Using of Templates</h3>
 </header>
 
-<div class="grid-two-col-eq">
-    <div class="flex-col justify-center">
-        <p>
-        In order to be able to create hardware for a plc, the first step we need to take is how the hardware configuration is described in a textual declaration for a IT like context.</p>
-        <br>
-            <p>The format in which the hardware configuration is created is Json. Json has the following advantages as a format:
-                <ul>
-                    <li>text based</li>
-                    <li>readable by humans</li>
-                    <li>can be easily edited with a text editor</li>
-                </ul>
-            </p>
-        <br>
-        <p>The devices and dependent modules, including all properties, can be easily defined and set.</p>
-    </div>
-    <img style="height: 400px; width: auto" src="./img/hwl-json-file.png" />
-</div>
-
-<div class="grid-slide-ressources">
-    <ol>
-      <li>More informations about: <br><a href="https://console.simatic-ax.siemens.io/docs/hw/language/templates">Templates</a></li>
-    </ol>
-</div>
 
 ---
 
@@ -238,29 +215,6 @@ Agenda
     <h3>Integration of GSDMLs</h3>
 </header>
 
-<div class="grid-two-col-eq">
-    <div class="flex-col justify-center">
-        <p>
-        In order to be able to create hardware for a plc, the first step we need to take is how the hardware configuration is described in a textual declaration for a IT like context.</p>
-        <br>
-            <p>The format in which the hardware configuration is created is Json. Json has the following advantages as a format:
-                <ul>
-                    <li>text based</li>
-                    <li>readable by humans</li>
-                    <li>can be easily edited with a text editor</li>
-                </ul>
-            </p>
-        <br>
-        <p>The devices and dependent modules, including all properties, can be easily defined and set.</p>
-    </div>
-    <img style="height: 400px; width: auto" src="./img/hwl-json-file.png" />
-</div>
-
-<div class="grid-slide-ressources">
-    <ol>
-      <li>More informations about: <br><a href="https://console.simatic-ax.siemens.io/docs/hw/language/gsd-devices-and-modules">GSDMLs in AX</a></li>
-    </ol>
-</div>
 
 ---
 
@@ -270,29 +224,6 @@ Agenda
     <h3>User Managment</h3>
 </header>
 
-<div class="grid-two-col-eq">
-    <div class="flex-col justify-center">
-        <p>
-        In order to be able to create hardware for a plc, the first step we need to take is how the hardware configuration is described in a textual declaration for a IT like context.</p>
-        <br>
-            <p>The format in which the hardware configuration is created is Json. Json has the following advantages as a format:
-                <ul>
-                    <li>text based</li>
-                    <li>readable by humans</li>
-                    <li>can be easily edited with a text editor</li>
-                </ul>
-            </p>
-        <br>
-        <p>The devices and dependent modules, including all properties, can be easily defined and set.</p>
-    </div>
-    <img style="height: 400px; width: auto" src="./img/hwl-json-file.png" />
-</div>
-
-<div class="grid-slide-ressources">
-    <ol>
-      <li>More informations about: <br><a href="https://console.simatic-ax.siemens.io/docs/hw/security/authorization/user-management">User Management Access Control (UMAC)</a></li>
-    </ol>
-</div>
 
 
 ---
