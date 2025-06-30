@@ -64,7 +64,7 @@ Agenda
         <p>
         In order to be able to create hardware for a plc, the first step we need to take is how the hardware configuration is described in a textual declaration for a IT like context.</p>
         <br>
-            <p>The format in which the hardware configuration is created is Json. Json has the following advantages as a format:
+            <p>The format in which the hardware configuration is created is YML. YML has the following advantages as a format:
                 <ul>
                     <li>text based</li>
                     <li>readable by humans</li>
@@ -74,12 +74,12 @@ Agenda
         <br>
         <p>The devices and dependent modules, including all properties, can be easily defined and set.</p>
     </div>
-    <img style="height: 400px; width: auto" src="./img/hwl-json-file.png" />
+    <img style="height: 400px; width: auto" src="./img/hwl-yml-file.png" />
 </div>
 
 <div class="grid-slide-ressources">
     <ol>
-      <li>Definition of JSON: <br><a href="https://ecma-international.org/publications-and-standards/standards/ecma-404/">ECMA-404</a></li>
+      <li>Information to YML format: <br><a href="https://en.wikipedia.org/wiki/YAML">YAML</a></li>
     </ol>
 </div>
 
@@ -162,7 +162,7 @@ Agenda
         <br>
         <p>The devices and dependent modules, including all properties, can be easily defined and set.</p>
     </div>
-    <img style="height: 400px; width: auto" src="./img/hwl-json-file.png" />
+    <img style="height: 400px; width: auto" src="./img/hwl-yml-file.png" />
 </div>
 
 <div class="grid-slide-ressources">
@@ -191,7 +191,7 @@ Agenda
         <br>
         <p>The devices and dependent modules, including all properties, can be easily defined and set.</p>
     </div>
-    <img style="height: 400px; width: auto" src="./img/hwl-json-file.png" />
+    <img style="height: 400px; width: auto" src="./img/hwl-yml-file.png" />
 </div>
 
 <div class="grid-slide-ressources">
