@@ -338,6 +338,8 @@ Agenda
     <h3>Diagnostic and hardware functions</h3>
 </header>
 
+siehe campture 8
+
 
 ----
 
@@ -349,32 +351,7 @@ Agenda
 </div>
 
 
-----
 
-<header class="slide_header">
-    <h3>PLC Info</h3>
-</header>
-
-
-</div>
-
-----
-
-<header class="slide_header">
-    <h3>Alarmserver</h3>
-</header>
-
-
-</div>
-
-----
-
-<header class="slide_header">
-    <h3>Performance Informations</h3>
-</header>
-
-
-</div>
 
 ---
 
