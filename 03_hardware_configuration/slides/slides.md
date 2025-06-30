@@ -206,6 +206,7 @@ Agenda
     <h3>Siemens Hardware over Support Packages</h3>
 </header>
 
+<img style="height: 400px; width: auto" src="./img/Hardware_Support_Package.png" />
 
 </div>
 
@@ -224,6 +225,7 @@ Agenda
     <h3>Overview what Hardware is installed in project</h3>
 </header>
 
+<img style="height: 400px; width: auto" src="./img/get-supported-devices.png" />
 
 </div>
 
@@ -285,6 +287,7 @@ Agenda
     <h3>Define Users and Roles in hwl.yml</h3>
 </header>
 
+<img style="height: 400px; width: auto" src="./img/UMAC_in_hwl_yml.png" />
 
 </div>
 
