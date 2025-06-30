@@ -6,13 +6,14 @@ Agenda
 | 00 | Introduction to the workshop |
 | 01 | Introduction to AX Code IDE |
 | 02 | Get started with your first AX Project |
-| 03 | Introduction to ST Programming |
-| 04 | Loading and Debugging |
-| 05 | OOP Elements of ST |
-| 06 | Unit Testing |
-| 07 | Tools for commissioning |
-| 08 | Package management |
-| **09** | **Hardware Configuration** |
+| **03** | **Hardware Configuration** |
+| 04 | Introduction to ST Programming |
+| 05 | Loading and Debugging |
+| 06 | OOP Elements of ST |
+| 07 | Unit Testing |
+| 08 | Tools for commissioning |
+| 09 | Package management |
+
 
 ---
 
@@ -118,22 +119,20 @@ Agenda
     <h3>Security by default</h3>
 </header>
 
-<div class="grid-two-col-eq">
-    <div class="flex-col justify-center">
-        <p>
-        In order to be able to create hardware for a plc, the first step we need to take is how the hardware configuration is described in a textual declaration for a IT like context.</p>
-        <br>
-            <p>Security consists of two aspects: Authentication and Authorization:
-                <ul>
-                    <li>Authentication ensures that you are communicating with the expected PLC</li>
-                    <li>Authorization ensures operations are only performed by users permitted to do so.</li>
-                </ul>
-            </p>
-        <br>
-        <p>The devices and dependent modules, including all properties, can be easily defined and set.</p>
-    </div>
-    <img style="height: 400px; width: auto" src="./img/hwl-json-file.png" />
-</div>
+  <div class="flex-col justify-center">
+     <p>Like all Siemens software, Simatic Ax also represents the principle of "Security by default". 
+        Accordingly, the security aspects must be set up in the project before loading the PLC.</p>
+    <br>
+       <p>Security consists of two aspects: Authentication and Authorization:
+          <ul>
+              <li>Authentication ensures that you are communicating with the expected PLC</li>
+              <li>Authorization ensures operations are only performed by users permitted to do so.</li>
+          </ul>
+       </p>
+    <br>
+  </div>
+
+<img style="height: auto; width: auto" src="./img/securityPrinciples.png" />
 
 <div class="grid-slide-ressources">
     <ol>
