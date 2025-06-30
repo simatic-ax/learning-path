@@ -12,9 +12,23 @@ mouseWheel: true,
 
 ---
 
-# Overview
-In this introductory course you will learn everything required to get started with the new engineering environment **SIMATIC AX**.
-Regardless if you are coming from TIA Portal or are starting new in the SIMATIC environment, this learning path will guide you through the journey.
+<h1>Overview</h1>
+
+
+<div class="flex-col justify-center">
+  <p>
+    In this introductory course you will learn everything required to get started with the new engineering environment <strong>SIMATIC AX</strong>. Regardless if you are coming from TIA Portal or are starting new in the SIMATIC environment this learning path will guide you through the journey.
+  </p>
+  </br>
+  <p>
+    To navigate between chapters (pages), please use the left/right arrows. To see more chapter content, use the up/down arrows when available. For a detailed overview of the controls, press F1 at any time of the presenation.
+  <p/>
+  </br>
+  <p>
+    To exit <strong>apax present</strong> in the terminal, please use "ctrl" + "c".
+  </p>
+</div>  
+
 
 ---
 
@@ -92,7 +106,7 @@ Regardless if you are coming from TIA Portal or are starting new in the SIMATIC 
       </code>
     </pre>
     <br>
-    <q><strong style="color: red">Note that this will install third party software and is done on your own risk</strong></q>
+    <q><strong style="color: red">Note that this will install "third-party" software and is done at your own risk</strong></q>
     <br>
     <p>You can then start the presentation by navigating to the module directory (e.g. 00_introduction) in the commandline and entering:</p>
     <br>
@@ -131,7 +145,7 @@ Regardless if you are coming from TIA Portal or are starting new in the SIMATIC 
   <h3>Exercises</h3>
 </header>
   <div class="flex-col justify-center">
-    <p>Some modules contain additional training material, where you can apply the skills you learned in a hands-on.</p>
+    <p>Some modules contain additional training materials, that allow you to apply the skills you've learned through hands-on exercises.</p>
     <p>You can start the exercise by opening the folder in AX Code and following the README.md</p>
   </div>
   </div>

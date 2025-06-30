@@ -1,0 +1,29 @@
+# General information
+name: "oop1"
+version: 0.0.1
+type: app
+keywords:
+  - library
+author: SIMATIC AX
+# Description will be displayed in the apax extension
+description: <Description for your library>
+# Targets to be compiled with 'apax build'
+targets:
+  - "1500"
+  - llvm
+# Dependencies
+devDependencies:
+  "@ax/sdk": 2504.0.0
+
+# Environment variables
+variables:
+  APAX_BUILD_ARGS:
+    - "--debug" # Generate debug information for target "1500"
+
+# Files, which will be shipped with the library
+files:
+  - bin
+dependencies:
+  "@ax/system-timer": 10.0.24
+catalogs:
+  "@ax/simatic-ax": ^2504.0.0

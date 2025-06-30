@@ -1,6 +1,6 @@
 ## How to publish a package to a private GitHub repository
 ---
-For the following workflow you will need a GitHub account. This is just an example on how to publish a package. Other services like GitLab can be used aswell, but won´t be explained in this chapter.
+For the following workflow you will need a GitHub account. This is just an example on how to publish a package. Other services like GitLab can be used as well, but won´t be explained in this chapter.
 
 1. Add your registry to the ``apax.yml`` (replace &lt;accountname&gt; with your account name which is shown on the top left on the GitHub Dashboard)
    ```

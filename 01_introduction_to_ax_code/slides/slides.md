@@ -1,5 +1,5 @@
 ---
-title: Introduction to the AX Code IDE 
+title: Introduction to the SIMATIC AX Code IDE 
 progress: true
 revealOptions:
   transition: 'fade'
@@ -11,7 +11,7 @@ mouseWheel: true,
 |  |  |
 | -- | ----- |
 | 00 | Introduction to the workshop |
-| **01** | **Introduction to AX Code IDE** |
+| **01** | **Introduction to the SIMATIC AX Code IDE** |
 | 02 | Get started with your first AX Project |
 | 03 | Loading and Debugging |
 | 04 | Introduction to ST Programming |
@@ -51,7 +51,7 @@ mouseWheel: true,
   <div class="flex-col justify-center">
     <p>After you completed this training section you will </p>
         <ul>
-            <li>have a rough overview about the AX Code IDE</li>
+            <li>have a rough overview about the SIMATIC AX Code IDE</li>
             <li>have learned about:</li>
             <ul>
                 <li>using the terminal</li>
@@ -67,14 +67,14 @@ mouseWheel: true,
 
 <header class="slide_header">
   <h2>
-        AX Code IDE
+        SIMATIC AX Code IDE
   </h2>
 </header>
 
 <div class="grid-two-col-foc-right">
   <div class="flex-col justify-center">
-    <p>AX Code is an IDE based on Visual Studio Code, an immensly popular open source IDE created by Microsoft.</p>
-    <p>AX Code adds a lot of specific functionality, that helps you write better ST code </p>
+    <p>SIMATIC AX Code is an IDE based on Visual Studio Code, an immensly popular open source IDE created by Microsoft.</p>
+    <p>The IDE has been enriched with Siemens specific functionality to support the user while engineering a PLC.</p>
   </div>
     <img src="./img/axcode.png" height=500 width=auto/>
 </div>
@@ -89,7 +89,7 @@ mouseWheel: true,
 
 <div class="grid-two-col-foc-right">
   <div class="flex-col justify-center">
-    <p>There are built in extensions like the source control via git.</p>
+    <p>SIMATIC AX Code comes with a prefabricated set of extensions. Those extensions are available natively inside the IDE, e.g. GIT source control.</p>
   </div>
     <img src="./img/built-in-extensions.png" height=auto width=auto/>
 </div>
@@ -104,7 +104,7 @@ mouseWheel: true,
 
 <div class="grid-two-col-foc-right">
   <div class="flex-col justify-center">
-    <p>Furthermore you have access to the VSIX marketplace and can add your favorite extensions like GitLens.</p>
+    <p>Furthermore you have access to the Open VSIX marketplace and may add your favorite extensions like GitLens.</p>
   </div>
     <img src="./img/marketplace.png" height=auto width=auto/>
 </div>
@@ -119,7 +119,7 @@ mouseWheel: true,
 
 <div class="grid-two-col-foc-right">
   <div class="flex-col justify-center">
-    <p>Beside the custom extensions there are AX specific extensions. Those are installed via the extension manager which is integrated into AX Code. The exension manager can also update the installed extensions automatically (optionally).</p>
+    <p>Besides third-party extensions, there are also SIMATIC AX specific extensions. Those extensions are installed via the extension manager, which is integrated into SIMATIC AX Code. The extension manager can also update the installed extensions automatically (optionally).</p>
     <p>Some examples for SIMATIC AX specific extensions:</p>
     <ul>
       <li>ST (according IEC61131-3) syntax highlighting</li>
@@ -135,14 +135,14 @@ mouseWheel: true,
 
 <header class="slide_header">
   <h2>
-        Call functions in AX code
+        Execute functionality in SIMATIC AX Code
   </h2>
 </header>
 
 <div class="grid-two-col-foc-right">
   <div class="flex-col justify-center">
-    <p>Press <code>F1</code> or <code>Ctrl + Shift + P</code> for quick access to nearly all functionalities of the AX IDE.</p>
-    <p>Here you can search for the functionality you require</p>
+    <p>While some of the functionalities of the extensions are accessible via the UI, you may access a more extended set of the functionalities via the command palette. To access them press <code>F1</code> or <code>Ctrl + Shift + P</code></p>
+    <p>Here you can search for the functionality you require.</p>
   </div>
     <img src="./img/f1command.png" height=auto width=auto/>
 </div>
@@ -157,7 +157,7 @@ mouseWheel: true,
 
 <div class="grid-two-col-foc-right">
   <div class="flex-col justify-center">
-    <p>You can open a new terminal via the top bar: "Terminal" > "New Terminal". </p>
+    <p>The IDE provides a built-in terminal that lets you access the file system and execute CLI commands and scripts inside. You can open a new terminal via the top bar: "Terminal" > "New Terminal". </p>
   </div>
     <img src="./img/apax-build.png" height=auto width=auto/>
 </div>
@@ -172,8 +172,8 @@ mouseWheel: true,
 
 <div class="grid-two-col-foc-right">
   <div class="flex-col justify-center">
-    <p>In the output window ou can take a look at outputs of various integrated tools. </p>
-    <p>Note that the output is always specific to the tools and can be switched using the drop down menu on the right.</p>
+    <p>To support the user in debugging extension specific behavior and errors, an output panel is available. In the output panel you can take a look at outputs of various integrated extensions. </p>
+    <p>Note that the output panel is always specific to the extension selected and can be switched using the drop down menu on the right.</p>
   </div>
     <img src="./img/output.png" height=auto width=auto/>
 </div>
@@ -182,13 +182,13 @@ mouseWheel: true,
 
 <header class="slide_header">
   <h2>
-        Window Arrangement
+        Window layout
   </h2>
 </header>
 
 <div class="grid-two-col-foc-right">
   <div class="flex-col justify-center">
-    <p>On the top right of AX Code you have the possibility to fully customize the layout of the windows.</p>
+    <p>You may change the current layout of the IDE to your liking. On the top right inside of SIMATIC AX Code you have the possibility to fully customize the layout of the windows.</p>
     <p>You can also drag and drop the tab of the current editor and move it to the desired location</p>
   </div>
     <img src="./img/window-customization.PNG" height=150 width=auto/>
@@ -198,14 +198,14 @@ mouseWheel: true,
 
 <header class="slide_header">
   <h2>
-        Auto Safe
+        Autosaving changes
   </h2>
 </header>
 
 <div class="grid-two-col-foc-right">
   <div class="flex-col justify-center">
-    <p>Recommendation: enable auto save.</p>
-    <p>By default this option will be turned off and you have to manually safe the file every time you modify it. Files with unsafed modifications will be  
+    <p>When editing files inside the IDE, changes are not immediately mirrored back to your file system. Unsaved changes in a file won't be considered while executing any of the functionalities inside the IDE.</p>
+    <p>Hence, we recommend to always enable auto save</p>
   </div>
     <img src="./img/autosave.png" height=60% width=auto/>
 </div>

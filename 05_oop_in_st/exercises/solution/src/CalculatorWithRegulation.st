@@ -6,13 +6,13 @@ USING System.Timer;
 
 
 
-//CAHNGE EVERYTHING FOR REGULATION
+//CHANGE EVERYTHING FOR REGULATION
 PROGRAM CalculatorWithRegulation
     VAR_EXTERNAL
         vInEntry  : ValveWithEntry;
         vOutEntry : ValveWithEntry;
         tankCube : FluidHandlingInterfaces.CubicTank;
-        tankCilinder : FluidHandlingInterfaces.CilindricTank;
+        tankCylinder : FluidHandlingInterfaces.CylindricalTank;
 
 
         vInCtrlEntry  : BYTE;
@@ -38,27 +38,27 @@ PROGRAM CalculatorWithRegulation
         _emptying_rate: REAL;
     END_VAR
     _ton();
-    
+
     tankCube.VolumeCalculator();
 
-    vInEntry.ReadCyclic(Regulator := TO_REAL(TO_INT(vInRegulator))); 
-    vOutEntry.ReadCyclic(Regulator := TO_REAL(TO_INT(vOutRegulator))); 
+    vInEntry.ReadCyclic(Regulator := TO_REAL(TO_INT(vInRegulator)));
+    vOutEntry.ReadCyclic(Regulator := TO_REAL(TO_INT(vOutRegulator)));
     //_duration_max :=  TO_LTIME(TO_LINT(tank.volume / 5));  //Conversion to Time values
-    _filling_rate := TO_INT(vInRegulator)/100;  
+    _filling_rate := TO_INT(vInRegulator)/100;
     _emptying_rate := TO_INT(vOutRegulator)/100;
     statusInR := vInEntry.GetState();
-    statusOutR := vOutEntry.GetState(); 
-    
+    statusOutR := vOutEntry.GetState();
+
 
     tankCube.ReadCyclic(Fill := Fill, Empty := Empty, Flush := Flush,  Close := Close);
- 
+
     CASE phase OF
         //-----------------------------------
         // here's the tank phase close
         //-----------------------------------
 
 
-            TankState#Close: 
+            TankState#Close:
             tankCube.Close();
             IF (Fill) THEN
                 _ton.signal := TRUE;
@@ -73,18 +73,18 @@ PROGRAM CalculatorWithRegulation
                 phase := TankState#Flushing;
             END_IF;
             // next phase after timeout
-            
+
         //-----------------------------------
         // here's the tank phase Filling
         //-----------------------------------
-        TankState#Filling:         
-            
+        TankState#Filling:
+
             // next phase after timeout
             IF (Fill) THEN
                 tankCube.Fill();
                 IF (capacity_percentage > 100) THEN
                     _ton.signal := FALSE;
-                    phase := TankState#Close; 
+                    phase := TankState#Close;
                 END_IF;
                 IF _ton.output THEN
                     _ton.signal := FALSE;
@@ -98,7 +98,7 @@ PROGRAM CalculatorWithRegulation
 
             ELSE
                 _ton.signal := FALSE;
-                phase := TankState#Close;      
+                phase := TankState#Close;
             END_IF;
         //-----------------------------------
         // here's the tank phase Emptying
@@ -108,7 +108,7 @@ PROGRAM CalculatorWithRegulation
                 tankCube.Emptying();
                 IF (capacity_percentage <= 0) THEN
                     _ton.signal := FALSE;
-                    phase := TankState#Close; 
+                    phase := TankState#Close;
                 END_IF;
                 IF _ton.output THEN
                     _ton.signal := FALSE;
@@ -122,41 +122,41 @@ PROGRAM CalculatorWithRegulation
 
             ELSE
                 _ton.signal := FALSE;
-                phase := TankState#Close;         
+                phase := TankState#Close;
             END_IF;
         //-----------------------------------
-        // here's the tank phase Flushing 
+        // here's the tank phase Flushing
         //-----------------------------------
         TankState#Flushing:
             IF Flush THEN
-                tankCube.Flush();                                       
+                tankCube.Flush();
                 _ton.signal := TRUE;
                 IF (capacity_percentage <= 0) THEN
                     _ton.signal := FALSE;
-                    phase := TankState#Close; 
+                    phase := TankState#Close;
                 END_IF;
                 IF (capacity_percentage >= 100) THEN
                     _ton.signal := FALSE;
-                    phase := TankState#Close; 
+                    phase := TankState#Close;
                 END_IF;
                 IF _ton.output THEN
                     _ton.signal := FALSE;
                     current_volume := current_volume + 5 * _filling_rate - 5 *_emptying_rate;
                     IF current_volume < 0 THEN
-                        current_volume := 0; 
+                        current_volume := 0;
                     END_IF;
                     IF current_volume > 100 THEN
-                        current_volume := 100; 
+                        current_volume := 100;
                     END_IF;
-                    capacity_percentage := (current_volume / tankCube.volume) * 100; 
-                    _ton.signal := TRUE; 
+                    capacity_percentage := (current_volume / tankCube.volume) * 100;
+                    _ton.signal := TRUE;
                 END_IF;
             ELSE
                 _ton.signal := FALSE;
-                phase := TankState#Close;         
-            END_IF; 
+                phase := TankState#Close;
+            END_IF;
     END_CASE;
-    
+
     vInEntry.WriteCyclic(ctrlOpen => vInCtrlEntry);
     vOutEntry.WriteCyclic(ctrlOpen => vOutCtrlEntry);
     tankCube.WriteCyclic(Capacity => capacity_percentage);

@@ -5,8 +5,8 @@ CONFIGURATION MyConfiguration
     VAR_GLOBAL
 
         //FIRST IMPLEMENTATION SIMPLE
-        vIn : basicValve;
-        vOut: basicValveValve;
+        vIn : ValveBase;
+        vOut: ValveBase;
         tank : TankWithVolume := (inletValve := vIn, outletValve := vOut, volume := 100);
 
        

@@ -82,11 +82,11 @@ In OOP, computer programs are designed by making them out of objects that **inte
 <br/>
 <br/>
 
-### History  
+### History
 
-The basics of OOP were developed in the 60ties and 70ties during the software crisis.  
+The basics of OOP were developed in the 60ties and 70ties during the software crisis.
 
-In this time, the software costs exceeded the hardware costs. In the 80ties, OOP became popular in computer programming.  
+In this time, the software costs exceeded the hardware costs. In the 80ties, OOP became popular in computer programming.
 
 ---
 <div class="grid-slide-container">
@@ -96,7 +96,7 @@ In this time, the software costs exceeded the hardware costs. In the 80ties, OOP
     </header>
   </div>
   <div class="grid-slide-text">
-    <p>OOP consists of several concepts that can be a fit for different scenarios or design patterns. 
+    <p>OOP consists of several concepts that can be a fit for different scenarios or design patterns.
     Not all concepts must be applied for a programming language to be object oriented.</p>
     <p>The main difference between OOP and non-OOP is how data is modelled; how the name implies data is represented as objects.<p>
     <p>We will learn about objects in depth in the next chapter.<p>
@@ -174,7 +174,7 @@ In this time, the software costs exceeded the hardware costs. In the 80ties, OOP
     </pre>
     <br>
     <pre>
-        VAR PUBLIC 
+        VAR PUBLIC
             isOpen : BOOL;
             isClosed : BOOL;
         END_VAR
@@ -203,7 +203,7 @@ In this time, the software costs exceeded the hardware costs. In the 80ties, OOP
 ----
 ## Instantiate a class in ST
 
-A class can be instanced just like any function block
+A class can be instantiated just like any function block
 
 ```C#
     VAR
@@ -214,7 +214,7 @@ A class can be instanced just like any function block
 #
 #### Remarks
 
->Classes can not instantiated in:  
+>Classes can not be instantiated in:
 >
 >* **VAR_TEMP** section
 >* **VAR_INPUT** section
@@ -222,7 +222,7 @@ A class can be instanced just like any function block
 
 >* In ST, classes can only be instantiated during compile time.
 >* In opposite to other languages, ST can not create instances during runtime.
->* There are no constructors for classes in ST
+>* There are no constructors for classes in ST.
 ----
 <br>
 
@@ -256,7 +256,7 @@ PROGRAM
     VAR_EXTERNAL
         v : Valve;
     END_VAR
-    
+
     v.Open();
 END_PROGRAM
 ```
@@ -272,24 +272,22 @@ A FUNCTION BLOCK is similar to a CLASS with one method
 |can be instantiated|yes|yes|
 |occupy memory|yes|yes|
 |method supported|no|yes|
-|access modifier[1]|no (just private)|yes|
+|access modifier[1]|yes|yes|
 |can be inherited|no|yes|
 
-<small>[1] in ST they're private. In SCL on TIA Portal they're public</small>
+<small>[1] In SCL on TIA Portal they're always public</small>
 
 ---
 
 # Encapsulation
 
-## What is a encapsulation? 
+## What is a encapsulation?
 One of the main concepts of OOP is encapsulation
 
 - The state of a object is stored in member variables
-- In a properly designed object, the state can be changed its methods.
+- In a properly designed object, the state can only be changed by its methods.
 - This is achieved by providing public methods that operate on the values of private member variables.
-- Encapsulation ensures that private information
- - is not exposed
- - and cannot be modified except through calls of methods
+- Encapsulation ensures that private information is not exposed and cannot be modified except through calls of methods
 
 ----
 
@@ -306,7 +304,7 @@ One of the main concepts of OOP is encapsulation
     myValveInstance.isOpen := TRUE;
     myValveInstance.isClosed := TRUE;
     </pre>
-    <p>To prevent this, we want to encapsulate all internal logic to be inaccessible from the outside and the user should only control the state using the defined methods. This can be done, by using access modifier; in </p>
+    <p>To prevent this, we want to encapsulate the internal state to be inaccessible from the outside and the user should only control the state using the defined methods. This can be done, by using access modifiers. </p>
   </div>
   <div class="grid-slide-image">
     <pre>
@@ -314,7 +312,7 @@ One of the main concepts of OOP is encapsulation
     </pre>
     <br>
     <pre>
-        VAR PRIVATE 
+        VAR PRIVATE
             isOpen : BOOL;
             isClosed : BOOL;
         END_VAR
@@ -346,7 +344,7 @@ One of the main concepts of OOP is encapsulation
 
 One of the main concepts of OOP is encapsulation
 
-* It refers to the bundling of data (variables) and methods (functions) that operate on the data into a single unit, typically a *class*. 
+* It refers to the bundling of data (variables) and methods (functions) that operate on the data into a single unit, typically a *class*.
 * In a properly designed object, the state can be changed. This is achieved by providing public methods that operate on the values of private member variables.
 * It also involves restricting direct access to some of an object's components, which is a means of preventing unintended interference and misuse of the data.
 * Encapsulation ensures that *private* information
@@ -375,15 +373,16 @@ Let's illustrate encapsulation with a simple example of a BankAccount class:
 ----
 ## Private Attributes:
 
-_accountNumber_ and _balance_ are private attributes of the BankAccount class and can not be accessed from the outside of the class instance (e.g. can not be changed by any other method than the methods of the same BankAccound class instance)
+_accountNumber_ and _balance_ are private attributes of the BankAccount class and can not be accessed from the outside of the class instance (e.g. can not be changed by any other method than the methods of the same BankAccount class instance)
 ```C#
 // Declaration of the BankAccount class
 Class BankAccount
-VAR
-// Private attributes
-    accountNumber : INT;
-    balance : REAL;
-END_VAR
+    VAR
+    // Private attributes
+        accountNumber : INT;
+        balance : REAL;
+    END_VAR
+END_CLASS
 ```
 ----
 ## Public Methods:
@@ -394,20 +393,20 @@ _Deposit_ method adds a valid amount to the balance and returns TRUE if the depo
 
 ```C#
 // Public methods
-METHOD GetBalance : REAL
-VAR_OUTPUT
-    GetBalance : REAL;
-END_VAR
+METHOD PUBLIC GetBalance : REAL
+    VAR_OUTPUT
+        GetBalance : REAL;
+    END_VAR
     GetBalance := balance;
 END_METHOD
 
-METHOD Deposit : BOOL
-VAR_INPUT
-    amount : REAL;
-END_VAR
-VAR_OUTPUT
-    Deposit : BOOL;
-END_VAR
+METHOD PUBLIC Deposit : BOOL
+    VAR_INPUT
+        amount : REAL;
+    END_VAR
+    VAR_OUTPUT
+        Deposit : BOOL;
+    END_VAR
     IF amount > 0 THEN
         balance := balance + amount;
         Deposit := TRUE;
@@ -419,13 +418,13 @@ END_METHOD
 ----
 _Withdraw_ method subtracts a valid amount from the balance and returns TRUE if the withdrawal was successful, otherwise FALSE.
 ```C#
-METHOD Withdraw : BOOL
-VAR_INPUT
-    amount : REAL;
-END_VAR
-VAR_OUTPUT
-    Withdraw : BOOL;
-END_VAR
+METHOD PUBLIC Withdraw : BOOL
+    VAR_INPUT
+        amount : REAL;
+    END_VAR
+    VAR_OUTPUT
+        Withdraw : BOOL;
+    END_VAR
     IF (amount > 0) AND (amount <= balance) THEN
         balance := balance - amount;
         Withdraw := TRUE;
@@ -441,18 +440,15 @@ END_METHOD
 The Init method is used to set up the initial values of accountNumber and balance when an instance of the BankAccount class is created. This method can act as a substitute for a constructor.
 ```C#
 // Initialization method to set up initial values
-METHOD Init
-VAR_INPUT
-    initAccountNumber : INT;
-    initBalance : REAL;
-END_VAR
+METHOD PUBLIC Init
+    VAR_INPUT
+        initAccountNumber : INT;
+        initBalance : REAL;
+    END_VAR
     accountNumber := initAccountNumber;
     balance := initBalance;
 END_METHOD
-END_CLASS
-
 ```
-
 ----
 <br>
 
@@ -487,7 +483,7 @@ END_CLASS
 ## Examples for Accessors
 
 ```C#
-NAMESPACE ContolModules
+NAMESPACE ControlModules
     CLASS Valve
         VAR PRIVATE
             _anyPrivate : BOOL;
@@ -500,21 +496,103 @@ NAMESPACE ContolModules
         END_VAR
         METHOD PRIVATE Check
             ;
-        END_METHOD    
+        END_METHOD
         METHOD PUBLIC Open
             ;
-        END_METHOD    
+        END_METHOD
         METHOD PROTECTED Close
             ;
-        END_METHOD    
+        END_METHOD
     END_CLASS
 END_NAMESPACE
 ```
 
 ---
 
-## Interfaces
+## Hands On (OOP01)
+### Goal
 
+Transform Valve and Tank into classes:
+
+**Miniumum:**
+
+- Valve is transformed into Class ValveBase
+- Tank is transformed into Class TankBase
+
+**Voluntary:**
+
+- ValveWithClosedSensor is transformed into class
+- Valve and Tank is instanced in configuration
+- Valve and Tank is called in ExampleProgram
+- Compile and download it to the PLC
+- Check the functionality of the program
+
+----
+
+## ValveBase Class ValveBase
+
+|**Method**|**Functionality**|
+|-|-|
+|Open()|Open the valve|
+|Close()|Close the valve|
+|GetState : ValveState| returns the state Undefined, Open, Close (Hint: Enumeration)|
+|WriteCyclic(ctrlOpen : BOOL) | for the activation of the digital output. true when valve opened, false when valve is closed|
+
+
+----
+
+SHORT HINT OF THE STRUCTURE OF THE CLASS AND THE ENUM
+```C#
+NAMESPACE FluidHandlingClass
+    CLASS ValveClass
+        //VARIABLES
+        _ctrlOpen : BOOL;
+        _state : ValveState;
+
+        //METHODS
+        Open();
+        Close();
+        GetState() : ValveState;
+        WriteCyclic(VAR_OUTPUT: (ctrlOpen : BOOL));
+    END_CLASS
+
+    //ENUM 
+    TYPE ValveState 
+       STATES: Open, Closed, Error, Undefined
+    END_TYPE
+END_NAMESPACE
+```
+----
+
+#### Create the Class TankBase
+
+Transform the function block Tank into a class according the table (next slide)
+
+```C#
+NAMESPACE FluidHandlingClass
+    CLASS Tank 
+        inletValve : Valve
+        outletValve : Valve
+        Fill()
+        Emptying()
+        Flush() 
+        Close()
+    END_CLASS
+END_NAMESPACE
+```
+
+Behavior:
+
+|**Method**|**inletValve**|**outletValve**|
+|-|-|-|
+|Fill()| OpenInlet() | CloseOutlet()|
+|Emptying()|CloseInlet()|OpenOutlet()|
+|Flush()|OpenInlet()|OpenOutlet()|
+|Close()|CloseInlet()|CloseOutlet()|
+
+---
+
+## Interfaces
 
 ----
 
@@ -530,7 +608,7 @@ An interface is a contract that defines a set of methods **without implementing 
 
 2. **Abstraction:** Provides a way to define capabilities without specifying how they should be implemented.
 
-3. **Multiple inheritcance:** Allows a class to inherit from multiple interfaces, enabling more flexible design.
+3. **Multiple inheritance:** Allows a class to inherit from multiple interfaces, enabling more flexible design.
 
 4. **Decoupling:** Promotes loose coupling between classes by separating the definition of methods from the implementation.
 
@@ -613,7 +691,7 @@ END_CLASS
 
 ----
 
-## Instanciating the classes 
+## Instantiating the classes
 
 ```C#
 CONFIGURATION MyConfiguration
@@ -643,14 +721,14 @@ You cannot add additional parameters in the implementation of a method that are 
 
 ---
 
-## Hands On (OOP02) 
+## Hands On (OOP02)
 ### Goal
 
-Using the solution for the HandsOn1 as the starting point: 
+Using the solution for the HandsOn1 as the starting point:
 
 
-* Create two interfaces, one for the tanks and the other for the valves. 
-* This interface will work as a "contract" that the classes must implement. 
+* Create two interfaces, one for the tanks and the other for the valves.
+* This interface will work as a "contract" that the classes must implement.
 * In this case, we are going to include all the methods implemented in the HandsOn1 in the interface.
 
 
@@ -658,12 +736,12 @@ Using the solution for the HandsOn1 as the starting point:
 ----
 ## Valve Interface
 
-|Method|
-   |-|
-   |Open()|
-   |Close()|
-   |GetState : ValveState|
-   |WriteCyclic(ctrlOpen : BOOL) |
+|**Method**|
+|-|
+|Open()|
+|Close()|
+|GetState : ValveState|
+|WriteCyclic(ctrlOpen : BOOL) |
 
 <br>
 <br>
@@ -676,10 +754,6 @@ Using the solution for the HandsOn1 as the starting point:
 
 |Method|
    |-|
-   |OpenInlet()|
-   |OpenOutlet()|
-   |CloseInlet()|
-   |CloseOutlet()|
    |Fill()|
    |Flush()|
    |Close()|
@@ -690,22 +764,22 @@ Using the solution for the HandsOn1 as the starting point:
 
 ---
 
-## Hands On (OOP03) 
+## Hands On (OOP03)
 ### Goal
 
 Developing program skills is achieved by practicing and trying to solve problems yourself. The next challenge is to apply what you have learned since the beginning of this training.
 
-The proposal is to **develop a program that calculates the volume of a tank**. 
+The proposal is to **develop a program that calculates the volume of a tank**.
 
 Here you will read physical entries, write on outputs, use timers, evaluate cases...
 
 ----
 
-Using the solution for the HandsOn2 as the starting point: 
+Using the solution for the HandsOn2 as the starting point:
 
 
-* **1:** Create a TYPE for the Tank State as the Valve one. 
-* **2:** Create a second class: *TankWithVolume* that implements also the interface *ITank* created in the HandsOn2. 
+* **1:** Create a TYPE for the Tank State as the Valve one.
+* **2:** Create a second class: *TankWithVolume* that implements also the interface *ITank* created in the HandsOn2.
 * **3:** Create a program that calculates and displays as an output the current volume of the tank .
 
 
@@ -732,10 +806,10 @@ Using the solution for the HandsOn2 as the starting point:
 
 > To handle the different status transitions, it will have entries to activate the different states: fill, empty, flush and close.
 
-> In addition, it has three new methods:  
->    **WriteCyclic(Capacity : REAL)** 
+> In addition, it has three new methods:
+>    **WriteCyclic(Capacity : REAL)**
 
->    **Capacity : REAL** that returns a real with the percentage of capacity of the volume of the tank.  
+>    **Capacity : REAL** that returns a real with the percentage of capacity of the volume of the tank.
 
 >    **ReadCyclic(Fill : BOOL, Empty : BOOL, Flush : BOOL, Close : BOOL)** to read the entries.
 
@@ -743,11 +817,11 @@ Using the solution for the HandsOn2 as the starting point:
 
 ## Program for calculating and displaying
 
-Structure the program as: 
+Structure the program as:
 
->1. Declaration of the external variables that you will use on the program: valves, tank, phyisical entries...
+>1. Declaration of the external variables that you will use on the program: valves, tank, physical entries...
 
->2. Then, declarate the complements that you will need to execute the program. For example, a timer, the filling and emptying rates...
+>2. Then, declare the complements that you will need to execute the program. For example, a timer, the filling and emptying rates...
 
 >3. Initialize the variables and read the entries that you need.
 
@@ -757,7 +831,7 @@ Structure the program as:
 
 ---
 
-## Inheritance 
+## Inheritance
 ### What is inheritance?
 
 Inheritance is a fundamental principle where a new class, called the derived or child class, inherits properties and behaviors (methods) from an existing class, known as the base or parent class. This mechanism promotes code reuse and establishes a natural a hierarchy between classes.
@@ -766,7 +840,7 @@ Inheritance is a fundamental principle where a new class, called the derived or 
 
 ## Benefits of Inheritance
 
-1. **Reusabilty:** Inheritance allows the reuse of existing code. Common functionality can be defined in a base class and inherited by multiple derived classes, reducing redundancy.
+1. **Reusability:** Inheritance allows the reuse of existing code. Common functionality can be defined in a base class and inherited by multiple derived classes, reducing redundancy.
 
 2. **Maintainability:** Changes made to a base a class are automatically inherited by derived classes, making the code easier to update and maintain.
 
@@ -801,32 +875,32 @@ END_CLASS
 
 CLASS car EXTENDS VEHICLE
     VAR
-        NumberOfDoors : INT;  //New propertie
+        NumberOfDoors : INT;  //New property
     END_VAR
 
     METHOD PUBLIC SetFuelLevel  //New Method
         VAR_INPUT
             newFuelLevel : INT;
-        END_VAR 
+        END_VAR
 
         FuelLevel := newFuelLevel;
     END_METHOD
 ```
 ---
-## Hands On (OOP04) 
+## Hands On (OOP04)
 ### Goal
 
-Using the solution for the HandsOn3 as the starting point: 
+Using the solution for the HandsOn3 as the starting point:
 
 
->* Applying **inheritance** create a class: *ComplexValve* that has an entry: *Regulator* and instead of boolean the regulation can be adjusted from 0 to 100 for both states, open and closed. 
+>* Applying **inheritance** create a class: *ComplexValve* that has an entry: *Regulator* and instead of boolean the regulation can be adjusted from 0 to 100 for both states, open and closed.
 
 For example: if the regulator for the entry valve is 30, the valve will be opened the 30%.
 ----
 
->* Applying **inheritance** create a file: *TankWithShape* that has an two classes: *CilindricTank* and *CubeTank*. These classes extend the properties of the *TankWithVolume* but now the volume is calculated with a  method called *VolumeCalculator* and the result stored in the propertie *volume*.
->   * For the cilindric tank it is needed to provide to the method the properties: *radium* and *height*
->   * For the cube tank only a single propertie (is a regular cube): *side_length*
+>* Applying **inheritance** create a file: *TankWithShape* that has an two classes: *CylindricalTank* and *CubeTank*. These classes extend the properties of the *TankWithVolume* but now the volume is calculated with a  method called *VolumeCalculator* and the result stored in the property *volume*.
+>   * For the cylindrical tank it is needed to provide to the method the properties: *radium* and *height*
+>   * For the cube tank only a single property (is a regular cube): *side_length*
 
 ----
 
@@ -834,13 +908,13 @@ For example: if the regulator for the entry valve is 30, the valve will be opene
 >   * You need to modify the filling/emptying rate by multiplying the rate plus the regulation value. This regulation value is a value that is needed to read from an entry of the valve in the first program lines after the declaration of variables.
 ----
 
->   * To use the new classes tankCube/tankCilinder, choose your favourite and provide the properties in the declaration. Then, in the intialization call the method to Calculate the tank volume that writes on the tank propertie volume.
+>   * To use the new classes tankCube/tankCylinder, choose your favorite and provide the properties in the declaration. Then, in the initialization call the method to Calculate the tank volume that writes on the tank property volume.
 
 
 **For example**: If the regulation is 50% on the entry valve. In this case, the filling rate will be: 5 * 50/100 = 2.5 L/s. So here, every second that the timer is executed you add to the current_volume := current_volume + filling_rate * MAX_FILLING_RATE;
 
 
->* **HINT:** Now for the **flushing state** you must take into account that the filling and emptying rates can be different. So in this state the tank can be filled or emptied too. 
+>* **HINT:** Now for the **flushing state** you must take into account that the filling and emptying rates can be different. So in this state the tank can be filled or emptied too.
 
 
 
