@@ -41,10 +41,12 @@ Agenda
   <div class="flex-col justify-center">
     <p>After you completed this training section you will </p>
         <ul>
-            <li>know how to create and hardware configuration</li>
-            <li>using templates in hardware context</li>
-            <li>know how to do GSDML handling</li>
-            <li>able to administrate Users over User Managment</li>
+            <li>Basic knowledge over hardware configuration</li>
+            <li>Know how to insert hardware devices in project</li>
+            <li>Using templates in hardware context</li>
+            <li>Able to administrate Users over User Managment</li>
+            <li>Hardware basic setting assignment</li>
+            <li>Diagnostics in the hardware environment</li>
         </ul>
     <br>
   </div>
