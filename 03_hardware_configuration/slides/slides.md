@@ -205,6 +205,8 @@ Agenda
         </ul>
     <br>
     <p>In the following section we will show you how to proceed in order to have the hardware information available in the project.</p>
+    <br>
+    <p>We will show how the modules are integrated into the project in the following chapter on templates.</p>
   </div>
 
 ----
@@ -213,7 +215,44 @@ Agenda
     <h3>Using of GSD Files</h3>
 </header>
 
+<div class="flex-col justify-center">
 
+  <p>The GSD (General Station Description) format is a description language used to describe and parameterize hardware settings. It is a standard supported by all PROFINET device manufacturers. Accordingly, each hardware manufacturer provides the description file.
+  <br>
+  <p>First, you need to contact the manufacturer of the module you want to use and obtain the GSD file. This is then usually inserted into the project. 
+    We recommend creating a folder called gsd in the project and inserting the files there centrally. After that, you need to make the module known in the project so that you can use it. This is done with the help of the hardware compiler. You call:</p>
+  <br>
+  <p><b>apax hwc install-gsd --input <name_of_GsdFile></b></p>
+  <br>
+  <p>The install-gsd command will generate intermediate files that are required for Hardware Compiler from the GSDML or GSDX files.</p>
+  <br>
+  <p>These intermediate files will be placed in the GSD installation cache folder. If you use Hardware Compiler version 3.1 or later, it is located in the .ax folder of your user folder. After this the hardware compiler is ready to use the informations fron the gsdml file by the compile.</p>
+  <br>
+  <ol>
+    <li>Additional Informations about GSDML: <br><a href="https://www.profibus.de/downloads/gsdml-gsdx-specification-for-profinet">GSDML Specification for PROFINET</a></li>
+    <li>Additional Informations about the import of GSDML Files: <br><a href="https://console.simatic-ax.siemens.io/docs/hw/language/gsd-devices-and-modules">GSDML informations on AX Doku</a></li>
+  </ol>
+</div>
+
+----
+
+<header class="slide_header">
+    <h3>Extension GSDML Viewer</h3>
+</header>
+<div class="grid-two-col-eq">
+    <div class="flex-col justify-center">
+       <p>Depending on how many assemblies it describes, a GSD file can become very large, making it difficult to determine which attributes an assembly has and which values ??it can assume.</p>
+       <br>
+       <p>For a graphical overview, we offer an extension that can be integrated into AX code (see image to the right). You can then click on a gsdml xml file, and it will open in the extension (see below).</p>
+       <br>
+    </div>
+    <img style="height: 200px; width: 250px" src="./img/extension_GSDML_viewer.png" />
+  </div>
+  <img style="height: 200px; width: auto" src="./img/GSDML_viewer.png" />
+  <br>
+<ol>
+  <li>Additional Informations about GSDML Viewer: <br><a href="https://console.simatic-ax.siemens.io/docs/axcode/vscode-gsdml-viewer">GSDML Viewer on AX-Side</a></li>
+</ol>
 </div>
 
 ----
@@ -246,10 +285,16 @@ Agenda
     <h3>Overview what Hardware is installed in project</h3>
 </header>
 
-<img style="height: 400px; width: auto" src="./img/get-supported-devices.png" />
+<div class="flex-col justify-center">
+    <p>You want to know which modules are known to the hardware compiler in the project, or/and what IDs they have. This can be done using a corresponding container in the hardware compiler, which looks like this:</p>
+    <br>
+    <p><b>apax hwc get-supported-devices</b></p>
+    <br>
+    <p>After this, you'll see an overview in the terminal that looks like this. This is divided into different types (modules/PLCs, etc.) and the type of integration (support packages or via GSD file).</p>
+    <br>
+    <img style="height: 400px; width: auto" src="./img/get-supported-devices.png" />
 
 </div>
-
 
 ---
 
