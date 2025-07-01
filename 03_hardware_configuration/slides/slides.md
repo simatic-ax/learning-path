@@ -261,7 +261,7 @@ Agenda
     <h3>Using of placeholder</h3>
 </header>
 
-
+<img style="height: 400px; width: auto" src="./img/templates_placeholder.png" />
 </div>
 
 ----
@@ -270,6 +270,7 @@ Agenda
     <h3>Apply templates</h3>
 </header>
 
+<img style="height: 400px; width: auto" src="./img/apply_template.png" />
 
 </div>
 
