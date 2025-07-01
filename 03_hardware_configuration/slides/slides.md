@@ -192,23 +192,20 @@ Agenda
 
 ---
 
-
-
 <header class="slide_header">
     <h2>IT Like Hardware Engineer</h2>
     <h3>Integration of additional hardware in project</h3>
 </header>
 
-
-----
-
-<header class="slide_header">
-    <h3>Siemens Hardware over Support Packages</h3>
-</header>
-
-<img style="height: 400px; width: auto" src="./img/Hardware_Support_Package.png" />
-
-</div>
+  <div class="flex-col justify-center">
+    <p>To operate a system, you obviously need not only the PLC but also the corresponding modules, motors, and so on. Accordingly, AX also offers various options for incorporating configuration information for modules into the project. There are two options here:</p>
+        <ul>
+            <li>The standardized way of importing the hardware into the standardized GSDML format is supported.</li>
+            <li>The standard Siemens modules that are supported are provided as apax packages and can be included as dev dependencies.</li>
+        </ul>
+    <br>
+    <p>In the following section we will show you how to proceed in order to have the hardware information available in the project.</p>
+  </div>
 
 ----
 
@@ -217,6 +214,30 @@ Agenda
 </header>
 
 
+</div>
+
+----
+
+<header class="slide_header">
+    <h3>Siemens Hardware over Support Packages</h3>
+</header>
+
+<div class="flex-col justify-center">
+    <p>A hardware support package is viewed as a package from the AX side. Accordingly, it can be added to the project like any other package. You call the apax add command, as in the following example for importing the standard 1500 modules:</p>
+    <br>
+    <p><b>apax add --dev @ax/hw-et200sp</b></p>
+    <br>
+    <p>The package can then be seen in Apax.yml under development dependencies:</p>
+    <img style="height: 120px; width: 250px" src="./img/Hardware_Support_Package.png" />
+    <br>
+    <p>
+        If you now open the project on another PC, the hardware information will also be added to the project via a simple Apax install.
+        If additional Siemens hardware is required that is not yet offered as a hardware support package, it can of course also be imported as GSDML. 
+    </p>
+    <br>
+    <ol>
+      <li>A current overview of available hardware can be found in the AX documentation: <br><a href="https://console.simatic-ax.siemens.io/docs/hw/supported-hardware">Hardware Support Packages</a></li>
+    </ol>
 </div>
 
 ----
