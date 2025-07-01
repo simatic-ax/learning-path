@@ -179,6 +179,8 @@ Agenda
 </header>
 
 
+<div class="flex-col justify-center">
+
 </div>
 
 ----
@@ -187,6 +189,7 @@ Agenda
     <h3>The PLC SecurityConfiguration File</h3>
 </header>
 
+<div class="flex-col justify-center">
 
 </div>
 
@@ -293,7 +296,6 @@ Agenda
     <p>After this, you'll see an overview in the terminal that looks like this. This is divided into different types (modules/PLCs, etc.) and the type of integration (support packages or via GSD file).</p>
     <br>
     <img style="height: 400px; width: auto" src="./img/get-supported-devices.png" />
-
 </div>
 
 ---
@@ -303,13 +305,31 @@ Agenda
     <h3>Using of Templates</h3>
 </header>
 
+<div class="flex-col justify-center">
+  <p>The previous section showed how to use the configuration information in the project. There are basically two ways to do this:
+  <ul>
+     <li>You can create the valid hardware configuration file yourself in your way.</li>
+     <li>You can have it created for you over the hardware compiler, which we deal with in this section</li>
+  </ul>
+  <br>
+  <p>The hardware compiler has the function of creating a template, which creates all the attributes made available for parameterization by the configuration file with the default values.</p>
+  <br>
+  <p>A template is initially referred to as the template of a hardware module, but later also as files that can be used multiple times in a project for modules with the same configuration. In this sense, hardware templates offer several advantages. Among other things, they can be:</p>
+  <ul>
+     <li>Can stored centrally and used in the project.</li>
+     <li>Can paramized by using placeholders</li>
+  </ul>
+  <br>
+  <p>It is important to note, however, that the identifier for the hardware compiler is the name. This means that a module name or template name in project must be unique and cannot be used multiple times.</p>
+</div>
+
 ----
 
 <header class="slide_header">
     <h3>Templates form GSD</h3>
 </header>
 
-
+<div class="flex-col justify-center">
 </div>
 
 ----
@@ -318,7 +338,7 @@ Agenda
     <h3>Templates form hardware support packages</h3>
 </header>
 
-
+<div class="flex-col justify-center">
 </div>
 
 ----
@@ -327,6 +347,7 @@ Agenda
     <h3>Using of placeholder</h3>
 </header>
 
+<div class="flex-col justify-center">
 <img style="height: 400px; width: auto" src="./img/templates_placeholder.png" />
 </div>
 
@@ -335,6 +356,8 @@ Agenda
 <header class="slide_header">
     <h3>Apply templates</h3>
 </header>
+
+<div class="flex-col justify-center">
 
 <img style="height: 400px; width: auto" src="./img/apply_template.png" />
 
@@ -354,6 +377,7 @@ Agenda
     <h3>Define Users and Roles in hwl.yml</h3>
 </header>
 
+<div class="flex-col justify-center">
 <img style="height: 400px; width: auto" src="./img/UMAC_in_hwl_yml.png" />
 
 </div>
@@ -364,6 +388,7 @@ Agenda
     <h3>Set Password and manage user over command line of hwc</h3>
 </header>
 
+<div class="flex-col justify-center">
 
 </div>
 
@@ -374,6 +399,9 @@ Agenda
     <h3>Hardware basic setting assignment</h3>
 </header>
 
+<div class="flex-col justify-center">
+
+</div>
 
 ---
 
@@ -382,12 +410,17 @@ Agenda
     <h3>Constante Values that will be used in software programm</h3>
 </header>
 
+<div class="flex-col justify-center">
+
+</div>
+
 ----
 
 <header class="slide_header">
     <h3>Io Addresses</h3>
 </header>
 
+<div class="flex-col justify-center">
 
 </div>
 
@@ -397,6 +430,8 @@ Agenda
     <h3>Hw Identifiers</h3>
 </header>
 
+
+<div class="flex-col justify-center">
 
 </div>
 
@@ -408,7 +443,9 @@ Agenda
     <h3>Diagnostic and hardware functions</h3>
 </header>
 
-siehe campture 8
+<div class="flex-col justify-center">
+
+</div>
 
 
 ----
