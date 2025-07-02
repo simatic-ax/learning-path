@@ -1,4 +1,4 @@
-
+﻿
 Agenda
 
 | ID | Topic |
@@ -372,7 +372,21 @@ Agenda
 </header>
 
 <div class="flex-col justify-center">
-<img style="height: 400px; width: auto" src="./img/templates_placeholder.png" />
+  <p>In the example shown here, the same template is used in an ET200SP. Accordingly, a different name is passed. Additionally, the white potential module is passed for the first module, which is not necessary for the second, since the black module is the default value. Here is an example of how it is used:</p>
+  <br>
+  <div class="grid-two-col-eq">
+    <div class="flex-col justify-center">
+    <p>The variables are parameterized accordingly under the keyword <b>Placeholders</b>. The following things are defined using the following keywords:</p>
+    <ul>
+     <li><b>Name:</b> The name of the placeholder, which is then also applied in the content</li>
+     <li><b>Value:</b> The default value if the variable is not specified. If this is not set, the variable must always be specified when applying.</li>
+     <li><b>AllowedValues:</b> 
+A masking of the values ​​that can be entered. If, for example, the assembly has more setting options, but the process only allows certain values, this can be restricted.</li>
+    </ul>
+    <p>The keyword <b>Content</b> contains the description of the module with the application of the placeholder, see <b>"${Modulename}"</b></p>
+    </div>
+    <img style="height: 400px; width: auto" src="./img/templates_placeholder.png" />
+  </div>
 </div>
 
 ----
@@ -388,7 +402,7 @@ Agenda
   Depending on whether placeholders are assigned and these are not initialized, they must be parameterized as <b>"Arguments"</b>.</p> 
   <div class="grid-two-col-eq">
     <img style="height: 300px; width: auto" src="./img/apply_template.png" />
-    <p>In the example shown here, the same template is used in an ET200SP. <br>Accordingly, a different name is passed over the parameter <b>ModuleName</b>. <br>As an example for the use of the default values ??in the template, the white potential module is passed over the parameter <b>"BaseUnit"</b> for the first module, which is not necessary for the second, since the black module is the default value.</p>
+    <p>In the example shown here, the same template is used in an ET200SP. <br>Accordingly, a different name is passed over the parameter <b>ModuleName</b>. <br>As an example for the use of the default values ​​in the template, the white potential module is passed over the parameter <b>"BaseUnit"</b> for the first module, which is not necessary for the second, since the black module is the default value.</p>
   </div>
 </div>
 
