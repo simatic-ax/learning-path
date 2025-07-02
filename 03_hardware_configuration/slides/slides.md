@@ -329,7 +329,18 @@ Agenda
     <h3>Templates form GSD</h3>
 </header>
 
-<div class="flex-col justify-center">
+<div class="grid-two-col-eq">
+   <div class="flex-col justify-center">
+     <p>The prerequisite for creating a template from a GSD file is that it is installed in the project. To call it, you need the GSD ID of the assembly in the file.</p>
+     <br>
+     <p>The command used to create a template from a GDSML file is shown on the right. The file and assembly ID must be specified accordingly. The result of the execution is shown.</p>
+     <br>
+     <p>However, placeholders are assigned for the template and assembly names, which must be manually modified to prevent duplicate names from being assigned when creating a second template.</p>
+   </div>
+   <div class="flex-col justify-center">
+     <p><b>apax hwc generate-template-file <br>--output hwc/templates/ET200SP_DQ_template.hwl.yml <br>--gsdFileName GSDML-V2.43-Siemens-ET200SP-20240726.xml <br>--gsdId "DQ 16x24VDC/0,5A ST"<br></b></p>
+     <img style="height: 350px; width: auto" src="./img/template_ET200SP.png" />
+   </div>
 </div>
 
 ----
@@ -337,6 +348,8 @@ Agenda
 <header class="slide_header">
     <h3>Templates form hardware support packages</h3>
 </header>
+
+<p><b>apax hwc generate-template-file --output hwc/templates/MP_DQ_template.hwl.json --orderNumber "6ES7 522-1BL00-0AB0" --version V2.0</b></p>
 
 <div class="flex-col justify-center">
 </div>
