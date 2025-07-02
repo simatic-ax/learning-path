@@ -443,12 +443,25 @@ A masking of the values ​​that can be entered. If, for example, the assembly
 
 <header class="slide_header">
     <h2>IT Like Hardware Engineer</h2>
-    <h3>Hardware basic setting assignment</h3>
+    <h3>Hardware Device Identifiers assignment</h3>
 </header>
 
 <div class="flex-col justify-center">
-
+  <p>When you set up or assemble a system for the first time, it's important to assign basic identifiers, such as names or IP addresses, to the modules, since the modules are delivered with the same values ​​from the factory. This applies to the spare parts use case. <br>
+  Therefore, AX must have a way for a module to know its unique identifiers. Accordingly, you can describe in AX which port is connected to which module. This allows the system to recognize which device is involved and assign the device identifiers based on the network interconnection. <br>
+  The following is a parameterization example showing how different modules are connected to a scalancex208:</p>
+  <br>
+  <div class="grid-two-col-eq">
+    <p><br>The keyword <b>"PortInterconnections"</b> opens the section where you describe everything. <br><br>Using the word <b>"Ports"</b> and the corresponding reference (<b>"Ref"</b>), you specify which port is connected to which port via network cable.</p>
+    <img style="height: 200px; width: auto" src="./img/Portinterconnection.png" />
+  </div>
 </div>
+
+<ol>
+  <li><br>Additional information about templates can be found on the AX page: <br><a href="https://console.simatic-ax.siemens.io/docs/hw/language#creating-a-port-interconnection-between-two-ports-topology-configuration">Topology Configuration</a></li>
+</ol>
+
+
 
 ---
 
