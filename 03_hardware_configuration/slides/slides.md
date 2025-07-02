@@ -336,6 +336,10 @@ Agenda
      <p>The command used to create a template from a GDSML file is shown on the right. The file and assembly ID must be specified accordingly. The result of the execution is shown.</p>
      <br>
      <p>However, placeholders are assigned for the template and assembly names, which must be manually modified to prevent duplicate names from being assigned when creating a second template.</p>
+     <br>
+     <ol>
+       <li>The GSDML for Siemens modules, one of which was also used for the ET200SP, can be downloaded from Siemens Support: <br><a href="https://sieportal.siemens.com/en-ww/support">Link to Siemens Online Support Portal</a></li>
+     </ol>
    </div>
    <div class="flex-col justify-center">
      <p><b>apax hwc generate-template-file <br>--output hwc/templates/ET200SP_DQ_template.hwl.yml <br>--gsdFileName GSDML-V2.43-Siemens-ET200SP-20240726.xml <br>--gsdId "DQ 16x24VDC/0,5A ST"<br></b></p>
