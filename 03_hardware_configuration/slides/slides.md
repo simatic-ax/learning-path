@@ -318,6 +318,7 @@ Agenda
   <ul>
      <li>Can stored centrally and used in the project.</li>
      <li>Can paramized by using placeholders</li>
+     <li>Splitting the hardware configuration into several hwl files.</li>
   </ul>
   <br>
   <p>It is important to note, however, that the identifier for the hardware compiler is the name. This means that a module name or template name in project must be unique and cannot be used multiple times.</p>
@@ -353,9 +354,15 @@ Agenda
     <h3>Templates form hardware support packages</h3>
 </header>
 
-<p><b>apax hwc generate-template-file --output hwc/templates/MP_DQ_template.hwl.json --orderNumber "6ES7 522-1BL00-0AB0" --version V2.0</b></p>
-
-<div class="flex-col justify-center">
+<div class="grid-two-col-eq">
+   <img style="height: 400px; width: auto" src="./img/template_ET200M.png" />
+   <div class="flex-col justify-center">
+     <p>The templates from the modules that come via the Hardware Support Packages are created in the same way as with GSDML. This is the same command, only different parameters must be specified. The command looks like this:</p>
+     <br>
+     <p><b>apax hwc generate-template-file <br>--output hwc/templates/MP_DQ_template.hwl.json <br>--orderNumber "6ES7 522-1BL00-0AB0" <br>--version V2.0<br></b></p>
+     <br>
+     <p>The "orderNumber" and "version" must be hand over. The generated faceplate can now be seen on the right.</p>
+   </div>
 </div>
 
 ----
@@ -375,10 +382,19 @@ Agenda
 </header>
 
 <div class="flex-col justify-center">
-
-<img style="height: 400px; width: auto" src="./img/apply_template.png" />
-
+  <p>Now that the template is ready for use, it must be applied accordingly in main (the file that instantiates the plc) yml file.</p>
+  <br>
+  <p>To use a template, the keyword <b>"Apply"</b> is used. Additionally, the name of the template to be applied must be specified.
+  Depending on whether placeholders are assigned and these are not initialized, they must be parameterized as <b>"Arguments"</b>.</p> 
+  <div class="grid-two-col-eq">
+    <img style="height: 300px; width: auto" src="./img/apply_template.png" />
+    <p>In the example shown here, the same template is used in an ET200SP. <br>Accordingly, a different name is passed over the parameter <b>ModuleName</b>. <br>As an example for the use of the default values ??in the template, the white potential module is passed over the parameter <b>"BaseUnit"</b> for the first module, which is not necessary for the second, since the black module is the default value.</p>
+  </div>
 </div>
+
+<ol>
+  <li><br>Additional information about templates can be found on the AX page: <br><a href="https://console.simatic-ax.siemens.io/docs/hw/language/templates">Templating in hardware configuration</a></li>
+</ol>
 
 ---
 
