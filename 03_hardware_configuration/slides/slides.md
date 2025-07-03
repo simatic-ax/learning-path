@@ -450,7 +450,8 @@ A masking of the values ​​that can be entered. If, for example, the assembly
 <div class="flex-col justify-center">
   <p>During hardware configuration, values/variables are created which must then be processed or accessed in the user program.</p>
   <br>
-  <p>After compiling a hardware configuration, hwc will generate ST files including Hardware Identifiers and IO Addresses for each module inside the folder SystemConstants.<p>
+  <p>After compiling a hardware configuration, hwc will generate ST files including Hardware Identifiers and IO Addresses for each module inside the folder SystemConstants. The files or values ​​you need can simply be copied into the src folder of the software program.
+  <br>Additional information: When the PLC is generated, the values ​​assigned are also saved in JSON files in order to retain values ​​that have already been assigned.<p>
   <br>
   <p>We will briefly show the two files containing the values ​​on the following page.</p>
 </div>
@@ -458,26 +459,29 @@ A masking of the values ​​that can be entered. If, for example, the assembly
 ----
 
 <header class="slide_header">
-    <h3>Io Addresses</h3>
+    <h3>I/O Addresses</h3>
 </header>
 
 <div class="flex-col justify-center">
-    <div class="grid-two-col-eq">
-      <p>a World</p>
-      <img style="height: 400px; width: auto" src="./img/IoAddresses.png" />
-    </div>
+  <p>The I/O addresses are the addresses used to access the signals via the module. This is the process image that contains the current values ​​pending on the hardware or those to be written to the hardware.
+  <br>The I/O addresses of a module will be stored as largest possible type inside IoAddresses file.</p>
+  <br>
+  <p>Here is an example of what such a generated file looks like:</p>
+  <br>
+  <img style="height: 300px; width: 600px" src="./img/IoAddresses.png" />
 </div>
 
 ----
 
 <header class="slide_header">
-    <h3>Hw Identifiers</h3>
+    <h3>Hardware Identifiers</h3>
 </header>
 
 
 <div class="flex-col justify-center">
     <div class="grid-two-col-eq">
-      <p>a World</p>
+      <p>
+Some functions require that you access the hardware in the program or specify which module it is. For this purpose, the hardware identifiers were created during compilation. These are of type UINT. The names correspond to the module name. An example of such a file looks like the one shown on the right.</p>
       <img style="height: 400px; width: auto" src="./img/HardwareIdentifiers.png" />
     </div>
 </div>
