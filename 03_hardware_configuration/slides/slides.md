@@ -119,6 +119,33 @@ Agenda
 
 <header class="slide_header">
     <h2>IT Like Hardware Engineer</h2>
+    <h3>Main Hardwars Tools</h3>
+</header>
+
+<div class="flex-col justify-center">
+   <p>In the hardware environment, there are two basic tools that perform the main tasks. The tools are added with the apax add command, but are both included in the SDK. These are as follows:</p>
+   <br>
+   <ul>
+      <li>HWC - Hardware Compiler
+      <br>The hardware compiler is the main engineering tool. Its main function is to support the customer in creating the hardware configuration (e.g., importing certificates, managing users, importing GSDMLS, and creating templates), as well as translating the configuration into the machine configuration that is also understood by the target. Furthermore, the plausibility of the configuration is checked during the translation process.
+      <br>The call of hwc via the CLI looks like this: <b>"apax hwc [command] [options]"</b>
+      </li>
+      <li>HWLD - Hardware Loader
+      <br>The main function of the hardware loader is to transfer the machine configuration, which was created via the hardware compiler, to the hardware.
+      <br>The call of hwc via the CLI looks like this: <b>"apax hwld [command] [parameters]"</b></li>
+   </ul>
+   <br>
+   <p>For more information about the components and the command and parameters, see:</p>
+   <ul>
+      <li><a href="https://console.simatic-ax.siemens.io/docs/hw/hwc">Hardware Compiler</a></li>
+      <li><a href="https://console.simatic-ax.siemens.io/docs/hw/hwld">Hardware Loader</a></li>
+   </ul>
+</div>
+
+---
+
+<header class="slide_header">
+    <h2>IT Like Hardware Engineer</h2>
     <h3>Security by default</h3>
 </header>
 
@@ -543,8 +570,6 @@ A masking of the values ​​that can be entered. If, for example, the assembly
         </ul>
     </ol>
 </div>
-
-
 
 ---
 
