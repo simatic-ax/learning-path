@@ -547,10 +547,9 @@ Some functions require that you access the hardware in the program or specify wh
     <br>
     <br>
     <ol>
-        <p>The links to the following tools on the AX page are also helpful:</p>
+        <p>The links to the following tool on the AX page are also helpful:</p>
         <ul>
-            <li><a href="https://console.simatic-ax.siemens.io/docs/hw/hwld">Hardware Loader to load HW Config to PLC</a></li>
-            <li><a href="https://console.simatic-ax.siemens.io/docs/plc-info">PLC Info to Start / Stop PLC over CLI</a></li>
+            <a href="https://console.simatic-ax.siemens.io/docs/plc-info">PLC Info to Start / Stop PLC over CLI</a>
         </ul>
     </ol>
 </div>
