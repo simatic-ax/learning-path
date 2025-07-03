@@ -115,96 +115,6 @@ Agenda
 
 <header class="slide_header">
     <h2>IT Like Hardware Engineer</h2>
-    <h3>Security Settings</h3>
-</header>
-
-  <div class="flex-col justify-center">
-     <p>Like all Siemens software, Simatic Ax also represents the principle of "Security by default". 
-        Accordingly, the security aspects must be set up in the project before loading the PLC.<br></p>
-       <p>Security consists the following two aspects:</p>
-       <ul>
-         <li><b>Authentication</b> ensures that you are communicating with the expected PLC</li>
-         <li><b>Authorization</b> ensures operations are only performed by users permitted to do so.</li>
-       </ul>
-  <img style="height: 300; width: auto" src="./img/securityPrinciples.png" />
-  </div>
-
-<ol>
-  <li>Informations about: <a href="https://console.simatic-ax.siemens.io/docs/hw/security">Security</a></li>
-</ol>
-
-----
-
-<header class="slide_header">
-    <h3>Set Up PLC Security Configuration</h3>
-</header>
-
-<div class="grid-two-col-eq">
-    <div class="flex-col justify-center">
-        <p>
-        In order to be able to create hardware for a plc, the first step we need to take is how the hardware configuration is described in a textual declaration for a IT like context.</p>
-        <br>
-            <p>Security consists of two aspects: Authentication and Authorization:
-                <ul>
-                    <li>Authentication ensures that you are communicating with the expected PLC</li>
-                    <li>Authorization ensures operations are only performed by users permitted to do so.</li>
-                </ul>
-            </p>
-        <br>
-        <p>The devices and dependent modules, including all properties, can be easily defined and set.</p>
-    </div>
-    <img style="height: 300px; width: auto" src="./img/hwl-yml-file.png" />
-</div>
-
-<div class="grid-slide-ressources">
-    <ol>
-      <li>Informations about: <a href="https://console.simatic-ax.siemens.io/docs/hw/security/authorization/plc-configuration-data-protection">PLC Configuration Data Protection</a></li>
-    </ol>
-</div>
-
-----
-
-<header class="slide_header">
-    <h3>The PLC SecurityConfiguration File</h3>
-</header>
-
-<div class="flex-col justify-center">
-
-</div>
-
-----
-
-
-<header class="slide_header">
-    <h2>IT Like Hardware Engineer</h2>
-    <h3>User Managment UMAC</h3>
-</header>
-
-----
-
-<header class="slide_header">
-    <h3>Define Users and Roles in hwl.yml</h3>
-</header>
-
-<div class="flex-col justify-center">
-<img style="height: 400px; width: auto" src="./img/UMAC_in_hwl_yml.png" />
-
-</div>
-
-----
-
-<header class="slide_header">
-    <h3>Set Password and manage user over command line of hwc</h3>
-</header>
-
-<div class="flex-col justify-center">
-
-</div>
-
----
-
-<header class="slide_header">
-    <h2>IT Like Hardware Engineer</h2>
     <h3>Integration of additional hardware in project</h3>
 </header>
 
@@ -417,6 +327,111 @@ A masking of the values ​​that can be entered. If, for example, the assembly
 <ol>
   <li><br>Additional information about templates can be found on the AX page: <a href="https://console.simatic-ax.siemens.io/docs/hw/language/templates">Templating in hardware configuration</a></li>
 </ol>
+
+---
+
+<header class="slide_header">
+    <h2>IT Like Hardware Engineer</h2>
+    <h3>Security Settings</h3>
+</header>
+
+  <div class="flex-col justify-center">
+     <p>Like all Siemens software, Simatic AX also represents the principle of "Security by default". 
+        Accordingly, the security aspects must be set up in the project before loading the PLC.<br></p>
+       <p>Security consists the following two aspects:</p>
+       <ul>
+         <li><b>Authentication</b> ensures that you are communicating with the expected PLC</li>
+         <li><b>Authorization</b> ensures operations are only performed by users permitted to do so.</li>
+       </ul>
+  <img style="height: 300; width: auto" src="./img/securityPrinciples.png" />
+  </div>
+
+<ol>
+  <li>Informations about: <a href="https://console.simatic-ax.siemens.io/docs/hw/security">Security</a></li>
+</ol>
+
+----
+
+<header class="slide_header">
+    <h3>Set Up PLC Security Configuration</h3>
+</header>
+
+<div class="grid-two-col-eq">
+    <div class="flex-col justify-center">
+        <p>
+        In order to be able to create hardware for a plc, the first step we need to take is how the hardware configuration is described in a textual declaration for a IT like context.</p>
+        <br>
+            <p>Security consists of two aspects: Authentication and Authorization:
+                <ul>
+                    <li>Authentication ensures that you are communicating with the expected PLC</li>
+                    <li>Authorization ensures operations are only performed by users permitted to do so.</li>
+                </ul>
+            </p>
+        <br>
+        <p>The devices and dependent modules, including all properties, can be easily defined and set.</p>
+    </div>
+    <img style="height: 300px; width: auto" src="./img/hwl-yml-file.png" />
+</div>
+
+<div class="grid-slide-ressources">
+    <ol>
+      <li>Informations about: <a href="https://console.simatic-ax.siemens.io/docs/hw/security/authorization/plc-configuration-data-protection">PLC Configuration Data Protection</a></li>
+    </ol>
+</div>
+
+----
+
+<header class="slide_header">
+    <h3>The PLC SecurityConfiguration File</h3>
+</header>
+
+<div class="flex-col justify-center">
+
+</div>
+
+----
+
+<header class="slide_header">
+    <h3>Certificat handling</h3>
+</header>
+
+<div class="flex-col justify-center">
+OPCUA / TLS / Webserver
+</div>
+
+----
+
+
+
+
+
+
+<header class="slide_header">
+    <h2>IT Like Hardware Engineer</h2>
+    <h3>User Managment UMAC</h3>
+</header>
+
+----
+
+<header class="slide_header">
+    <h3>Define Users and Roles in hwl.yml</h3>
+</header>
+
+<div class="flex-col justify-center">
+<img style="height: 400px; width: auto" src="./img/UMAC_in_hwl_yml.png" />
+
+</div>
+
+----
+
+<header class="slide_header">
+    <h3>Set Password and manage user over command line of hwc</h3>
+</header>
+
+<div class="flex-col justify-center">
+
+</div>
+
 
 ---
 
