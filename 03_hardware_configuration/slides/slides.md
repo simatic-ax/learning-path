@@ -448,7 +448,11 @@ A masking of the values ​​that can be entered. If, for example, the assembly
 </header>
 
 <div class="flex-col justify-center">
-
+  <p>During hardware configuration, values/variables are created which must then be processed or accessed in the user program.</p>
+  <br>
+  <p>After compiling a hardware configuration, hwc will generate ST files including Hardware Identifiers and IO Addresses for each module inside the folder SystemConstants.<p>
+  <br>
+  <p>We will briefly show the two files containing the values ​​on the following page.</p>
 </div>
 
 ----
@@ -555,11 +559,13 @@ A masking of the values ​​that can be entered. If, for example, the assembly
 </header>
 
 <div class="flex-col justify-center">
-    <ul>
-      <li>How to create a hardware configuration</li>
-      <li>How to set the security settings</li>
-      <li>How to get assemblies into the project</li>
-      <li>You have learned where to find a variable for the software program</li>
-      <li>You have loaded your first hardware configuration</li>
-    </ul>
+   <ul>
+     <li>How to create a hardware configuration</li>
+     <li>How to set the security settings</li>
+     <li>How to get assemblies into the project</li>
+     <li>You have learned where to find a variable for the software program</li>
+     <li>You have loaded your first hardware configuration</li>
+   </ul>
+   <br>
+   <p>Congratulations, you've created your first hardware configuration. We recommend, however, that you use a template to store your basic settings so you don't have to start from scratch every time and have your usual settings and scripts available right from the start.</p>
 </div>
