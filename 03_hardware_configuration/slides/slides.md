@@ -517,6 +517,7 @@ A masking of the values ​​that can be entered. If, for example, the assembly
 ---
 
 <header class="slide_header">
+    <h2>IT Like Hardware Engineer</h2>
     <h3>Exercise</h3>
 </header>
 
@@ -530,6 +531,7 @@ A masking of the values ​​that can be entered. If, for example, the assembly
       <li>Create a template for a profinet module from a GSDML. Set Placeholders in the template e.g. for the name. Apply and parameterize the template.</li>
       <li>Create also the topology connection for the profinet module.</li>
       <li>Create your own scripts in the apax yml for loading / user management and hardware diagnostics.</li>
+      <li>Load your hardware configuratin and compare online with offline.</li>
     </ul>
     <br>
     <br>
@@ -547,8 +549,16 @@ A masking of the values ​​that can be entered. If, for example, the assembly
 ---
 
 <header class="slide_header">
-    <h3>HW Overview and Online / Offline compare</h3>
+    <h2>IT Like Hardware Engineer</h2>
+    <h3>What did you learn?</h3>
 </header>
 
-
-What did you learn
+<div class="flex-col justify-center">
+    <ul>
+      <li>How to create a hardware configuration</li>
+      <li>How to set the security settings</li>
+      <li>How to get assemblies into the project</li>
+      <li>You have learned where to find a variable for the software program</li>
+      <li>You have loaded your first hardware configuration</li>
+    </ul>
+</div>
