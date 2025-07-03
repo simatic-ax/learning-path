@@ -115,38 +115,7 @@ Agenda
 
 <header class="slide_header">
     <h2>IT Like Hardware Engineer</h2>
-    <h3>Create a hardware configuration</h3>
-</header>
-
-<div class="grid-two-col-eq">
-    <div class="flex-col justify-center">
-        <p>
-       To create your own hardware configuration, you just have to create a file with the ending ".hwl.sjon" or you can simply use the template that is provided via the hardware laguage server.
-       </p>
-        <br>
-            <p>There are a few points here that need to be taken into account:
-                <ul>
-                    <li>The entry point is always the device</li>
-                    <li>The name of the device will be used later for identification. If it is changed, some things have to be initialized again.</li>
-                    <li>A piece of hardware can consist of several files</li>
-                </ul>
-            </p>
-        <br>
-    </div>
-    <img style="height: 400px; width: auto" src="./img/create-hardware-file.png" />
-</div>
-
-<div class="grid-slide-ressources">
-    <ol>
-      <li>Definition of: <a href="https://console.simatic-ax.siemens.io/docs/hw/language">The SIMATIC AX Hardware Declaration Language</a></li>
-    </ol>
-</div>
-
----
-
-<header class="slide_header">
-    <h2>IT Like Hardware Engineer</h2>
-    <h3>Security by default</h3>
+    <h3>Security Settings</h3>
 </header>
 
   <div class="flex-col justify-center">
