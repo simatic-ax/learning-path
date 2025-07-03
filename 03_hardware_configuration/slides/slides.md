@@ -489,7 +489,10 @@ A masking of the values ​​that can be entered. If, for example, the assembly
 </header>
 
 <div class="flex-col justify-center">
-
+    <div class="grid-two-col-eq">
+      <p>a World</p>
+      <img style="height: 400px; width: auto" src="./img/IoAddresses.png" />
+    </div>
 </div>
 
 ----
@@ -500,8 +503,12 @@ A masking of the values ​​that can be entered. If, for example, the assembly
 
 
 <div class="flex-col justify-center">
-
+    <div class="grid-two-col-eq">
+      <p>a World</p>
+      <img style="height: 400px; width: auto" src="./img/HardwareIdentifiers.png" />
+    </div>
 </div>
+
 
 
 ---
