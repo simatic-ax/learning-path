@@ -169,9 +169,8 @@ Agenda
 ----
 
 <header class="slide_header">
-    <h3>Set Up PLC Access Protection</h3>
+    <h3>The PLC SecurityConfiguration File</h3>
 </header>
-
 
 <div class="flex-col justify-center">
 
@@ -179,8 +178,27 @@ Agenda
 
 ----
 
+
 <header class="slide_header">
-    <h3>The PLC SecurityConfiguration File</h3>
+    <h2>IT Like Hardware Engineer</h2>
+    <h3>User Managment UMAC</h3>
+</header>
+
+----
+
+<header class="slide_header">
+    <h3>Define Users and Roles in hwl.yml</h3>
+</header>
+
+<div class="flex-col justify-center">
+<img style="height: 400px; width: auto" src="./img/UMAC_in_hwl_yml.png" />
+
+</div>
+
+----
+
+<header class="slide_header">
+    <h3>Set Password and manage user over command line of hwc</h3>
 </header>
 
 <div class="flex-col justify-center">
@@ -403,35 +421,6 @@ A masking of the values ​​that can be entered. If, for example, the assembly
 <ol>
   <li><br>Additional information about templates can be found on the AX page: <a href="https://console.simatic-ax.siemens.io/docs/hw/language/templates">Templating in hardware configuration</a></li>
 </ol>
-
----
-
-<header class="slide_header">
-    <h2>IT Like Hardware Engineer</h2>
-    <h3>User Managment UMAC</h3>
-</header>
-
-
-----
-
-<header class="slide_header">
-    <h3>Define Users and Roles in hwl.yml</h3>
-</header>
-
-<div class="flex-col justify-center">
-<img style="height: 400px; width: auto" src="./img/UMAC_in_hwl_yml.png" />
-
-</div>
-
-----
-
-<header class="slide_header">
-    <h3>Set Password and manage user over command line of hwc</h3>
-</header>
-
-<div class="flex-col justify-center">
-
-</div>
 
 ---
 
