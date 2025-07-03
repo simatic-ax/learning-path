@@ -80,7 +80,7 @@ Agenda
 
 <div class="grid-slide-ressources">
     <ol>
-      <li>Information to YML format: <br><a href="https://en.wikipedia.org/wiki/YAML">YAML</a></li>
+      <li>Information to YML format: <a href="https://en.wikipedia.org/wiki/YAML">YAML</a></li>
     </ol>
 </div>
 
@@ -111,7 +111,7 @@ Agenda
 
 <div class="grid-slide-ressources">
     <ol>
-      <li>Definition of: <br><a href="https://console.simatic-ax.siemens.io/docs/hw/language">The SIMATIC AX Hardware Declaration Language</a></li>
+      <li>Definition of: <a href="https://console.simatic-ax.siemens.io/docs/hw/language">The SIMATIC AX Hardware Declaration Language</a></li>
     </ol>
 </div>
 
@@ -124,24 +124,18 @@ Agenda
 
   <div class="flex-col justify-center">
      <p>Like all Siemens software, Simatic Ax also represents the principle of "Security by default". 
-        Accordingly, the security aspects must be set up in the project before loading the PLC.</p>
-    <br>
-       <p>Security consists of two aspects: Authentication and Authorization:
-          <ul>
-              <li>Authentication ensures that you are communicating with the expected PLC</li>
-              <li>Authorization ensures operations are only performed by users permitted to do so.</li>
-          </ul>
-       </p>
-    <br>
+        Accordingly, the security aspects must be set up in the project before loading the PLC.<br></p>
+       <p>Security consists the following two aspects:</p>
+       <ul>
+         <li><b>Authentication</b> ensures that you are communicating with the expected PLC</li>
+         <li><b>Authorization</b> ensures operations are only performed by users permitted to do so.</li>
+       </ul>
+  <img style="height: 300; width: auto" src="./img/securityPrinciples.png" />
   </div>
 
-<img style="height: auto; width: auto" src="./img/securityPrinciples.png" />
-
-<div class="grid-slide-ressources">
-    <ol>
-      <li>Informations about: <br><a href="https://console.simatic-ax.siemens.io/docs/hw/security">Security</a></li>
-    </ol>
-</div>
+<ol>
+  <li>Informations about: <a href="https://console.simatic-ax.siemens.io/docs/hw/security">Security</a></li>
+</ol>
 
 ----
 
@@ -163,12 +157,12 @@ Agenda
         <br>
         <p>The devices and dependent modules, including all properties, can be easily defined and set.</p>
     </div>
-    <img style="height: 400px; width: auto" src="./img/hwl-yml-file.png" />
+    <img style="height: 300px; width: auto" src="./img/hwl-yml-file.png" />
 </div>
 
 <div class="grid-slide-ressources">
     <ol>
-      <li>Informations about: <br><a href="https://console.simatic-ax.siemens.io/docs/hw/security/authorization/plc-configuration-data-protection">PLC Configuration Data Protection</a></li>
+      <li>Informations about: <a href="https://console.simatic-ax.siemens.io/docs/hw/security/authorization/plc-configuration-data-protection">PLC Configuration Data Protection</a></li>
     </ol>
 </div>
 
@@ -203,7 +197,7 @@ Agenda
   <div class="flex-col justify-center">
     <p>To operate a system, you obviously need not only the PLC but also the corresponding modules, motors, and so on. Accordingly, AX also offers various options for incorporating configuration information for modules into the project. There are two options here:</p>
         <ul>
-            <li>The standardized way of importing the hardware into the standardized GSDML format is supported.</li>
+            <li>The way of importing the hardware as standardized GSDML format.</li>
             <li>The standard Siemens modules that are supported are provided as apax packages and can be included as dev dependencies.</li>
         </ul>
     <br>
@@ -232,8 +226,8 @@ Agenda
   <p>These intermediate files will be placed in the GSD installation cache folder. If you use Hardware Compiler version 3.1 or later, it is located in the .ax folder of your user folder. After this the hardware compiler is ready to use the informations fron the gsdml file by the compile.</p>
   <br>
   <ol>
-    <li>Additional Informations about GSDML: <br><a href="https://www.profibus.de/downloads/gsdml-gsdx-specification-for-profinet">GSDML Specification for PROFINET</a></li>
-    <li>Additional Informations about the import of GSDML Files: <br><a href="https://console.simatic-ax.siemens.io/docs/hw/language/gsd-devices-and-modules">GSDML informations on AX Doku</a></li>
+    <li>Additional Informations about GSDML: <a href="https://www.profibus.de/downloads/gsdml-gsdx-specification-for-profinet">GSDML Specification for PROFINET</a></li>
+    <li>Additional Informations about the import of GSDML Files: <a href="https://console.simatic-ax.siemens.io/docs/hw/language/gsd-devices-and-modules">GSDML informations on AX Doku</a></li>
   </ol>
 </div>
 
@@ -254,7 +248,7 @@ Agenda
   <img style="height: 200px; width: auto" src="./img/GSDML_viewer.png" />
   <br>
 <ol>
-  <li>Additional Informations about GSDML Viewer: <br><a href="https://console.simatic-ax.siemens.io/docs/axcode/vscode-gsdml-viewer">GSDML Viewer on AX-Side</a></li>
+  <li>Additional Informations about GSDML Viewer: <a href="https://console.simatic-ax.siemens.io/docs/axcode/vscode-gsdml-viewer">GSDML Viewer on AX-Side</a></li>
 </ol>
 </div>
 
@@ -267,7 +261,7 @@ Agenda
 <div class="flex-col justify-center">
     <p>A hardware support package is viewed as a package from the AX side. Accordingly, it can be added to the project like any other package. You call the apax add command, as in the following example for importing the standard 1500 modules:</p>
     <br>
-    <p><b>apax add --dev @ax/hw-et200sp</b></p>
+    <p><b>apax add --dev @ax/hw-s7-1500</b></p>
     <br>
     <p>The package can then be seen in Apax.yml under development dependencies:</p>
     <img style="height: 120px; width: 250px" src="./img/Hardware_Support_Package.png" />
@@ -278,7 +272,7 @@ Agenda
     </p>
     <br>
     <ol>
-      <li>A current overview of available hardware can be found in the AX documentation: <br><a href="https://console.simatic-ax.siemens.io/docs/hw/supported-hardware">Hardware Support Packages</a></li>
+      <li>A current overview of available hardware can be found in the AX documentation: <a href="https://console.simatic-ax.siemens.io/docs/hw/supported-hardware">Hardware Support Packages</a></li>
     </ol>
 </div>
 
@@ -343,7 +337,7 @@ Agenda
      </ol>
    </div>
    <div class="flex-col justify-center">
-     <p><b>apax hwc generate-template-file <br>--output hwc/templates/ET200SP_DQ_template.hwl.yml <br>--gsdFileName GSDML-V2.43-Siemens-ET200SP-20240726.xml <br>--gsdId "DQ 16x24VDC/0,5A ST"<br></b></p>
+     <p><b>apax hwc generate-template-file <br>--output hwc/templates/ET200SP_DQ_template.hwl.yml <br>--gsd-file-name GSDML-V2.43-Siemens-ET200SP-20240726.xml <br>--gsd-id "DQ 16x24VDC/0,5A ST"<br></b></p>
      <img style="height: 350px; width: auto" src="./img/template_ET200SP.png" />
    </div>
 </div>
@@ -359,9 +353,9 @@ Agenda
    <div class="flex-col justify-center">
      <p>The templates from the modules that come via the Hardware Support Packages are created in the same way as with GSDML. This is the same command, only different parameters must be specified. The command looks like this:</p>
      <br>
-     <p><b>apax hwc generate-template-file <br>--output hwc/templates/MP_DQ_template.hwl.json <br>--orderNumber "6ES7 522-1BL00-0AB0" <br>--version V2.0<br></b></p>
+     <p><b>apax hwc generate-template-file <br>--output hwc/templates/MP_DQ_template.hwl.json <br>--order-number "6ES7 522-1BL00-0AB0" <br>--version V2.0<br></b></p>
      <br>
-     <p>The "orderNumber" and "version" must be hand over. The generated faceplate can now be seen on the right.</p>
+     <p>The "ordernumber" and "version" must be hand over. The generated faceplate can now be seen on the right.</p>
    </div>
 </div>
 
@@ -407,7 +401,7 @@ A masking of the values ​​that can be entered. If, for example, the assembly
 </div>
 
 <ol>
-  <li><br>Additional information about templates can be found on the AX page: <br><a href="https://console.simatic-ax.siemens.io/docs/hw/language/templates">Templating in hardware configuration</a></li>
+  <li><br>Additional information about templates can be found on the AX page: <a href="https://console.simatic-ax.siemens.io/docs/hw/language/templates">Templating in hardware configuration</a></li>
 </ol>
 
 ---
@@ -458,10 +452,8 @@ A masking of the values ​​that can be entered. If, for example, the assembly
 </div>
 
 <ol>
-  <li><br>Additional information about templates can be found on the AX page: <br><a href="https://console.simatic-ax.siemens.io/docs/hw/language#creating-a-port-interconnection-between-two-ports-topology-configuration">Topology Configuration</a></li>
+  <li><br>Additional information about templates can be found on the AX page: <a href="https://console.simatic-ax.siemens.io/docs/hw/language#creating-a-port-interconnection-between-two-ports-topology-configuration">Topology Configuration</a></li>
 </ol>
-
-
 
 ---
 
