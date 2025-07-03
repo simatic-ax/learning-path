@@ -485,22 +485,70 @@ A masking of the values ​​that can be entered. If, for example, the assembly
 </header>
 
 <div class="flex-col justify-center">
-
+  <p>When commissioning a program, you need various tools for general diagnostics, for example, to view or trace online values ​​from the PLC. Therefore, we have created a separate chapter in the Learning Path dedicated exclusively to general diagnostics. 
+  <br><br>However, we will show the hardware-specific diagnostic tools on next side, that you need to get your first hardware run.</p>
 </div>
-
 
 ----
 
 <header class="slide_header">
-    <h3>Hw Overview</h3>
+    <h3>HW Overview and Online / Offline compare</h3>
 </header>
 
+<div class="flex-col justify-center">
+  <p>One of the main hardware-specific diagnostics is checking the online status or checking whether the hardware parameterized in the project is compatible with the current status of the existing hardware.</p>
+  <br>
+  <p>The Ax Eco System provides the hardware diagnostics tool, which can be installed with <b>"apax add --dev @ax/hardware-diagnostics"</b> in the project like a package.</p>
+  <br>
+  <p>Once the tool is installed, you can run the corresponding command <b>apax hw-diag compare</b> to compare your online and offline hardware. It must be noted that appropriately parameterized authentication information such as user/password and certificate must also be transferred. The result will be displayed in the terminal and will look like the image below:</p>
+  <br>
+  <div class="grid-two-col-eq">
+    <img style="height: 180px; width: auto" src="./img/hw-diag-cli.png" />
+    <ul>
+      <li><b>"Actual"</b> refers to the values ​​of the existing hardware</li>
+      <li><b>"Configured"</b> refers to how configuration is done in the offline project</li>
+    </ul>
+  </div>
+</div>
+<ol>
+  <li><br>Additional information about hardware diagnostic can be found on the AX page: <a href="https://console.simatic-ax.siemens.io/docs/hardware-diagnostics">Hardware Diagnostic</a></li>
+</ol>
 
+---
+
+<header class="slide_header">
+    <h3>Exercise</h3>
+</header>
+
+<div class="flex-col justify-center">
+    <p>Now it's time to put what you've learned into practice. To do this, please complete an exercise and follow the steps below. Feel free to flip back to the relevant pages for help.</p>
+    <ul>
+      <li>Create a new project</li>
+      <li>Add the components hwc, hwld</li>
+      <li>Insert assemblies via packages and gsd</li>
+      <li>Create the template of a PLC from the hardware support packages and perform the setup of the security functions</li>
+      <li>Create a template for a profinet module from a GSDML. Set Placeholders in the template e.g. for the name. Apply and parameterize the template.</li>
+      <li>Create also the topology connection for the profinet module.</li>
+      <li>Create your own scripts in the apax yml for loading / user management and hardware diagnostics.</li>
+    </ul>
+    <br>
+    <br>
+    <ol>
+        <p>The links to the following tools on the AX page are also helpful:</p>
+        <ul>
+            <li><a href="https://console.simatic-ax.siemens.io/docs/hw/hwld">Hardware Loader to load HW Config to PLC</a></li>
+            <li><a href="https://console.simatic-ax.siemens.io/docs/plc-info">PLC Info to Start / Stop PLC over CLI</a></li>
+        </ul>
+    </ol>
 </div>
 
 
 
-
 ---
+
+<header class="slide_header">
+    <h3>HW Overview and Online / Offline compare</h3>
+</header>
+
 
 What did you learn
