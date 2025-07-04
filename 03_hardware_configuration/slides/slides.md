@@ -40,14 +40,14 @@ Agenda
 
 <div class="grid-two-col-eq">
   <div class="flex-col justify-center">
-    <p>After you completed this training section you will </p>
+    <p>After you complete this training section, you will have:</p>
         <ul>
-            <li>Basic knowledge over hardware configuration</li>
-            <li>Know how to insert hardware devices in project</li>
-            <li>Using templates in hardware context</li>
-            <li>Able to administrate Users over User Managment</li>
-            <li>Hardware basic setting assignment</li>
-            <li>Diagnostics in the hardware environment</li>
+            <li>Basic knowledge of hardware configuration</li>
+            <li>Know how to insert hardware devices into a project</li>
+            <li>Know how to use templates in hardware context</li>
+            <li>Be able to administer users through User Management</li>
+            <li>Know how to perform hardware basic setting assignment</li>
+            <li>Understand diagnostics in the hardware environment</li>
         </ul>
     <br>
   </div>
@@ -56,20 +56,20 @@ Agenda
 ---
 
 <header class="slide_header">
-    <h2>IT Like Hardware Engineer</h2>
+    <h2>IT-Like Hardware Engineering</h2>
     <h3>The description of the configuration</h3>
 </header>
 
 <div class="grid-two-col-eq">
     <div class="flex-col justify-center">
         <p>
-        In order to be able to create hardware for a plc, the first step we need to take is how the hardware configuration is described in a textual declaration for a IT like context.</p>
+        In order to create hardware for a PLC, the first step we need to take is to understand how the hardware configuration is described in a textual declaration for an IT-like context.</p>
         <br>
-            <p>The format in which the hardware configuration is created is YML. YML has the following advantages as a format:
+            <p>The format in which the hardware configuration is created is YAML. YAML has the following advantages as a format:
                 <ul>
-                    <li>text based</li>
-                    <li>readable by humans</li>
-                    <li>can be easily edited with a text editor</li>
+                    <li>Text-based</li>
+                    <li>Human-readable</li>
+                    <li>Can be easily edited with a text editor</li>
                 </ul>
             </p>
         <br>
@@ -80,31 +80,31 @@ Agenda
 
 <div class="grid-slide-ressources">
     <ol>
-      <li>Information to YML format: <a href="https://en.wikipedia.org/wiki/YAML">YAML</a></li>
+      <li>Information about YAML format: <a href="https://en.wikipedia.org/wiki/YAML">YAML</a></li>
     </ol>
 </div>
 
 ---
 
 <header class="slide_header">
-    <h2>IT Like Hardware Engineer</h2>
-    <h3>Main Hardwars Tools</h3>
+    <h2>IT-Like Hardware Engineering</h2>
+    <h3>Main Hardware Tools</h3>
 </header>
 
 <div class="flex-col justify-center">
-   <p>In the hardware environment, there are two basic tools that perform the main tasks. The tools are added with the apax add command, but are both included in the SDK. These are as follows:</p>
+   <p>In the hardware environment, there are two basic tools that perform the main tasks. The tools are added with the `apax add` command, but are both included in the SDK. These are as follows:</p>
    <br>
    <ul>
       <li>HWC - Hardware Compiler
-      <br>The hardware compiler is the main engineering tool. Its main function is to support the customer in creating the hardware configuration (e.g., importing certificates, managing users, importing GSDMLS, and creating templates), as well as translating the configuration into the machine configuration that is also understood by the target. Furthermore, the plausibility of the configuration is checked during the translation process.
-      <br>The call of hwc via the CLI looks like this: <b>"apax hwc [command] [options]"</b>
+      <br>The hardware compiler is the main engineering tool. Its main function is to support the customer in creating the hardware configuration (e.g., importing certificates, managing users, importing GSDMLs, and creating templates), as well as translating the configuration into the machine configuration that is also understood by the target. Furthermore, the plausibility of the configuration is checked during the translation process.
+      <br>The call of HWC via the CLI looks like this: <b>"apax hwc [command] [options]"</b>
       </li>
       <li>HWLD - Hardware Loader
       <br>The main function of the hardware loader is to transfer the machine configuration, which was created via the hardware compiler, to the hardware.
-      <br>The call of hwc via the CLI looks like this: <b>"apax hwld [command] [parameters]"</b></li>
+      <br>The call of HWLD via the CLI looks like this: <b>"apax hwld [command] [parameters]"</b></li>
    </ul>
    <br>
-   <p>For more information about the components and the command and parameters, see:</p>
+   <p>For more information about the components and their commands and parameters, see:</p>
    <ul>
       <li><a href="https://console.simatic-ax.siemens.io/docs/hw/hwc">Hardware Compiler</a></li>
       <li><a href="https://console.simatic-ax.siemens.io/docs/hw/hwld">Hardware Loader</a></li>
@@ -114,15 +114,15 @@ Agenda
 ---
 
 <header class="slide_header">
-    <h2>IT Like Hardware Engineer</h2>
-    <h3>Integration of additional hardware in project</h3>
+    <h2>IT-Like Hardware Engineering</h2>
+    <h3>Integration of additional hardware into a project</h3>
 </header>
 
   <div class="flex-col justify-center">
     <p>To operate a system, you obviously need not only the PLC but also the corresponding modules, motors, and so on. Accordingly, AX also offers various options for incorporating configuration information for modules into the project. There are two options here:</p>
         <ul>
-            <li>The way of importing the hardware as standardized GSDML format.</li>
-            <li>The standard Siemens modules that are supported are provided as apax packages and can be included as dev dependencies.</li>
+            <li>Importing the hardware as a standardized GSDML format.</li>
+            <li>Using standard Siemens modules that are supported and provided as apax packages that can be included as dev dependencies.</li>
         </ul>
     <br>
     <p>In the following section we will show you how to proceed in order to have the hardware information available in the project.</p>
@@ -133,7 +133,7 @@ Agenda
 ----
 
 <header class="slide_header">
-    <h3>Using of GSD Files</h3>
+    <h3>Use of GSD Files</h3>
 </header>
 
 <div class="flex-col justify-center">
@@ -141,17 +141,17 @@ Agenda
   <p>The GSD (General Station Description) format is a description language used to describe and parameterize hardware settings. It is a standard supported by all PROFINET device manufacturers. Accordingly, each hardware manufacturer provides the description file.
   <br>
   <p>First, you need to contact the manufacturer of the module you want to use and obtain the GSD file. This is then usually inserted into the project. 
-    We recommend creating a folder called gsd in the project and inserting the files there centrally. After that, you need to make the module known in the project so that you can use it. This is done with the help of the hardware compiler. You call:</p>
+    We recommend creating a folder called `gsd` in the project and inserting the files there centrally. After that, you need to make the module known in the project so that you can use it. This is done with the help of the hardware compiler. You call:</p>
   <br>
-  <p><b>apax hwc install-gsd --input <name_of_GsdFile></b></p>
+  <p><b>apax hwc install-gsd --input &lt;name_of_GsdFile&gt;</b></p>
   <br>
   <p>The install-gsd command will generate intermediate files that are required for Hardware Compiler from the GSDML or GSDX files.</p>
   <br>
-  <p>These intermediate files will be placed in the GSD installation cache folder. If you use Hardware Compiler version 3.1 or later, it is located in the .ax folder of your user folder. After this the hardware compiler is ready to use the informations fron the gsdml file by the compile.</p>
+  <p>These intermediate files will be placed in the GSD installation cache folder. If you use Hardware Compiler version 3.1 or later, it is located in the .ax folder of your user folder. After this, the hardware compiler is ready to use the information from the GSDML file by the compile.</p>
   <br>
   <ol>
-    <li>Additional Informations about GSDML: <a href="https://www.profibus.de/downloads/gsdml-gsdx-specification-for-profinet">GSDML Specification for PROFINET</a></li>
-    <li>Additional Informations about the import of GSDML Files: <a href="https://console.simatic-ax.siemens.io/docs/hw/language/gsd-devices-and-modules">GSDML informations on AX Doku</a></li>
+    <li>Additional information about GSDML: <a href="https://www.profibus.de/downloads/gsdml-gsdx-specification-for-profinet">GSDML Specification for PROFINET</a></li>
+    <li>Additional information about the import of GSDML Files: <a href="https://console.simatic-ax.siemens.io/docs/hw/language/gsd-devices-and-modules">GSDML information on AX Documentation</a></li>
   </ol>
 </div>
 
@@ -162,9 +162,9 @@ Agenda
 </header>
 <div class="grid-two-col-eq">
     <div class="flex-col justify-center">
-       <p>Depending on how many assemblies it describes, a GSD file can become very large, making it difficult to determine which attributes an assembly has and which values ??it can assume.</p>
+       <p>Depending on how many assemblies it describes, a GSD file can become very large, making it difficult to determine which attributes an assembly has and which values it can assume.</p>
        <br>
-       <p>For a graphical overview, we offer an extension that can be integrated into AX code (see image to the right). You can then click on a gsdml xml file, and it will open in the extension (see below).</p>
+       <p>For a graphical overview, we offer an extension that can be integrated into AX code (see image to the right). You can then click on a GSDML XML file, and it will open in the extension (see below).</p>
        <br>
     </div>
     <img style="height: 200px; width: 250px" src="./img/extension_GSDML_viewer.png" />
@@ -172,26 +172,26 @@ Agenda
   <img style="height: 200px; width: auto" src="./img/GSDML_viewer.png" />
   <br>
 <ol>
-  <li>Additional Informations about GSDML Viewer: <a href="https://console.simatic-ax.siemens.io/docs/axcode/vscode-gsdml-viewer">GSDML Viewer on AX-Side</a></li>
+  <li>Additional information about GSDML Viewer: <a href="https://console.simatic-ax.siemens.io/docs/axcode/vscode-gsdml-viewer">GSDML Viewer on AX-Side</a></li>
 </ol>
 </div>
 
 ----
 
 <header class="slide_header">
-    <h3>Siemens Hardware over Support Packages</h3>
+    <h3>Siemens Hardware via Support Packages</h3>
 </header>
 
 <div class="flex-col justify-center">
-    <p>A hardware support package is viewed as a package from the AX side. Accordingly, it can be added to the project like any other package. You call the apax add command, as in the following example for importing the standard 1500 modules:</p>
+    <p>A hardware support package is viewed as a package from the AX side. Accordingly, it can be added to the project like any other package. You call the `apax add` command, as in the following example for importing the standard 1500 modules:</p>
     <br>
     <p><b>apax add --dev @ax/hw-s7-1500</b></p>
     <br>
-    <p>The package can then be seen in Apax.yml under development dependencies:</p>
+    <p>The package can then be seen in apax.yml under development dependencies:</p>
     <img style="height: 120px; width: 250px" src="./img/Hardware_Support_Package.png" />
     <br>
     <p>
-        If you now open the project on another PC, the hardware information will also be added to the project via a simple Apax install.
+        If you now open the project on another PC, the hardware information will also be added to the project via a simple `apax install`.
         If additional Siemens hardware is required that is not yet offered as a hardware support package, it can of course also be imported as GSDML. 
     </p>
     <br>
@@ -203,11 +203,11 @@ Agenda
 ----
 
 <header class="slide_header">
-    <h3>Overview what Hardware is installed in project</h3>
+    <h3>Overview of what hardware is installed in the project</h3>
 </header>
 
 <div class="flex-col justify-center">
-    <p>You want to know which modules are known to the hardware compiler in the project, or/and what IDs they have. This can be done using a corresponding container in the hardware compiler, which looks like this:</p>
+    <p>You want to know which modules are known to the hardware compiler in the project, and/or what IDs they have. This can be done using a corresponding command in the hardware compiler, which looks like this:</p>
     <br>
     <p><b>apax hwc get-supported-devices</b></p>
     <br>
@@ -219,40 +219,40 @@ Agenda
 ---
 
 <header class="slide_header">
-    <h2>IT Like Hardware Engineer</h2>
-    <h3>Using of Templates</h3>
+    <h2>IT-Like Hardware Engineering</h2>
+    <h3>Use of Templates</h3>
 </header>
 
 <div class="flex-col justify-center">
-  <p>The previous section showed how to use the configuration information in the project. There are basically two ways to do this:
+  <p>The previous section showed how to use the configuration information in the project. There are basically two ways to do this:</p>
   <ul>
-     <li>You can create the valid hardware configuration file yourself in your way.</li>
-     <li>You can have it created for you over the hardware compiler, which we deal with in this section</li>
+     <li>You can create the valid hardware configuration file yourself in your own way.</li>
+     <li>You can have it created for you via the hardware compiler, which we deal with in this section.</li>
   </ul>
   <br>
   <p>The hardware compiler has the function of creating a template, which creates all the attributes made available for parameterization by the configuration file with the default values.</p>
   <br>
   <p>A template is initially referred to as the template of a hardware module, but later also as files that can be used multiple times in a project for modules with the same configuration. In this sense, hardware templates offer several advantages. Among other things, they can be:</p>
   <ul>
-     <li>Can stored centrally and used in the project.</li>
-     <li>Can paramized by using placeholders</li>
-     <li>Splitting the hardware configuration into several hwl files.</li>
+     <li>Be stored centrally and used in the project.</li>
+     <li>Be parameterized by using placeholders.</li>
+     <li>Split the hardware configuration into several HWL files.</li>
   </ul>
   <br>
-  <p>It is important to note, however, that the identifier for the hardware compiler is the name. This means that a module name or template name in project must be unique and cannot be used multiple times.</p>
+  <p>It is important to note, however, that the identifier for the hardware compiler is the name. This means that a module name or template name in a project must be unique and cannot be used multiple times.</p>
 </div>
 
 ----
 
 <header class="slide_header">
-    <h3>Templates form GSD</h3>
+    <h3>Templates from GSD</h3>
 </header>
 
 <div class="grid-two-col-eq">
    <div class="flex-col justify-center">
      <p>The prerequisite for creating a template from a GSD file is that it is installed in the project. To call it, you need the GSD ID of the assembly in the file.</p>
      <br>
-     <p>The command used to create a template from a GDSML file is shown on the right. The file and assembly ID must be specified accordingly. The result of the execution is shown.</p>
+     <p>The command used to create a template from a GSDML file is shown on the right. The file and assembly ID must be specified accordingly. The result of the execution is shown.</p>
      <br>
      <p>However, placeholders are assigned for the template and assembly names, which must be manually modified to prevent duplicate names from being assigned when creating a second template.</p>
      <br>
@@ -269,7 +269,7 @@ Agenda
 ----
 
 <header class="slide_header">
-    <h3>Templates form hardware support packages</h3>
+    <h3>Templates from hardware support packages</h3>
 </header>
 
 <div class="grid-two-col-eq">
@@ -279,14 +279,14 @@ Agenda
      <br>
      <p><b>apax hwc generate-template-file <br>--output hwc/templates/MP_DQ_template.hwl.json <br>--order-number "6ES7 522-1BL00-0AB0" <br>--version V2.0<br></b></p>
      <br>
-     <p>The "ordernumber" and "version" must be hand over. The generated faceplate can now be seen on the right.</p>
+     <p>The "order number" and "version" must be passed. The generated template can now be seen on the right.</p>
    </div>
 </div>
 
 ----
 
 <header class="slide_header">
-    <h3>Using of placeholder</h3>
+    <h3>Use of placeholders</h3>
 </header>
 
 <div class="flex-col justify-center">
@@ -299,7 +299,7 @@ Agenda
      <li><b>Name:</b> The name of the placeholder, which is then also applied in the content</li>
      <li><b>Value:</b> The default value if the variable is not specified. If this is not set, the variable must always be specified when applying.</li>
      <li><b>AllowedValues:</b> 
-A masking of the values ​​that can be entered. If, for example, the assembly has more setting options, but the process only allows certain values, this can be restricted.</li>
+A restriction of the values that can be entered. If, for example, the assembly has more setting options, but the process only allows certain values, this can be restricted.</li>
     </ul>
     <p>The keyword <b>Content</b> contains the description of the module with the application of the placeholder, see <b>"${Modulename}"</b></p>
     </div>
@@ -320,7 +320,7 @@ A masking of the values ​​that can be entered. If, for example, the assembly
   Depending on whether placeholders are assigned and these are not initialized, they must be parameterized as <b>"Arguments"</b>.</p> 
   <div class="grid-two-col-eq">
     <img style="height: 300px; width: auto" src="./img/apply_template.png" />
-    <p>In the example shown here, the same template is used in an ET200SP. <br>Accordingly, a different name is passed over the parameter <b>ModuleName</b>. <br>As an example for the use of the default values ​​in the template, the white potential module is passed over the parameter <b>"BaseUnit"</b> for the first module, which is not necessary for the second, since the black module is the default value.</p>
+    <p>In the example shown here, the same template is used in an ET200SP. <br>Accordingly, a different name is passed via the parameter <b>ModuleName</b>. <br>As an example for the use of the default values in the template, the white potential module is passed via the parameter <b>"BaseUnit"</b> for the first module, which is not necessary for the second, since the black module is the default value.</p>
   </div>
 </div>
 
@@ -331,14 +331,14 @@ A masking of the values ​​that can be entered. If, for example, the assembly
 ---
 
 <header class="slide_header">
-    <h2>IT Like Hardware Engineer</h2>
+    <h2>IT-Like Hardware Engineering</h2>
     <h3>Security Settings</h3>
 </header>
 
   <div class="flex-col justify-center">
-     <p>Like all Siemens software, Simatic AX also represents the principle of "Security by default". 
+     <p>Like all Siemens software, SIMATIC AX also represents the principle of "Security by default". 
         Accordingly, the security aspects must be set up in the project before loading the PLC.<br></p>
-       <p>Security consists the following two aspects:</p>
+       <p>Security consists of the following two aspects:</p>
        <ul>
          <li><b>Authentication</b> ensures that you are communicating with the expected PLC</li>
          <li><b>Authorization</b> ensures operations are only performed by users permitted to do so.</li>
@@ -347,7 +347,7 @@ A masking of the values ​​that can be entered. If, for example, the assembly
   </div>
 
 <ol>
-  <li>Informations about: <a href="https://console.simatic-ax.siemens.io/docs/hw/security">Security</a></li>
+  <li>Information about: <a href="https://console.simatic-ax.siemens.io/docs/hw/security">Security</a></li>
 </ol>
 
 ----
@@ -359,7 +359,7 @@ A masking of the values ​​that can be entered. If, for example, the assembly
 <div class="grid-two-col-eq">
     <div class="flex-col justify-center">
         <p>
-        In order to be able to create hardware for a plc, the first step we need to take is how the hardware configuration is described in a textual declaration for a IT like context.</p>
+        In order to create hardware for a PLC, the first step we need to take is to understand how the hardware configuration is described in a textual declaration for an IT-like context.</p>
         <br>
             <p>Security consists of two aspects: Authentication and Authorization:
                 <ul>
@@ -375,14 +375,14 @@ A masking of the values ​​that can be entered. If, for example, the assembly
 
 <div class="grid-slide-ressources">
     <ol>
-      <li>Informations about: <a href="https://console.simatic-ax.siemens.io/docs/hw/security/authorization/plc-configuration-data-protection">PLC Configuration Data Protection</a></li>
+      <li>Information about: <a href="https://console.simatic-ax.siemens.io/docs/hw/security/authorization/plc-configuration-data-protection">PLC Configuration Data Protection</a></li>
     </ol>
 </div>
 
 ----
 
 <header class="slide_header">
-    <h3>The PLC SecurityConfiguration File</h3>
+    <h3>The PLC Security Configuration File</h3>
 </header>
 
 <div class="flex-col justify-center">
@@ -392,7 +392,7 @@ A masking of the values ​​that can be entered. If, for example, the assembly
 ----
 
 <header class="slide_header">
-    <h3>Certificat handling</h3>
+    <h3>Certificate handling</h3>
 </header>
 
 <div class="flex-col justify-center">
@@ -407,8 +407,8 @@ OPCUA / TLS / Webserver
 
 
 <header class="slide_header">
-    <h2>IT Like Hardware Engineer</h2>
-    <h3>User Managment UMAC</h3>
+    <h2>IT-Like Hardware Engineering</h2>
+    <h3>User Management UMAC</h3>
 </header>
 
 ----
@@ -425,7 +425,7 @@ OPCUA / TLS / Webserver
 ----
 
 <header class="slide_header">
-    <h3>Set Password and manage user over command line of hwc</h3>
+    <h3>Set Password and manage users over command line of hwc</h3>
 </header>
 
 <div class="flex-col justify-center">
@@ -436,14 +436,14 @@ OPCUA / TLS / Webserver
 ---
 
 <header class="slide_header">
-    <h2>IT Like Hardware Engineer</h2>
+    <h2>IT-Like Hardware Engineering</h2>
     <h3>Hardware Device Identifiers assignment</h3>
 </header>
 
 <div class="flex-col justify-center">
-  <p>When you set up or assemble a system for the first time, it's important to assign basic identifiers, such as names or IP addresses, to the modules, since the modules are delivered with the same values ​​from the factory. This applies to the spare parts use case. <br>
+  <p>When you set up or assemble a system for the first time, it's important to assign basic identifiers, such as names or IP addresses, to the modules, since the modules are delivered with the same values from the factory. This applies to the spare parts use case. <br>
   Therefore, AX must have a way for a module to know its unique identifiers. Accordingly, you can describe in AX which port is connected to which module. This allows the system to recognize which device is involved and assign the device identifiers based on the network interconnection. <br>
-  The following is a parameterization example showing how different modules are connected to a scalancex208:</p>
+  The following is a parameterization example showing how different modules are connected to a SCALANCE X208:</p>
   <br>
   <div class="grid-two-col-eq">
     <p><br>The keyword <b>"PortInterconnections"</b> opens the section where you describe everything. <br><br>Using the word <b>"Ports"</b> and the corresponding reference (<b>"Ref"</b>), you specify which port is connected to which port via network cable.</p>
@@ -458,17 +458,17 @@ OPCUA / TLS / Webserver
 ---
 
 <header class="slide_header">
-    <h2>IT Like Hardware Engineer</h2>
-    <h3>Constante Values that will be used in software programm</h3>
+    <h2>IT-Like Hardware Engineering</h2>
+    <h3>Constant Values that will be used in software program</h3>
 </header>
 
 <div class="flex-col justify-center">
   <p>During hardware configuration, values/variables are created which must then be processed or accessed in the user program.</p>
   <br>
-  <p>After compiling a hardware configuration, hwc will generate ST files including Hardware Identifiers and IO Addresses for each module inside the folder SystemConstants. The files or values ​​you need can simply be copied into the src folder of the software program.
-  <br>Additional information: When the PLC is generated, the values ​​assigned are also saved in JSON files in order to retain values ​​that have already been assigned.<p>
+  <p>After compiling a hardware configuration, hwc will generate ST files including Hardware Identifiers and IO Addresses for each module inside the folder SystemConstants. The files or values you need can simply be copied into the src folder of the software program.
+  <br>Additional information: When the PLC is generated, the values assigned are also saved in JSON files in order to retain values that have already been assigned.</p>
   <br>
-  <p>We will briefly show the two files containing the values ​​on the following page.</p>
+  <p>We will briefly show the two files containing the values on the following page.</p>
 </div>
 
 ----
@@ -478,8 +478,8 @@ OPCUA / TLS / Webserver
 </header>
 
 <div class="flex-col justify-center">
-  <p>The I/O addresses are the addresses used to access the signals via the module. This is the process image that contains the current values ​​pending on the hardware or those to be written to the hardware.
-  <br>The I/O addresses of a module will be stored as largest possible type inside IoAddresses file.</p>
+  <p>The I/O addresses are the addresses used to access the signals via the module. This is the process image that contains the current values pending on the hardware or those to be written to the hardware.
+  <br>The I/O addresses of a module will be stored as the largest possible type inside the IoAddresses file.</p>
   <br>
   <p>Here is an example of what such a generated file looks like:</p>
   <br>
@@ -496,7 +496,7 @@ OPCUA / TLS / Webserver
 <div class="flex-col justify-center">
     <div class="grid-two-col-eq">
       <p>
-Some functions require that you access the hardware in the program or specify which module it is. For this purpose, the hardware identifiers were created during compilation. These are of type UINT. The names correspond to the module name. An example of such a file looks like the one shown on the right.</p>
+Some functions require that you access the hardware in the program or specify which module it is. For this purpose, hardware identifiers are created during compilation. These are of type UINT. The names correspond to the module name. An example of such a file looks like the one shown on the right.</p>
       <img style="height: 400px; width: auto" src="./img/HardwareIdentifiers.png" />
     </div>
 </div>
@@ -506,13 +506,13 @@ Some functions require that you access the hardware in the program or specify wh
 ---
 
 <header class="slide_header">
-    <h2>IT Like Hardware Engineer</h2>
+    <h2>IT-Like Hardware Engineering</h2>
     <h3>Diagnostic and hardware functions</h3>
 </header>
 
 <div class="flex-col justify-center">
-  <p>When commissioning a program, you need various tools for general diagnostics, for example, to view or trace online values ​​from the PLC. Therefore, we have created a separate chapter in the Learning Path dedicated exclusively to general diagnostics. 
-  <br><br>However, we will show the hardware-specific diagnostic tools on next side, that you need to get your first hardware run.</p>
+  <p>When commissioning a program, you need various tools for general diagnostics, for example, to view or trace online values from the PLC. Therefore, we have created a separate chapter in the Learning Path dedicated exclusively to general diagnostics. 
+  <br><br>However, we will show the hardware-specific diagnostic tools on the next slide that you need to get your first hardware running.</p>
 </div>
 
 ----
@@ -524,26 +524,26 @@ Some functions require that you access the hardware in the program or specify wh
 <div class="flex-col justify-center">
   <p>One of the main hardware-specific diagnostics is checking the online status or checking whether the hardware parameterized in the project is compatible with the current status of the existing hardware.</p>
   <br>
-  <p>The Ax Eco System provides the hardware diagnostics tool, which can be installed with <b>"apax add --dev @ax/hardware-diagnostics"</b> in the project like a package.</p>
+  <p>The AX Ecosystem provides the hardware diagnostics tool, which can be installed with <b>"apax add --dev @ax/hardware-diagnostics"</b> in the project like a package.</p>
   <br>
   <p>Once the tool is installed, you can run the corresponding command <b>apax hw-diag compare</b> to compare your online and offline hardware. It must be noted that appropriately parameterized authentication information such as user/password and certificate must also be transferred. The result will be displayed in the terminal and will look like the image below:</p>
   <br>
   <div class="grid-two-col-eq">
     <img style="height: 180px; width: auto" src="./img/hw-diag-cli.png" />
     <ul>
-      <li><b>"Actual"</b> refers to the values ​​of the existing hardware</li>
+      <li><b>"Actual"</b> refers to the values of the existing hardware</li>
       <li><b>"Configured"</b> refers to how configuration is done in the offline project</li>
     </ul>
   </div>
 </div>
 <ol>
-  <li><br>Additional information about hardware diagnostic can be found on the AX page: <a href="https://console.simatic-ax.siemens.io/docs/hardware-diagnostics">Hardware Diagnostic</a></li>
+  <li><br>Additional information about hardware diagnostics can be found on the AX page: <a href="https://console.simatic-ax.siemens.io/docs/hardware-diagnostics">Hardware Diagnostic</a></li>
 </ol>
 
 ---
 
 <header class="slide_header">
-    <h2>IT Like Hardware Engineer</h2>
+    <h2>IT-Like Hardware Engineering</h2>
     <h3>Exercise</h3>
 </header>
 
@@ -554,15 +554,15 @@ Some functions require that you access the hardware in the program or specify wh
       <li>Add the components hwc, hwld</li>
       <li>Insert assemblies via packages and gsd</li>
       <li>Create the template of a PLC from the hardware support packages and perform the setup of the security functions</li>
-      <li>Create a template for a profinet module from a GSDML. Set Placeholders in the template e.g. for the name. Apply and parameterize the template.</li>
-      <li>Create also the topology connection for the profinet module.</li>
+      <li>Create a template for a PROFINET module from a GSDML. Set placeholders in the template e.g. for the name. Apply and parameterize the template.</li>
+      <li>Create also the topology connection for the PROFINET module.</li>
       <li>Create your own scripts in the apax yml for loading / user management and hardware diagnostics.</li>
-      <li>Load your hardware configuratin and compare online with offline.</li>
+      <li>Load your hardware configuration and compare online with offline.</li>
     </ul>
     <br>
     <br>
     <ol>
-        <p>The links to the following tool on the AX page are also helpful:</p>
+        <p>The links to the following tools on the AX page are also helpful:</p>
         <ul>
             <a href="https://console.simatic-ax.siemens.io/docs/plc-info">PLC Info to Start / Stop PLC over CLI</a>
         </ul>
@@ -572,7 +572,7 @@ Some functions require that you access the hardware in the program or specify wh
 ---
 
 <header class="slide_header">
-    <h2>IT Like Hardware Engineer</h2>
+    <h2>IT-Like Hardware Engineering</h2>
     <h3>What did you learn?</h3>
 </header>
 
@@ -581,7 +581,7 @@ Some functions require that you access the hardware in the program or specify wh
      <li>How to create a hardware configuration</li>
      <li>How to set the security settings</li>
      <li>How to get assemblies into the project</li>
-     <li>You have learned where to find a variable for the software program</li>
+     <li>You have learned where to find variables for the software program</li>
      <li>You have loaded your first hardware configuration</li>
    </ul>
    <br>
