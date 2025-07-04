@@ -382,17 +382,24 @@ A restriction of the values that can be entered. If, for example, the assembly h
 </header>
 
 <div class="flex-col justify-center">
-  <p>To fullfill the cyber security needs of a production facility, additional information must be stored and loaded onto the PLC. This information is not necessarily generic or even stored in a readable format. Examples include passwords or certificate keys.</p>
-  <p></p>
-  <img style="height: 300px; width: auto" src="./img/SecurityConfiguration-File.png" />
-</div>
-
-
-<div class="grid-slide-ressources">
-    <ol>
-      <li><br>Informations about: <br><a href="https://console.simatic-ax.siemens.io/docs/hw/security/authorization/plc-configuration-data-protection">PLC Configuration Data Protection</a>
-      <br><a href="https://console.simatic-ax.siemens.io/docs/hw/hwc#setup-secure-communication-command">setup-secure-communication command</a></li> 
-    </ol>
+  <p>To fullfill the cyber security needs of a production facility, additional information must be stored and loaded onto the PLC. This information is not necessarily generic or even stored in a readable format, how you can see down in the screenshot. Examples include passwords or certificate keys.</p>
+  <br>
+  <img style="height: 120px; width: 400px" src="./img/SecurityConfiguration-File.png" />
+  <br>
+  <p>Creating the file is also necessary in order to successfully compile the PLC. 
+  <br>If the file is deleted or manually modified, it must be deleted and completely recreated.</p>
+  <br>
+  <p>To create the file, the command <b>"apax hwc setup-secure-communication"</b> called with the following parameters.:
+    <ul>
+      <li><b>module-name:</b> name of PLC</li>
+      <li><b>input:</b> Path to the hwl config files.</li>
+      <li><b>master-password</b> the masterpassword for the config on plc.</li>
+    </ul>
+  </p>
+  <ol>
+   <li>For more Information floowing the links for the topics: <br><a href="https://console.simatic-ax.siemens.io/docs/hw/security/authorization/plc-configuration-data-protection">PLC Configuration Data Protection</a>
+   <br><a href="https://console.simatic-ax.siemens.io/docs/hw/hwc#setup-secure-communication-command">setup-secure-communication command</a></li> 
+  </ol>
 </div>
 
 ----
