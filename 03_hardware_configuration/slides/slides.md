@@ -397,7 +397,7 @@ A restriction of the values that can be entered. If, for example, the assembly h
     </ul>
   </p>
   <ol>
-   <li>For more Information floowing the links for the topics: <br><a href="https://console.simatic-ax.siemens.io/docs/hw/security/authorization/plc-configuration-data-protection">PLC Configuration Data Protection</a>
+   <li>For more Information flowing the links for the topics: <br><a href="https://console.simatic-ax.siemens.io/docs/hw/security/authorization/plc-configuration-data-protection">PLC Configuration Data Protection</a>
    <br><a href="https://console.simatic-ax.siemens.io/docs/hw/hwc#setup-secure-communication-command">setup-secure-communication command</a></li> 
   </ol>
 </div>
@@ -408,11 +408,22 @@ A restriction of the values that can be entered. If, for example, the assembly h
     <h3>Certificate handling</h3>
 </header>
 
-<div class="flex-col justify-center">
-    OPCUA / TLS / Webserver
-    <img style="height: 300px; width: auto" src="./img/SecurityConfiguration-File-Cert.png" />
 
+
+<div class="flex-col justify-center">
+  <p>As already mentioned, the certificate handling is required for the authentication aspect. Accordingly, the hwc offers the option of importing certificates. 
+  This is done via the command <b>"apax hwc import-certificate"</b></p>
+  <p>In addition to the information about which PLC the certificate refers to, the certificate file, password, and purpose must also be specified. </p>
+  <p>Purpose can include <b>TLS</b>, <b>WebServer</b>, <b>SysLogClient</b> and <b>OpcUaServer</b></p>
+  <p>Once the certificate has been added, you can find it in the security configuration file and also find the file index. </p>
+  <br>
+  <p>Some commands or blocks break the certificate index. The whole thing then looks like the screenshot shown:</p>
+  <img style="height: 200px; width: 500px" src="./img/SecurityConfiguration-File-Cert.png" />
 </div>
+
+  <ol>
+   <li><br>For More Informations about the Command check the documentation on the AX Side: <br><a href="https://console.simatic-ax.siemens.io/docs/hw/hwc#import-certificate-command">Import certificate command</a></li> 
+  </ol>
 
 ----
 
