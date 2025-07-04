@@ -432,7 +432,8 @@ A restriction of the values that can be entered. If, for example, the assembly h
 </header>
 
 <div class="flex-col justify-center">
-  <p>To enable authorization on a PLC, users, passwords, and roles must be assigned. This whole process is referred to as User Management Access Control (UMAC). It consists of two pillars: the assignment of roles and rights, and the assignment of passwords. Passwords are assigned via the CLI and are discussed on the next page.</p>
+  <p>To enable authorization on a PLC, users, passwords, and roles must be assigned. This whole process is referred to as User Management Access Control (UMAC). It consists of two pillars: the assignment of roles and rights, and the assignment of passwords. Passwords are assigned via the CLI and are discussed on the next page. 
+If the config file and PLC Security Configuration File are not kept synchronized, errors may occur during hardware compilation</p>
   <br>
   <div class="grid-two-col-eq">
     <div class="flex-col justify-center">
