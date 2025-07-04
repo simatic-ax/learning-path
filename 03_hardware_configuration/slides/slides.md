@@ -372,6 +372,7 @@ A masking of the values ​​that can be entered. If, for example, the assembly
 <div class="grid-slide-ressources">
     <ol>
       <li>Informations about: <a href="https://console.simatic-ax.siemens.io/docs/hw/security/authorization/plc-configuration-data-protection">PLC Configuration Data Protection</a></li>
+      <li>Informations about: <a href="https://console.simatic-ax.siemens.io/docs/hw/language/services">Configuration of PLC services</a></li>
     </ol>
 </div>
 
