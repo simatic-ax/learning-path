@@ -13,12 +13,13 @@ mouseWheel: true,
 | 00 | Introduction to the workshop |
 | 01 | Introduction to AX Code IDE |
 | 02 | Get started with your first AX Project |
-| 03 | Loading and Debugging |
-| 04 | Introduction to ST Programming |
-| 05 | OOP Elements of ST |
-| 06 | Unit Testing |
-| **07** | **Tools for commissioning** |
-| 08 | Package management |
+| 03 | Hardware Configuration |
+| 04 | Loading and Debugging |
+| 05 | Introduction to ST Programming |
+| 06 | OOP Elements of ST |
+| 07 | Unit Testing |
+| **08** | **Tools for commissioning** |
+| 09 | Package management |
 
 ---
 
