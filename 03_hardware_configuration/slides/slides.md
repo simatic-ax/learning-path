@@ -371,7 +371,6 @@ A masking of the values ​​that can be entered. If, for example, the assembly
 
 <div class="grid-slide-ressources">
     <ol>
-      <li>Informations about: <a href="https://console.simatic-ax.siemens.io/docs/hw/security/authorization/plc-configuration-data-protection">PLC Configuration Data Protection</a></li>
       <li>Informations about: <a href="https://console.simatic-ax.siemens.io/docs/hw/language/services">Configuration of PLC services</a></li>
     </ol>
 </div>
@@ -383,7 +382,17 @@ A masking of the values ​​that can be entered. If, for example, the assembly
 </header>
 
 <div class="flex-col justify-center">
+  <p>To fullfill the cyber security needs of a production facility, additional information must be stored and loaded onto the PLC. This information is not necessarily generic or even stored in a readable format. Examples include passwords or certificate keys.</p>
+  <p></p>
+  <img style="height: 300px; width: auto" src="./img/SecurityConfiguration-File.png" />
+</div>
 
+
+<div class="grid-slide-ressources">
+    <ol>
+      <li><br>Informations about: <br><a href="https://console.simatic-ax.siemens.io/docs/hw/security/authorization/plc-configuration-data-protection">PLC Configuration Data Protection</a>
+      <br><a href="https://console.simatic-ax.siemens.io/docs/hw/hwc#setup-secure-communication-command">setup-secure-communication command</a></li> 
+    </ol>
 </div>
 
 ----
@@ -393,18 +402,15 @@ A masking of the values ​​that can be entered. If, for example, the assembly
 </header>
 
 <div class="flex-col justify-center">
-OPCUA / TLS / Webserver
+    OPCUA / TLS / Webserver
+    <img style="height: 300px; width: auto" src="./img/SecurityConfiguration-File-Cert.png" />
+
 </div>
 
 ----
 
 
-
-
-
-
 <header class="slide_header">
-    <h2>IT Like Hardware Engineer</h2>
     <h3>User Managment UMAC</h3>
 </header>
 
