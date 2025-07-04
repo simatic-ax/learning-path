@@ -411,7 +411,6 @@ A restriction of the values that can be entered. If, for example, the assembly h
 
 
 <header class="slide_header">
-    <h2>IT-Like Hardware Engineering</h2>
     <h3>User Management UMAC</h3>
 </header>
 
