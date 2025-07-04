@@ -419,37 +419,57 @@ A restriction of the values that can be entered. If, for example, the assembly h
   <br>
   <p>Some commands or blocks break the certificate index. The whole thing then looks like the screenshot shown:</p>
   <img style="height: 200px; width: 500px" src="./img/SecurityConfiguration-File-Cert.png" />
-</div>
 
   <ol>
    <li><br>For More Informations about the Command check the documentation on the AX Side: <br><a href="https://console.simatic-ax.siemens.io/docs/hw/hwc#import-certificate-command">Import certificate command</a></li> 
   </ol>
-
-----
-
-
-<header class="slide_header">
-    <h3>User Management UMAC</h3>
-</header>
-
-----
-
-<header class="slide_header">
-    <h3>Define Users and Roles in hwl.yml</h3>
-</header>
-
-<div class="flex-col justify-center">
-<img style="height: 400px; width: auto" src="./img/UMAC_in_hwl_yml.png" />
-
 </div>
 
 ----
 
 <header class="slide_header">
-    <h3>Set Password and manage users over command line of hwc</h3>
+    <h3>User Management UMAC - Define Users and Roles in hwl.yml</h3>
 </header>
 
 <div class="flex-col justify-center">
+  <p>To enable authorization on a PLC, users, passwords, and roles must be assigned. This whole process is referred to as User Management Access Control (UMAC). It consists of two pillars: the assignment of roles and rights, and the assignment of passwords. Passwords are assigned via the CLI and are discussed on the next page.</p>
+  <br>
+  <div class="grid-two-col-eq">
+    <div class="flex-col justify-center">
+    <p>Roles are configured in the hwl.yml file. A <b>"UserManagement"</b> section is created when defining the PLC. There, roles can be defined and then assigned to users.</p>
+    <p>The function roles can come from the following things, for example.:</p>
+    <ul>
+     <li><a href="https://console.simatic-ax.siemens.io/docs/hw/security/authorization/plc-access-protection">The Access to PLC</a></li>
+     <li><a href="https://console.simatic-ax.siemens.io/docs/hw/security/authorization/plc-web-server">PLC Web Server Authorization</a></li>
+     <li><a href="https://console.simatic-ax.siemens.io/docs/hw/security/authorization/opc-ua-server">OPC UA Server Authorization</a></li>
+   </ul>
+    </div>
+    <img style="height: 350px; width: auto" src="./img/UMAC_in_hwl_yml.png" />
+  </div>
+  <ol>
+    <li><br>For More Informations about UMAC on the AX Side: <br><a href="https://console.simatic-ax.siemens.io/docs/hw/security/authorization/user-management#user-management-access-control-umac">User Management Access Control (UMAC)</a></li> 
+  </ol>
+</div>
+
+----
+
+<header class="slide_header">
+    <h3>User Management UMAC - <br>Managing User Credentials over command line of hwc</h3>
+</header>
+
+<div class="flex-col justify-center">
+  <p>Using the command <b>"apax hwc manage-users"</b>, you can list all known users, assign passwords, and create users. As with the other commands, you must specify the PLC name and the location of the PLC config file the user is currently in. Note: Role assignment is still done via the hwl condig file. Therefore, both the config file and user management in the PLC Security Configuration File must be maintained.</p>
+  <br>
+  <p> The command now offers the following options:
+    <ul>
+      <li><b>list:</b> <br>Lists all users for which credentials have been configured for the specified PLC in the PLC Security Configuration File.</li>
+      <li><b>set-password:</b> <br>Sets the password for a PLC's user. If the user does not yet exist, it will be created implicitly. If the user already exists, the previously configured password will be overwritten..</li>
+      <li><b>delete:</b> <br>Deletes a user from the PLC Security Configuration File.</li>
+    </ul>
+  </p>
+  <ol>
+    <li><br>For More Informations about mange User Command on AX Side: <br><a href="https://console.simatic-ax.siemens.io/docs/hw/hwc#manage-users-command">Manage User Command</a></li> 
+  </ol>
 
 </div>
 
