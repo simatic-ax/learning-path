@@ -38,7 +38,6 @@ Agenda
   </h2>
 </header>
 
-<div class="grid-two-col-eq">
   <div class="flex-col justify-center">
     <p>After you complete this training section, you will have:</p>
         <ul>
@@ -50,7 +49,6 @@ Agenda
             <li>Understand diagnostics in the hardware environment</li>
         </ul>
     <br>
-  </div>
 </div>
 
 ---
@@ -334,7 +332,6 @@ A restriction of the values that can be entered. If, for example, the assembly h
     <h2>IT-Like Hardware Engineering</h2>
     <h3>Security Settings</h3>
 </header>
-
   <div class="flex-col justify-center">
      <p>Like all Siemens software, SIMATIC AX also represents the principle of "Security by default". 
         Accordingly, the security aspects must be set up in the project before loading the PLC.<br></p>
@@ -359,23 +356,23 @@ A restriction of the values that can be entered. If, for example, the assembly h
 <div class="grid-two-col-eq">
     <div class="flex-col justify-center">
         <p>
-        In order to create hardware for a PLC, the first step we need to take is to understand how the hardware configuration is described in a textual declaration for an IT-like context.</p>
+        To create the appropriate security settings for a PLC, you first need a PLC description file. The PLC is the central element in a hardware configuration, to which all other modules are interconnected. The basic configuration can now be created, for example, by generating a template from a PLC in a hardware support package.</p>
         <br>
-            <p>Security consists of two aspects: Authentication and Authorization:
+            <p>In this file you can also set some basic settings in relation of Authentication and Authorization:
                 <ul>
-                    <li>Authentication ensures that you are communicating with the expected PLC</li>
-                    <li>Authorization ensures operations are only performed by users permitted to do so.</li>
+                    <li>Authentication: The services can be switched on here, such as OPCUA / Webserver</li>
+                    <li>Authorization: The basic protection level is set here.</li>
                 </ul>
             </p>
         <br>
-        <p>The devices and dependent modules, including all properties, can be easily defined and set.</p>
     </div>
-    <img style="height: 300px; width: auto" src="./img/hwl-yml-file.png" />
+    <img style="height: 400px; width: auto" src="./img/hwl-yml-access.png" />
 </div>
 
 <div class="grid-slide-ressources">
     <ol>
-      <li>Information about: <a href="https://console.simatic-ax.siemens.io/docs/hw/security/authorization/plc-configuration-data-protection">PLC Configuration Data Protection</a></li>
+      <li>Informations about: <a href="https://console.simatic-ax.siemens.io/docs/hw/security/authorization/plc-configuration-data-protection">PLC Configuration Data Protection</a></li>
+      <li>Informations about: <a href="https://console.simatic-ax.siemens.io/docs/hw/language/services">Configuration of PLC services</a></li>
     </ol>
 </div>
 
