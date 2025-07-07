@@ -170,7 +170,7 @@ Agenda
   <img style="height: 200px; width: auto" src="./img/GSDML_viewer.png" />
   <br>
 <ol>
-  <li>Additional information about GSDML Viewer: <a href="https://console.simatic-ax.siemens.io/docs/axcode/vscode-gsdml-viewer">GSDML Viewer on AX-Side</a></li>
+  <li>Additional information about GSDML Viewer: <a href="https://console.simatic-ax.siemens.io/docs/axcode/vscode-gsdml-viewer">GSDML Viewer on AX-Website</a></li>
 </ol>
 </div>
 
