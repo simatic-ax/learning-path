@@ -7,6 +7,6 @@ variables:
   APAX_BUILD_ARGS:
     - "--debug" # Generate debug information for target "1500"
 devDependencies:
-  "@ax/sdk": 2311.0.1
+  "@ax/sdk": ^2405.0.0
 scripts:
     present: reveal-md ./slides/slides.md --theme ./slides/theme/simatic-ax.css --watch
