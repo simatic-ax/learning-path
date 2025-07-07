@@ -160,7 +160,7 @@ Agenda
 </header>
 <div class="grid-two-col-eq">
     <div class="flex-col justify-center">
-       <p>Depending on how many assemblies it describes, a GSD file can become very large, making it difficult to determine which attributes an assembly has and which values it can assume.</p>
+       <p>Depending on how many devices and modules it describes, a GSD file can become very large, making it difficult to determine which configuration parameters an module has and which values it can assume.</p>
        <br>
        <p>For a graphical overview, we offer an extension that can be integrated into AX code (see image to the right). You can then click on a GSDML XML file, and it will open in the extension (see below).</p>
        <br>
