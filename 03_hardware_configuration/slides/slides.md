@@ -61,7 +61,7 @@ Agenda
 <div class="grid-two-col-eq">
     <div class="flex-col justify-center">
         <p>
-        In order to create hardware for a PLC, the first step we need to take is to understand how the hardware configuration is described in a textual declaration for an IT-like context.</p>
+        In order to create the hardware configuration for a PLC, the first step we need to take is to understand how the hardware configuration is described in a textual declaration for an IT-like context.</p>
         <br>
             <p>The format in which the hardware configuration is created is YAML. YAML has the following advantages as a format:
                 <ul>
