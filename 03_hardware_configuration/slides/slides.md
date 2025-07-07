@@ -507,7 +507,7 @@ If the config file and PLC Security Configuration File are not kept synchronized
 <div class="flex-col justify-center">
   <p>During hardware configuration, values/variables are assigned which can be referred to in the user program.</p>
   <br>
-  <p>After compiling a hardware configuration, hwc will generate ST files including Hardware Identifiers and IO Addresses for each module inside the folder SystemConstants. The files or values you need can simply be copied into the src folder of the software program.
+  <p>After compiling a hardware configuration, hwc will generate ST files that define variables for Hardware Identifiers and IO Addresses of each module inside the folder SystemConstants. The files or values you need can simply be copied into the src folder of the software program.
   <br>Additional information: When the PLC is generated, the values assigned are also saved in JSON files in order to retain values that have already been assigned.</p>
   <br>
   <p>We will briefly show the two files containing the values on the following page.</p>
