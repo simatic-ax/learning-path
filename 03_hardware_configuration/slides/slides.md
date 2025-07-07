@@ -117,7 +117,7 @@ Agenda
 </header>
 
   <div class="flex-col justify-center">
-    <p>To operate a system, you obviously need not only the PLC but also the corresponding modules, motors, and so on. Accordingly, AX also offers various options for incorporating configuration information for modules into the project. There are two options here:</p>
+    <p>To operate a system, you need to configure not only the PLC but also the corresponding modules, motors, and so on. Accordingly, AX offers various options for incorporating configuration information for modules into the project. There are two options here:</p>
         <ul>
             <li>Importing the hardware as a standardized GSDML format.</li>
             <li>Using standard Siemens modules that are supported and provided as apax packages that can be included as dev dependencies.</li>
