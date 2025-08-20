@@ -483,7 +483,7 @@ If the config file and PLC Security Configuration File are not kept synchronized
 </header>
 
 <div class="flex-col justify-center">
-  <p>When you set up or assemble a system for the first time, it's important to assign basic identifiers, such as names or IP addresses, to the modules, since the modules are delivered with the same values from the factory. This applies to the spare parts use case. <br>
+  <p>When you set up or assemble a system for the first time, it's important to assign communication addresses, such as the IP address, to the modules, since the modules are delivered with the same values from the factory. This applies to the spare parts use case. <br>
   Therefore, AX must have a way for a module to know its unique identifiers. Accordingly, you can describe in AX which port is connected to which module. This allows the system to recognize which device is involved and assign the device identifiers based on the network interconnection. <br>
   The following is a parameterization example showing how different modules are connected to a SCALANCE X208:</p>
   <br>
