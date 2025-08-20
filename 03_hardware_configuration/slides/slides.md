@@ -44,7 +44,7 @@ Agenda
             <li>Basic knowledge of hardware configuration</li>
             <li>Know how to insert hardware devices into a project</li>
             <li>Know how to use templates in hardware context</li>
-            <li>Be able to administer users through User Management</li>
+            <li>After you complete this training section, you will have be able to administer users through User Management</li>
             <li>Know how to perform hardware basic setting assignment</li>
             <li>Understand diagnostics in the hardware environment</li>
         </ul>
@@ -479,7 +479,7 @@ If the config file and PLC Security Configuration File are not kept synchronized
 
 <header class="slide_header">
     <h2>IT-Like Hardware Engineering</h2>
-    <h3>Hardware Device Identifiers assignment</h3>
+    <h3>Hardware Identifiers</h3>
 </header>
 
 <div class="flex-col justify-center">
