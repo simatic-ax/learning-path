@@ -21,14 +21,13 @@ Agenda
   <h2>Prerequisites</h2>
 </header>
 
-<div class="grid-two-col-eq">
   <div class="flex-col justify-center">
-    <p>To get started, you need to have SIMATIC AX, apax and all its prerequisites installed.</p>
-    <p>In addition you should know the basics on how to use AX Code as well as have a starting project and know the basics of hardware configuration.</p>
+    <p>To get started, you need to have SIMATIC AX, apax and all its prerequisites installed.<br/></p>
+    <p>In addition you should know the basics on how to use AX Code as well as have a starting project and know the basics of hardware configuration.<br/></p>
+    <p>You should execute the <a href="https://console.simatic-ax.siemens.io/docs/get-started/prepare/prepare_itlike">Getting Starting - Preparing the IT-like PLC engineering workflow.</a></p>
     <br/>
     <p>With this you are set up to continue with this learning path.</p>
   </div>
-</div>
 
 ---
 
