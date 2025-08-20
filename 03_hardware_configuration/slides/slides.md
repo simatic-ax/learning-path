@@ -382,7 +382,7 @@ A restriction of the values that can be entered. If, for example, the assembly h
 </header>
 
 <div class="flex-col justify-center">
-  <p>To fullfill the cyber security needs of a production facility, additional information must be stored and loaded onto the PLC. This information is not necessarily generic or even stored in a readable format, how you can see down in the screenshot. Examples include passwords or certificate keys.</p>
+  <p>To fullfill the cyber security needs of a production facility, additional information must be stored and loaded onto the PLC. This information is not necessarily generic or even stored in a readable format, as you can see down in the screenshot. Examples include passwords or certificate keys.</p>
   <br>
   <img style="height: 120px; width: 400px" src="./img/SecurityConfiguration-File.png" />
   <br>
