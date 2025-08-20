@@ -190,6 +190,7 @@ Agenda
     <br>
     <p>
         If you now open the project on another PC, the hardware information will also be added to the project via a simple `apax install`.
+        By default, the hardware support package for the 1500 PLC is included in the SDK.
         If additional Siemens hardware is required that is not yet offered as a hardware support package, it can of course also be imported as GSDML. 
     </p>
     <br>
@@ -459,7 +460,7 @@ If the config file and PLC Security Configuration File are not kept synchronized
 </header>
 
 <div class="flex-col justify-center">
-  <p>Using the command <b>"apax hwc manage-users"</b>, you can list all known users, assign passwords, and create users. As with the other commands, you must specify the PLC name and the location of the PLC config file the user is currently in. Note: Role assignment is still done via the hwl config file. Therefore, both the config file and user management in the PLC Security Configuration File must be maintained.</p>
+  <p>Using the command <b>"apax hwc manage-users"</b>, you can list all known users, assign passwords, and create users. As with the other commands, you must specify the PLC name and the location of the PLC config file the user is currently in with the same --input parameters you would pass to hwc compile. Note: Role assignment is still done via the hwl config file. Therefore, both the config file and user management in the PLC Security Configuration File must be maintained.</p>
   <br>
   <p> The command now offers the following options:
     <ul>
