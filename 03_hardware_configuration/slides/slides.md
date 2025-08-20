@@ -90,7 +90,7 @@ Agenda
 </header>
 
 <div class="flex-col justify-center">
-   <p>In the hardware environment, there are two basic tools that perform the main tasks. The tools are added with the `apax add` command, but are both included in the SDK. These are as follows:</p>
+   <p>In the hardware environment, there are two basic tools that perform the main tasks. The tools are added over sdk the `apax add --dev @ax/sdk` command. But it is also possible to insert both without sdk. This tools are as follows:</p>
    <br>
    <ul>
       <li>HWC - Hardware Compiler
@@ -594,7 +594,7 @@ Some functions require that you access the hardware in the program or specify wh
     <p>Now it's time to put what you've learned into practice. To do this, please complete an exercise and follow the steps below. Feel free to flip back to the relevant pages for help.</p>
     <ul>
       <li>Create a new project</li>
-      <li>Add the components hwc, hwld</li>
+      <li>Add the components hwc, hwld over sdk</li>
       <li>Insert assemblies via packages and gsd</li>
       <li>Create the template of a PLC from the hardware support packages and perform the setup of the security functions</li>
       <li>Create a template for a PROFINET module from a GSDML. Set placeholders in the template e.g. for the name. Apply and parameterize the template.</li>
