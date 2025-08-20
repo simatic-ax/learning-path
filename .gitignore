@@ -1,4 +1,4 @@
 **/.apax
 /.vs
 **/node_modules
-/05_introduction_to_st/slides/theme/.DS_Store
+**/.DS_Store
