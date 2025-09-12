@@ -1,3 +1,20 @@
+# Important Notice
+
+**Chapters "02_first_ax_project" and "introduction_to_st" are now available in a separate repository!**
+
+- **Repository:** [simatic-ax/axlp_apax_and_project_creation](https://github.com/simatic-ax/axlp_apax_and_project_creation)
+- **Presentation:** [GitHub Pages (Online & Direct)](https://simatic-ax.github.io/axlp_apax_and_project_creation/)
+
+---
+
+# Wichtiger Hinweis
+
+**Die Kapitel "first_ax_project" und "introduction_to_st" sind über ein separates Repository und einen eigenen Link erreichbar!**
+
+- **Repository:** [simatic-ax/axlp_apax_and_project_creation](https://github.com/simatic-ax/axlp_apax_and_project_creation)
+- **Präsentation:** [GitHub Pages (Direkt & Online)](https://simatic-ax.github.io/axlp_apax_and_project_creation/)
+
+---
 ## How to get the learning path
 
 To retrieve the learning path, you can either
