@@ -1,18 +1,19 @@
 # Important Notice
 
-**Chapters "02_first_ax_project" and "introduction_to_st" are now available in a separate repository!**
 
-- **Repository:** [simatic-ax/axlp_apax_and_project_creation](https://github.com/simatic-ax/axlp_apax_and_project_creation)
-- **Presentation:** [GitHub Pages (Online & Direct)](https://simatic-ax.github.io/axlp_apax_and_project_creation/)
+
+**The chapters "02_first_ax_project" and "introduction_to_st" are now available in separate repositories!**
+
+- **First AX Project**
+	- **Repository:** [simatic-ax/axlp_apax_and_project_creation](https://github.com/simatic-ax/axlp_apax_and_project_creation)
+	- **Presentation:** [GitHub Pages (Online & Direct)](https://simatic-ax.github.io/axlp_apax_and_project_creation/)
+- **Introduction to ST**
+	- **Repository:** [simatic-ax/axlp_introduction_to_st](https://github.com/simatic-ax/axlp_introduction_to_st)
+	- **Presentation:** [GitHub Pages (Online & Direct)](https://simatic-ax.github.io/axlp_introduction_to_st/#/)
 
 ---
 
-# Wichtiger Hinweis
-
-**Die Kapitel "first_ax_project" und "introduction_to_st" sind über ein separates Repository und einen eigenen Link erreichbar!**
-
-- **Repository:** [simatic-ax/axlp_apax_and_project_creation](https://github.com/simatic-ax/axlp_apax_and_project_creation)
-- **Präsentation:** [GitHub Pages (Direkt & Online)](https://simatic-ax.github.io/axlp_apax_and_project_creation/)
+---
 
 ---
 ## How to get the learning path
