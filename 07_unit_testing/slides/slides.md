@@ -204,12 +204,16 @@ END_NAMESPACE
 
 ## Assert functions
 
-|Assertion  |Example|
 |-          |-|
-|Equal      | AxUnit.Assert.Equal(expected := x, actual := y)|
-|NotEqual   | AxUnit.Assert.NotEqual(expected := x, actual := y)|
-|LessThan   | AxUnit.Assert.LessThan(left := x, right := y)|
-|GreaterThan| AxUnit.Assert.GreaterThan(left := x, right := y)|
+|Assertion         |Description (EN)                                               | Example                                             |
+|------------------|---------------------------------------------------------------|-----------------------------------------------------|
+|Equal             | Checks if two values are equal.                               | AxUnit.Assert.Equal(expected := x, actual := y)     |
+|NotEqual          | Checks if two values are not equal.                           | AxUnit.Assert.NotEqual(expected := x, actual := y)  |
+|Greater           | Checks if one value is greater than another.                  | AxUnit.Assert.Greater(left := x, right := y)        |
+|GreaterOrEqual    | Checks if one value is greater than or equal to another.      | AxUnit.Assert.GreaterOrEqual(left := x, right := y) |
+|Less              | Checks if one value is less than another.                     | AxUnit.Assert.Less(left := x, right := y)           |
+|LessOrEqual       | Checks if one value is less than or equal to another.         | AxUnit.Assert.LessOrEqual(left := x, right := y)    |
+|InRange           | Checks if a value is within a specified range.                | AxUnit.Assert.InRange(number_1, tolerace)           |
 
 <br>
 <br>
