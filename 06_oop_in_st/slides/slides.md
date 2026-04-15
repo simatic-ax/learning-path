@@ -272,7 +272,7 @@ A FUNCTION BLOCK is similar to a CLASS with one method
 |-|-|-|
 |can be instantiated|yes|yes|
 |occupy memory|yes|yes|
-|method supported|no|yes|
+|method supported|yes|yes|
 |access modifier[1]|yes|yes|
 |can be inherited|no|yes|
 
