@@ -21,6 +21,7 @@ NAMESPACE FluidHandlingClass
                 currentVolume : REAL;
             END_VAR 
             _capacity := (currentVolume / volume) * 100;
+            Capacity := _capacity;
         END_METHOD
 
         METHOD PUBLIC OpenInlet 
